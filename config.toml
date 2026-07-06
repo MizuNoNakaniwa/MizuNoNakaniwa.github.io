@@ -352,7 +352,7 @@ uglyURLs = false
     #      Open Graph、Atom、RSS
 
     # 站点的创建时间
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2026-07-06T00:00:00+00:00"
     # 注意：请保持此格式，更改数字
 
     # 站点的推特帐号
@@ -1067,7 +1067,7 @@ uglyURLs = false
     enablePostUpdatedBadge = true
 
     # 是否显示（全局设置）
-    displayUpdatedBadge = true
+    displayUpdatedBadge = false
     # 说明：文章的 Front Matter 中的 `badge`
     #      的优先级高于此处
 
@@ -1122,10 +1122,10 @@ uglyURLs = false
     # 文章分享
 
     # 是否开启
-    enablePostShare = true
+    enablePostShare = false
 
     # 是否显示（全局设置）
-    displayPostShare = true
+    displayPostShare = false
     # 说明：文章的 Front Matter 中的 `share`
     #      的优先级高于此处
 
@@ -1235,10 +1235,10 @@ uglyURLs = false
 
     displayCopyleftSymbol = false
     # 是否显示版权符号（©）
-    displayCopyrightSymbol = true
+    displayCopyrightSymbol = false
 
     # 是否显示站点的创建年份
-    displaySiteCreatedYear = true
+    displaySiteCreatedYear = false
 
     # 年份与作者之间的图标，留空（""）则无
     iconBetweenYearAndAuthor = "heart"
@@ -1248,10 +1248,10 @@ uglyURLs = false
     iconAnimation = true
 
     # 是否显示 Hugo 和 MemE 的链接
-    displayPoweredBy = true
+    displayPoweredBy = false
 
     # 是否显示站点的版权信息
-    displaySiteCopyright = true
+    displaySiteCopyright = false
 
     # 自定义页脚（支持 Markdown）
     customFooter = ""
@@ -1266,7 +1266,7 @@ uglyURLs = false
     #      https://busuanzi.ibruce.info/
 
     # 社交链接
-    enableSocials = true
+    enableSocials = false
     # 说明：见 data/Socials.toml
 
 
