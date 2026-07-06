@@ -189,46 +189,29 @@ uglyURLs = false
 
 [menu]
     ## 菜单栏
-    # [[menu.main]]
-    #     pageref = "/"
-    #     name = "首页"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "home"
-    [[menu.main]]
-        pageref = "/posts/"
-        name = "文章"
-        weight = 2
-        pre = "internal"
-        post = "archive"
-    [[menu.main]]
-        pageref = "/categories/"
-        name = "分类"
-        weight = 3
-        pre = "internal"
-        post = "th"
-    [[menu.main]]
-        pageref = "/tags/"
-        name = "标签"
-        weight = 4
-        pre = "internal"
-        post = "tags"
     [[menu.main]]
         pageref = "/about/"
-        name = "关于"
+        name = "About 介绍"
+        weight = 1
+
+    [[menu.main]]
+        pageref = "/projects/"
+        name = "Projects 我的项目"
+        weight = 2
+
+    [[menu.main]]
+        pageref = "/posts/"
+        name = "Blog 我的博客"
+        weight = 3
+
+    [[menu.main]]
+        pageref = "/contact/"
+        name = "Contact 联系我"
+        weight = 4
+
+    [[menu.main]]
         weight = 5
-        pre = "internal"
-        post = "user-circle"
-    [[menu.main]]
-        weight = 6
         identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 7
-        identifier = "lang-switcher"
-    # [[menu.main]]
-    #     weight = 8
-    #     identifier = "search"
-    #     post = "search"
 
 
 
