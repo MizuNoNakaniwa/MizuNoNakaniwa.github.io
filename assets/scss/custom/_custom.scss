@@ -138,3 +138,23 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.6rem;
   }
 }
+
+// ---------- 刊头横幅(仿 China Heritage) ----------
+.site-banner {
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;     // 图片过高时居中裁切,双端都不变形
+  }
+}
+
+@media (max-width: 600px) {
+  .site-banner img {
+    max-height: 180px;     // 手机上横幅矮一点,不挤内容
+  }
+}

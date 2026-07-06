@@ -236,6 +236,12 @@ uglyURLs = false
 # 主题配置
 
 [params]
+    # ---- 刊头横幅(站点级自定义,仿 China Heritage)----
+    # 换图: 把图片传到 static/images/banner.jpg 覆盖同名文件
+    # 不要横幅: enableBanner 改 false
+    enableBanner = true
+    bannerImage = "/images/banner.jpg"
+
     ######################################
     # 顶栏
 
@@ -1413,3 +1419,4 @@ uglyURLs = false
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
         busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         utterances = "https://utteranc.es/client.js"
+
