@@ -158,3 +158,104 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 180px;     // 手机上横幅矮一点,不挤内容
   }
 }
+
+// ---------- 顶栏固定死: 取消跟随滚动 ----------
+// MemE 的 flex 顶栏默认 position: fixed(粘在屏幕顶跟着滚)
+// 覆盖为 static,顶栏回到正常文档流,滚下去就滚走
+.header {
+  position: static !important;
+  width: auto !important;
+}
+
+// 顶栏不再悬浮后,正文顶部原本给悬浮栏留的大空隙收小
+.post-body {
+  margin-top: 2em !important;
+}
+
+// ==============================================
+// 整站居中容器: 仿 China Heritage
+// 横幅 / 黑色菜单条 / 页脚底图 全部收进中间一栏,两边留白
+// ==============================================
+$page-width: 1080px;
+
+// ---- 横幅收窄居中,不再通栏 ----
+.site-banner {
+  max-width: $page-width;
+  margin: 1.2rem auto 0;
+  padding: 0 1rem;       // 屏幕略窄时两边不贴死
+  box-sizing: border-box;
+}
+
+// ---- 菜单条: 全黑底白字,同样收窄居中 ----
+.header {
+  max-width: $page-width;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  background: #1a1a1a !important;
+  backdrop-filter: none !important;
+  padding: 0.6em 1.2em !important;
+}
+
+// 站名和菜单文字全白
+.header .brand,
+.header .site-brand a,
+.header .nav .menu-item a,
+.header .nav .menu-item-name,
+.header .nav a {
+  color: #ffffff !important;
+}
+
+.header .nav .menu-item a:hover,
+.header .nav .menu-item-name:hover {
+  color: #bbbbbb !important;
+}
+
+// 菜单里的图标(主题切换/搜索)也变白
+.header .nav svg {
+  fill: #ffffff !important;
+}
+
+// ---- 页脚底图: 同宽居中,在最下面 ----
+.footer-image {
+  max-width: $page-width;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+}
+
+// 页脚文字区也对齐同一容器宽度
+.footer-inner {
+  max-width: $page-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ---- 手机端: 容器天然占满,留白交给 padding ----
+@media (max-width: 600px) {
+  .site-banner,
+  .header,
+  .footer-image {
+    padding: 0 0.6rem;
+  }
+  .footer-image img {
+    max-height: 140px;
+  }
+}
+
+// 暗色模式下菜单条保持黑底白字,无需变化,但确保边界可见
+[data-theme='dark'] .header-wrapper {
+  background: #000000 !important;
+  border: 1px solid #333;
+}

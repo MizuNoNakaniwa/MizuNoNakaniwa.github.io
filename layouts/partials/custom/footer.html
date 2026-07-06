@@ -1,0 +1,6 @@
+{{/* 站点级: 页脚底图,仿 chinaheritage.net 最下方的长方形图片 */}}
+{{ if .Site.Params.enableFooterImage }}
+    <div class="footer-image">
+        <img src="{{ .Site.Params.footerImage | relURL }}" alt="">
+    </div>
+{{ end }}

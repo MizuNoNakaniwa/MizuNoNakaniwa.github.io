@@ -241,6 +241,9 @@ uglyURLs = false
     # 不要横幅: enableBanner 改 false
     enableBanner = true
     bannerImage = "/images/banner.jpg"
+    # 页脚底图(最下方的长方形图片),换图同理传 static/images/ 覆盖
+    enableFooterImage = true
+    footerImage = "/images/footer.jpg"
 
     ######################################
     # 顶栏
