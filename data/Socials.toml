@@ -1,0 +1,37 @@
+# 社交链接 — 改这里的 YOUR_HANDLE 为你的账号,不要的删掉整段
+# 图标名参见 themes/meme/data/SVG.toml
+
+[[socials]]
+    id = "github"
+    url = "https://github.com/MizuNoNakaniwa"
+    icon = "github"
+    title = "GitHub"
+    weight = 1
+
+[[socials]]
+    id = "twitter"
+    url = "https://x.com/YOUR_HANDLE"
+    icon = "twitter"
+    title = "X"
+    weight = 2
+
+[[socials]]
+    id = "instagram"
+    url = "https://instagram.com/YOUR_HANDLE"
+    icon = "instagram"
+    title = "Instagram"
+    weight = 3
+
+[[socials]]
+    id = "tiktok"
+    url = "https://tiktok.com/@YOUR_HANDLE"
+    icon = "tiktok"
+    title = "TikTok"
+    weight = 4
+
+[[socials]]
+    id = "rss"
+    url = "/rss.xml"
+    icon = "rss"
+    title = "RSS"
+    weight = 5

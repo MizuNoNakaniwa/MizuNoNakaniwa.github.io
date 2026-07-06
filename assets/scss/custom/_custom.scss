@@ -1,0 +1,140 @@
+// ==============================================
+// Lester Shi — 期刊风格样式覆盖
+// 方向: 黑白 / 衬线 / 留白 / 中英混排
+// 参照气质: chinaheritage.net
+// ==============================================
+
+// ---------- 字体引入 ----------
+// Cinzel: Trajan 的免费替代(碑铭体标题)
+// EB Garamond: Caslon 同族的老式衬线正文
+// 中文楷体走系统字体(嵌入楷体字库体积太大,不划算)
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --font-title: 'Cinzel', 'STKaiti', 'KaiTi', '楷体', serif;
+  --font-body: 'EB Garamond', Georgia, 'STKaiti', 'KaiTi', '楷体', serif;
+}
+
+// ---------- 全局:黑白基调 ----------
+body {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.9;                // 中文长文需要更松的行距
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+// ---------- 刊头 ----------
+.site-brand {
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: 0.12em;          // 碑铭体拉开字距才有味道
+  text-transform: none;
+}
+
+// ---------- 标题 ----------
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #111;
+}
+
+.post-title {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+// ---------- 正文排版 ----------
+.post-body {
+  p {
+    margin: 1.4em 0;
+  }
+
+  // 引文块: 学期刊的左线 + 楷体
+  blockquote {
+    border-left: 2px solid #1a1a1a;
+    margin: 2em 0;
+    padding: 0.2em 0 0.2em 1.5em;
+    color: #444;
+    font-style: normal;
+    font-family: 'STKaiti', 'KaiTi', '楷体', 'EB Garamond', serif;
+  }
+
+  // 链接: 黑色 + 细下划线,不用蓝色(保持黑白)
+  a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    &:hover {
+      color: #666;
+    }
+  }
+
+  // 图片留白
+  img {
+    margin: 2em auto;
+    display: block;
+  }
+
+  // 分隔线: 用居中短线,期刊味
+  hr {
+    border: none;
+    text-align: center;
+    margin: 3em 0;
+    &::after {
+      content: "❦";              // 也可换成 "· · ·" 或 "※"
+      color: #999;
+      font-size: 1.2em;
+    }
+  }
+}
+
+// ---------- 首页文章列表 ----------
+.summary {
+  .summary-title {
+    font-family: var(--font-title);
+  }
+  .summary-content {
+    color: #333;
+  }
+}
+
+// ---------- 内容宽度: 窄栏居中,长文阅读最佳宽度 ----------
+.main-inner {
+  max-width: 42rem;
+}
+
+// ---------- 嵌入内容(推文/视频)居中 ----------
+.twitter-tweet, .tiktok-embed, iframe {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+// ---------- 暗色模式微调 ----------
+[data-theme='dark'] {
+  body {
+    color: #d6d6d6;
+  }
+  .post-body a {
+    color: #d6d6d6;
+    &:hover { color: #999; }
+  }
+  .post-body blockquote {
+    border-left-color: #d6d6d6;
+    color: #aaa;
+  }
+}
+
+// ---------- 手机端 ----------
+@media (max-width: 600px) {
+  body {
+    font-size: 1.05rem;
+  }
+  .post-title {
+    font-size: 1.6rem;
+  }
+}
