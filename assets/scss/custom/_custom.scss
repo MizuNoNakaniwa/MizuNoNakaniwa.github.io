@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 // 整站居中容器: 仿 China Heritage
 // 横幅 / 黑色菜单条 / 页脚底图 全部收进中间一栏,两边留白
 // ==============================================
-$page-width: 1080px;
+$page-width: 820px;
 
 // ---- 横幅收窄居中,不再通栏 ----
 .site-banner {
@@ -195,7 +195,7 @@ $page-width: 1080px;
 }
 
 .header-wrapper {
-  background: #1a1a1a !important;
+  background: #000000 !important;
   backdrop-filter: none !important;
   padding: 0.6em 1.2em !important;
 }
