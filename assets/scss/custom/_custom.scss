@@ -176,12 +176,12 @@ h1, h2, h3, h4, h5, h6 {
 // 整站居中容器: 仿 China Heritage
 // 横幅 / 黑色菜单条 / 页脚底图 全部收进中间一栏,两边留白
 // ==============================================
-$page-width: 1000px;
+$page-width: 920px;
 $banner-width: 1100px;   // 横幅单独一个宽度,比正文容器宽
 
 // ---- 横幅收窄居中,不再通栏 ----
 .site-banner {
-  max-width: $page-width;
+  max-width: $banner-width;
   margin: 1.2rem auto 0;
   padding: 0 1rem;       // 屏幕略窄时两边不贴死
   box-sizing: border-box;
@@ -293,4 +293,10 @@ $banner-width: 1100px;   // 横幅单独一个宽度,比正文容器宽
 // 黑条内边距略增,菜单更有呼吸感(对齐参考站的高度)
 .header-wrapper {
   padding: 0.9em 1.2em !important;
+}
+
+// ---------- 收掉正文顶部大留白 ----------
+// 主题为旧悬浮顶栏留的 7em 垫子,顶栏已改固定,不需要了
+.main {
+  padding-top: 1.5em !important;
 }
