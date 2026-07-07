@@ -177,13 +177,13 @@ h1, h2, h3, h4, h5, h6 {
 // 横幅 / 黑色菜单条 / 页脚底图 全部收进中间一栏,两边留白
 // ==============================================
 $page-width: 1000px;
-$banner-width: 1000px;   // 横幅单独一个宽度,比正文容器宽
+$banner-width: $page-width;   // 横幅宽度绑定容器宽度,改 $page-width 一处即可
 
 // ---- 横幅收窄居中,不再通栏 ----
 .site-banner {
   max-width: $banner-width;
   margin: 1.2rem auto 0;
-  padding: 0 1rem;       // 屏幕略窄时两边不贴死
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -191,7 +191,7 @@ $banner-width: 1000px;   // 横幅单独一个宽度,比正文容器宽
 .header {
   max-width: $page-width;
   margin: 0 auto 1.5rem;
-  padding: 0 1rem;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -224,7 +224,7 @@ $banner-width: 1000px;   // 横幅单独一个宽度,比正文容器宽
 .footer-image {
   max-width: $banner-width;
   margin: 2rem auto 0;
-  padding: 0 1rem;
+  padding: 0;
   box-sizing: border-box;
 
   img {
@@ -243,7 +243,16 @@ $banner-width: 1000px;   // 横幅单独一个宽度,比正文容器宽
   margin-right: auto;
 }
 
-// ---- 手机端: 容器天然占满,留白交给 padding ----
+// ---- 屏幕窄于容器时,两侧留一点边防贴死 ----
+@media (max-width: 1040px) {
+  .site-banner,
+  .header,
+  .footer-image {
+    padding: 0 1rem;
+  }
+}
+
+// ---- 手机端 ----
 @media (max-width: 600px) {
   .site-banner,
   .header,
