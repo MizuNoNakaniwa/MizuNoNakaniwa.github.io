@@ -300,3 +300,8 @@ $banner-width: 1100px;   // 横幅单独一个宽度,比正文容器宽
 .main {
   padding-top: 1.5em !important;
 }
+
+// ---------- 页脚 "2026 ♥ Lester Shi" 整行去掉 ----------
+.footer .site-info {
+  display: none !important;
+}
