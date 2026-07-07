@@ -8,10 +8,10 @@
 // Cinzel: Trajan 的免费替代(碑铭体标题)
 // EB Garamond: Caslon 同族的老式衬线正文
 // 中文楷体走系统字体(嵌入楷体字库体积太大,不划算)
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
-  --font-title: 'Cinzel', 'STKaiti', 'KaiTi', '楷体', serif;
+  --font-title: 'EB Garamond', 'STKaiti', 'KaiTi', '楷体', serif;
   --font-body: 'EB Garamond', Georgia, 'STKaiti', 'KaiTi', '楷体', serif;
 }
 
@@ -148,14 +148,14 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 440px;
     object-fit: cover;     // 图片过高时居中裁切,双端都不变形
   }
 }
 
 @media (max-width: 600px) {
   .site-banner img {
-    max-height: 180px;     // 手机上横幅矮一点,不挤内容
+    max-height: 230px;     // 手机上横幅矮一点,不挤内容
   }
 }
 
@@ -176,11 +176,12 @@ h1, h2, h3, h4, h5, h6 {
 // 整站居中容器: 仿 China Heritage
 // 横幅 / 黑色菜单条 / 页脚底图 全部收进中间一栏,两边留白
 // ==============================================
-$page-width: 1000px;
+$page-width: 920px;
+$banner-width: 1100px;   // 横幅单独一个宽度,比正文容器宽
 
 // ---- 横幅收窄居中,不再通栏 ----
 .site-banner {
-  max-width: $page-width;
+  max-width: $banner-width;
   margin: 1.2rem auto 0;
   padding: 0 1rem;       // 屏幕略窄时两边不贴死
   box-sizing: border-box;
@@ -221,7 +222,7 @@ $page-width: 1000px;
 
 // ---- 页脚底图: 同宽居中,在最下面 ----
 .footer-image {
-  max-width: $page-width;
+  max-width: $banner-width;
   margin: 2rem auto 0;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -258,4 +259,38 @@ $page-width: 1000px;
 [data-theme='dark'] .header-wrapper {
   background: #000000 !important;
   border: 1px solid #333;
+}
+
+// ---------- 菜单条: 去掉站名,只留菜单 ----------
+.header .site-brand {
+  display: none !important;
+}
+// 站名没了,菜单占满整条黑条并居中
+.header .header-inner {
+  justify-content: center !important;
+}
+
+// ---------- 菜单条: 仿 China Heritage 均匀铺满 ----------
+// 菜单项在整条黑条内等距分布,而不是挤在中间
+.header .nav {
+  width: 100%;
+  text-align: initial !important;
+}
+
+.header .nav .menu {
+  display: flex !important;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;          // 窄屏时允许换行,不溢出
+}
+
+.header .nav .menu-item {
+  margin-left: 0 !important;
+  font-size: 1.05rem;
+}
+
+// 黑条内边距略增,菜单更有呼吸感(对齐参考站的高度)
+.header-wrapper {
+  padding: 0.9em 1.2em !important;
 }
