@@ -6,13 +6,13 @@
 
 // ---------- 字体引入 ----------
 // Cinzel: Trajan 的免费替代(碑铭体标题)
-// EB Garamond: Caslon 同族的老式衬线正文
+// 英文: Times New Roman(系统字体)
 // 中文楷体走系统字体(嵌入楷体字库体积太大,不划算)
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+// 英文用 Times New Roman(系统自带,无需下载);中文思源宋体由 config 的 fontsLink 加载
 
 :root {
-  --font-title: 'EB Garamond', 'STKaiti', 'KaiTi', '楷体', serif;
-  --font-body: 'EB Garamond', Georgia, 'STKaiti', 'KaiTi', '楷体', serif;
+  --font-title: 'Times New Roman', Times, 'STKaiti', 'KaiTi', '楷体', serif;
+  --font-body: 'Times New Roman', Times, 'STKaiti', 'KaiTi', '楷体', serif;
 }
 
 // ---------- 全局:黑白基调 ----------
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.2em 0 0.2em 1.5em;
     color: #444;
     font-style: normal;
-    font-family: 'STKaiti', 'KaiTi', '楷体', 'EB Garamond', serif;
+    font-family: 'STKaiti', 'KaiTi', '楷体', 'Times New Roman', serif;
   }
 
   // 链接: 黑色 + 细下划线,不用蓝色(保持黑白)
