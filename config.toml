@@ -485,7 +485,7 @@ uglyURLs = false
     # 说明：light（浅色模式）或 dark（深色模式）
 
     # 是否隐藏模式切换开关
-    hideThemeToggle = false
+    hideThemeToggle = true
     # 是否在首页隐藏模式切换开关
     hideThemeToggleInHome = false
     # 说明：如果开启了深色模式，即使你隐藏了开关，
