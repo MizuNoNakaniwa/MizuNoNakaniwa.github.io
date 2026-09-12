@@ -54,7 +54,7 @@
                 <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
                     {{- $linkType := (string .Pre) -}}
                     {{- $menuURL := .URL -}}
-                    {{- if eq .URL "/about/" -}}
+                    {{- if eq .Name "About 介绍" -}}
                         {{- $menuURL = (print `/` | relLangURL) -}}
                     {{- end -}}
                     <a href="{{ $menuURL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
