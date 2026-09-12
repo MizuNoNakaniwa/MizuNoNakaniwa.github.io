@@ -37,15 +37,13 @@
                 {{ end }}
             {{ else if eq .URL "/posts/" }}
                 <li class="menu-item menu-item-dropdown{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                    <details class="menu-dropdown">
-                        <summary>
-                            <span class="menu-item-name">{{ .Name }}</span>
-                            <span class="dropdown-arrow" aria-hidden="true">▾</span>
-                        </summary>
-                        <ul class="submenu">
-                            <li><a href="{{ "/posts/economics/" | relLangURL }}">我的经济内容</a></li>
-                        </ul>
-                    </details>
+                    <button class="menu-dropdown-toggle" type="button" aria-expanded="false" aria-controls="blog-submenu">
+                        <span class="menu-item-name">{{ .Name }}</span>
+                        <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <ul class="submenu" id="blog-submenu">
+                        <li><a href="{{ "/posts/economics/" | relLangURL }}">我的经济内容</a></li>
+                    </ul>
                 </li>
             {{ else }}
                 <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
