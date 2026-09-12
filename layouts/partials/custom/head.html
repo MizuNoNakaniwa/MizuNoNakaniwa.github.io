@@ -103,6 +103,20 @@
   color: #fff !important;
 }
 
+/* List year: traditional numerals left, English year right */
+.list-year-bilingual {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list-year-bilingual .list-year-en {
+  margin-left: 1.5em;
+  text-align: right;
+  white-space: nowrap;
+}
+
 @media (max-width: 600px) {
   .header .nav .menu-item-dropdown .submenu {
     top: calc(100% + 0.75em) !important;
