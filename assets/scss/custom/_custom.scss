@@ -282,7 +282,9 @@ $banner-width: $page-width;   // 横幅宽度绑定容器宽度,改 $page-width 
 // ---------- 菜单条: 仿 China Heritage 均匀铺满 ----------
 // 菜单项在整条黑条内等距分布,而不是挤在中间
 .header .nav {
+  display: block !important;
   width: 100%;
+  margin: 0 !important;
   text-align: initial !important;
 }
 
@@ -297,6 +299,12 @@ $banner-width: $page-width;   // 横幅宽度绑定容器宽度,改 $page-width 
 .header .nav .menu-item {
   margin-left: 0 !important;
   font-size: 1.05rem;
+}
+
+// 手机端不再使用坏掉的折叠菜单按钮；直接显示黑色导航栏
+.nav-toggle,
+.nav-curtain {
+  display: none !important;
 }
 
 // 黑条内边距略增,菜单更有呼吸感(对齐参考站的高度)
