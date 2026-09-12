@@ -55,7 +55,11 @@
                         {{ $year = replace $year "7" "柒" }}
                         {{ $year = replace $year "8" "捌" }}
                         {{ $year = replace $year "9" "玖" }}
-                        <h2 class="list-year">{{ $year }}</h2>
+                        {{ $yearEnglish := .Key }}
+                        {{ if eq .Key "2026" }}
+                            {{ $yearEnglish = "twenty twenty-six" }}
+                        {{ end }}
+                        <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
 
                         {{ if $.Site.Params.groupByMonth }}
                             {{ range .Pages.GroupByDate "January" }}
