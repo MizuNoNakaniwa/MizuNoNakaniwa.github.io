@@ -307,6 +307,79 @@ $banner-width: $page-width;   // 横幅宽度绑定容器宽度,改 $page-width 
   display: none !important;
 }
 
+// ---------- Blog 下拉菜单 ----------
+.menu-item-dropdown {
+  position: relative;
+}
+
+.menu-dropdown {
+  position: relative;
+}
+
+.menu-dropdown > summary {
+  list-style: none;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  user-select: none;
+}
+
+.menu-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown-arrow {
+  font-size: 0.8em;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.menu-dropdown[open] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 0.8em);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 10em;
+  margin: 0;
+  padding: 0.45em 0;
+  list-style: none;
+  background: #000000;
+  border: 1px solid #333;
+  z-index: 20;
+  white-space: nowrap;
+}
+
+.submenu li {
+  margin: 0;
+  padding: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.55em 1em;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  background: #222222;
+  color: #ffffff !important;
+}
+
+@media (max-width: 600px) {
+  .submenu {
+    top: calc(100% + 0.55em);
+    min-width: 8.5em;
+    font-size: 0.95em;
+  }
+}
+
 // 黑条内边距略增,菜单更有呼吸感(对齐参考站的高度)
 .header-wrapper {
   padding: 0.9em 1.2em !important;
