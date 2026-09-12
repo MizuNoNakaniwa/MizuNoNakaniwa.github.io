@@ -7,8 +7,17 @@
         {{ end }}
         {{ $currentPage := .Scratch.Get "currentPage" }}
         {{ $ctx := . }}
+
+        <li class="menu-item{{ if .IsHome }} active{{ end }}">
+            <a href="{{ `/` | relLangURL }}">
+                <span class="menu-item-name">About 介绍</span>
+            </a>
+        </li>
+
         {{ range .Site.Menus.main }}
-            {{ if and (eq .Identifier "theme-switcher") $.Site.Params.enableDarkMode }}
+            {{ if eq .Name "About 介绍" }}
+                {{/* 首页即 About；这里跳过旧的 /about/ 菜单配置 */}}
+            {{ else if and (eq .Identifier "theme-switcher") $.Site.Params.enableDarkMode }}
                 {{ if eq $.Site.Params.headerLayout "flex" }}
                     {{ $switcher := partial "components/dark-mode.html" $ctx }}
                     {{ with $switcher }}
@@ -53,11 +62,7 @@
             {{ else }}
                 <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
                     {{- $linkType := (string .Pre) -}}
-                    {{- $menuURL := .URL -}}
-                    {{- if eq .Name "About 介绍" -}}
-                        {{- $menuURL = (print `/` | relLangURL) -}}
-                    {{- end -}}
-                    <a href="{{ $menuURL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
+                    <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
                         {{- $iconName := (string .Post) -}}
                         {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
                         {{- with .Name -}}
