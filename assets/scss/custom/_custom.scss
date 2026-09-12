@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 600px) {
   .site-banner img {
-    max-height: 300px;     // 手机上放大顶部横幅
+    max-height: 230px;     // 手机上横幅矮一点,不挤内容
   }
 }
 
@@ -255,14 +255,12 @@ $banner-width: $page-width;   // 横幅宽度绑定容器宽度,改 $page-width 
 // ---- 手机端 ----
 @media (max-width: 600px) {
   .site-banner,
+  .header,
   .footer-image {
-    padding: 0 0.15rem;
-  }
-  .header {
     padding: 0 0.6rem;
   }
   .footer-image img {
-    max-height: 190px;
+    max-height: 140px;
   }
 }
 
