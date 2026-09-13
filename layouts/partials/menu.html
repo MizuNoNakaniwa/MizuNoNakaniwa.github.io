@@ -1,92 +1,61 @@
 <nav class="nav">
     <ul class="menu" id="menu">
-        {{ if .Site.Params.activeInSection }}
-            {{ .Scratch.Set "currentPage" (.Site.GetPage (printf `/%s` .Section)) }}
-        {{ else }}
-            {{ .Scratch.Set "currentPage" . }}
-        {{ end }}
-        {{ $currentPage := .Scratch.Get "currentPage" }}
-        {{ $ctx := . }}
-
         <li class="menu-item{{ if .IsHome }} active{{ end }}">
             <a href="{{ `/` | relLangURL }}">
                 <span class="menu-item-name">About 介绍</span>
             </a>
         </li>
 
-        {{ range .Site.Menus.main }}
-            {{ if eq .Name "About 介绍" }}
-                {{/* 首页即 About；这里跳过旧的 /about/ 菜单配置 */}}
-            {{ else if and (eq .Identifier "theme-switcher") $.Site.Params.enableDarkMode }}
-                {{ if eq $.Site.Params.headerLayout "flex" }}
-                    {{ $switcher := partial "components/dark-mode.html" $ctx }}
-                    {{ with $switcher }}
-                        <li class="menu-item">
-                            {{ . }}
-                        </li>
-                    {{ end }}
-                {{ end }}
-            {{ else if eq .Identifier "lang-switcher" }}
-                {{ if and $.Site.IsMultiLingual $.Site.Params.enableLangToggle }}
-                    {{ if eq $.Site.Params.headerLayout "flex" }}
-                        {{ $switcher := partial "components/multilingual.html" $ctx }}
-                        {{ with $switcher }}
-                            <li class="menu-item">
-                                {{ . }}
-                            </li>
-                        {{ end }}
-                    {{ end }}
-                {{ end }}
-            {{ else if eq .Identifier "search" }}
-                {{ if and (eq $.Site.Params.headerLayout "flex") (or $.Site.Params.enableLunrSearch $.Site.Params.enableAlgoliaSearch) }}
-                    {{- $iconName := (string .Post) -}}
-                    <li class="menu-item search-item">
-                        {{ partial "components/search.html" (dict "$" $ctx "iconName" $iconName) }}
-                    </li>
-                {{ end }}
-            {{ else if eq .URL "/posts/" }}
-                <li class="menu-item menu-item-dropdown{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                    <button class="menu-dropdown-toggle" type="button" aria-expanded="false" aria-controls="blog-submenu">
-                        <span class="menu-item-name">{{ .Name }}</span>
-                        <span class="dropdown-arrow" aria-hidden="true">▾</span>
-                    </button>
-                    <ul class="submenu" id="blog-submenu">
-                        <li>
-                            <a href="{{ "/posts/techniques-investment-decision-making-risk-management/" | relLangURL }}">
-                                <span class="submenu-en">Techniques: Investment,Decision-Making &amp; Risk Management</span>
-                                <span class="submenu-zh">术: 投资术,决策术,风险管理术</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ "/posts/food-recipes-and-reviews/" | relLangURL }}">
-                                <span class="submenu-en">My Recipes, Ideas, Food &amp; Drink Reviews</span>
-                                <span class="submenu-zh">我的食谱,点子,美食饮料评鉴</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ "/posts/game-reviews-and-research/" | relLangURL }}">
-                                <span class="submenu-en">My Game Reviews &amp; Research</span>
-                                <span class="submenu-zh">我的游戏评测与研究</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ "/posts/comic-reviews/" | relLangURL }}">
-                                <span class="submenu-en">My Comic Reviews</span>
-                                <span class="submenu-zh">我的漫画评测</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            {{ else }}
-                <li class="menu-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                    {{- $linkType := (string .Pre) -}}
-                    <a href="{{ .URL }}"{{ if eq $linkType "external" }} target="_blank" rel="external noopener"{{ end }}>
-                        {{- $iconName := (string .Post) -}}
-                        {{- partial "utils/icon.html" (dict "$" $ "name" $iconName "class" .Identifier) -}}
-                        {{- with .Name -}}
-                            <span class="menu-item-name">{{ . }}</span>
-                        {{- end -}}
+        <li class="menu-item{{ if eq .Section `projects` }} active{{ end }}">
+            <a href="{{ `/projects/` | relLangURL }}">
+                <span class="menu-item-name">Projects 我的项目</span>
+            </a>
+        </li>
+
+        <li class="menu-item menu-item-dropdown{{ if eq .Section `posts` }} active{{ end }}">
+            <button class="menu-dropdown-toggle" type="button" aria-expanded="false" aria-controls="blog-submenu">
+                <span class="menu-item-name">Blog 我的博客</span>
+                <span class="dropdown-arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="submenu" id="blog-submenu">
+                <li>
+                    <a href="{{ `/posts/techniques-investment-decision-making-risk-management/` | relLangURL }}">
+                        <span class="submenu-en">Techniques: Investment,Decision-Making &amp; Risk Management</span>
+                        <span class="submenu-zh">术: 投资术,决策术,风险管理术</span>
                     </a>
+                </li>
+                <li>
+                    <a href="{{ `/posts/food-recipes-and-reviews/` | relLangURL }}">
+                        <span class="submenu-en">My Recipes, Ideas, Food &amp; Drink Reviews</span>
+                        <span class="submenu-zh">我的食谱,点子,美食饮料评鉴</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ `/posts/game-reviews-and-research/` | relLangURL }}">
+                        <span class="submenu-en">My Game Reviews &amp; Research</span>
+                        <span class="submenu-zh">我的游戏评测与研究</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ `/posts/comic-reviews/` | relLangURL }}">
+                        <span class="submenu-en">My Comic Reviews</span>
+                        <span class="submenu-zh">我的漫画评测</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu-item{{ if eq .Section `contact` }} active{{ end }}">
+            <a href="{{ `/contact/` | relLangURL }}">
+                <span class="menu-item-name">Contact 联系我</span>
+            </a>
+        </li>
+
+        {{ if and .Site.Params.enableDarkMode (eq .Site.Params.headerLayout "flex") }}
+            {{ $switcher := partial "components/dark-mode.html" . }}
+            {{ with $switcher }}
+                <li class="menu-item">
+                    {{ . }}
                 </li>
             {{ end }}
         {{ end }}
