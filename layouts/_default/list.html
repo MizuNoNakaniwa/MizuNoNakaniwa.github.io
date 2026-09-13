@@ -42,40 +42,43 @@
                         {{ $.Scratch.Set "pages" $pages }}
                     {{ end }}
 
-                    {{ $pages := sort (.Scratch.Get "pages") "Date" "asc" }}
-                    {{ range ($pages.GroupByDate "2006").Reverse }}
-                        {{ $year := .Key }}
-                        {{ $year = replace $year "0" "零" }}
-                        {{ $year = replace $year "1" "壹" }}
-                        {{ $year = replace $year "2" "貳" }}
-                        {{ $year = replace $year "3" "參" }}
-                        {{ $year = replace $year "4" "肆" }}
-                        {{ $year = replace $year "5" "伍" }}
-                        {{ $year = replace $year "6" "陸" }}
-                        {{ $year = replace $year "7" "柒" }}
-                        {{ $year = replace $year "8" "捌" }}
-                        {{ $year = replace $year "9" "玖" }}
-                        {{ $yearEnglish := .Key }}
-                        {{ if eq .Key "2026" }}
-                            {{ $yearEnglish = "twenty twenty-six" }}
-                        {{ end }}
-                        <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
+                    {{ $pages := .Scratch.Get "pages" }}
+                    {{ if $pages }}
+                        {{ $pages = sort $pages "Date" "asc" }}
+                        {{ range ($pages.GroupByDate "2006").Reverse }}
+                            {{ $year := .Key }}
+                            {{ $year = replace $year "0" "零" }}
+                            {{ $year = replace $year "1" "壹" }}
+                            {{ $year = replace $year "2" "貳" }}
+                            {{ $year = replace $year "3" "參" }}
+                            {{ $year = replace $year "4" "肆" }}
+                            {{ $year = replace $year "5" "伍" }}
+                            {{ $year = replace $year "6" "陸" }}
+                            {{ $year = replace $year "7" "柒" }}
+                            {{ $year = replace $year "8" "捌" }}
+                            {{ $year = replace $year "9" "玖" }}
+                            {{ $yearEnglish := .Key }}
+                            {{ if eq .Key "2026" }}
+                                {{ $yearEnglish = "twenty twenty-six" }}
+                            {{ end }}
+                            <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
 
-                        {{ if $.Site.Params.groupByMonth }}
-                            {{ range (.Pages.GroupByDate "January").Reverse }}
-                                {{ $.Scratch.Delete "month" }}
-                                {{ if $.Site.Params.i18nMonth }}
-                                    {{ $month := i18n (lower .Key) }}
-                                    {{ $.Scratch.Set "month" $month }}
-                                {{ else }}
-                                    {{ $.Scratch.Set "month" .Key }}
+                            {{ if $.Site.Params.groupByMonth }}
+                                {{ range (.Pages.GroupByDate "January").Reverse }}
+                                    {{ $.Scratch.Delete "month" }}
+                                    {{ if $.Site.Params.i18nMonth }}
+                                        {{ $month := i18n (lower .Key) }}
+                                        {{ $.Scratch.Set "month" $month }}
+                                    {{ else }}
+                                        {{ $.Scratch.Set "month" .Key }}
+                                    {{ end }}
+                                    {{ $month := $.Scratch.Get "month" }}
+                                    <h3 class="list-month">{{ $month }}</h3>
+                                    {{ partial "utils/list-item.html" (dict "$" .) }}
                                 {{ end }}
-                                {{ $month := $.Scratch.Get "month" }}
-                                <h3 class="list-month">{{ $month }}</h3>
+                            {{ else }}
                                 {{ partial "utils/list-item.html" (dict "$" .) }}
                             {{ end }}
-                        {{ else }}
-                            {{ partial "utils/list-item.html" (dict "$" .) }}
                         {{ end }}
                     {{ end }}
                 </div>
