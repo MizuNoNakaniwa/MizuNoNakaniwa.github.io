@@ -35,6 +35,14 @@
                                 {{ end }}
                             {{ end }}
                         {{ end }}
+
+                        {{ with .Params.extraPages }}
+                            {{ range . }}
+                                {{ with $.Site.GetPage . }}
+                                    {{ $.Scratch.Add "pages" (slice .) }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
                     {{ end }}
 
                     {{ if (eq .Kind "term") }}
