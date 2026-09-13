@@ -42,8 +42,8 @@
                         {{ $.Scratch.Set "pages" $pages }}
                     {{ end }}
 
-                    {{ $pages := .Scratch.Get "pages" }}
-                    {{ range $pages.GroupByDate "2006" }}
+                    {{ $pages := sort (.Scratch.Get "pages") "Date" "asc" }}
+                    {{ range ($pages.GroupByDate "2006").Reverse }}
                         {{ $year := .Key }}
                         {{ $year = replace $year "0" "零" }}
                         {{ $year = replace $year "1" "壹" }}
@@ -62,7 +62,7 @@
                         <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
 
                         {{ if $.Site.Params.groupByMonth }}
-                            {{ range .Pages.GroupByDate "January" }}
+                            {{ range (.Pages.GroupByDate "January").Reverse }}
                                 {{ $.Scratch.Delete "month" }}
                                 {{ if $.Site.Params.i18nMonth }}
                                     {{ $month := i18n (lower .Key) }}
