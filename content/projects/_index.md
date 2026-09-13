@@ -2,11 +2,9 @@
 title: "Projects 我的项目"
 ---
 
-<!-- 在下面列你的项目,格式随意。示例: -->
+## 我的漫画评测
 
-## 项目名称
-
-一句话介绍这个项目是干什么的。[链接](https://example.com)
+[进入栏目](/projects/comic-reviews/)
 
 ---
 
