@@ -5,6 +5,29 @@
     </div>
 {{ end }}
 
+<style>
+.header,
+.header-wrapper,
+.header-inner,
+.header .nav,
+.header .nav .menu,
+.menu-item-dropdown {
+  overflow: visible !important;
+}
+
+.menu-item-dropdown .submenu {
+  display: none !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  z-index: 9999 !important;
+}
+
+.menu-item-dropdown.is-open .submenu {
+  display: block !important;
+}
+</style>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const dropdown = document.querySelector('.menu-item-dropdown');
