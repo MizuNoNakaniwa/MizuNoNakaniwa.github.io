@@ -1,3 +1,3 @@
 ---
-title: "My Movie & TV Reviews / 我的电影电视剧评测"
+title: "我的电影，电视剧，动漫评测"
 ---
