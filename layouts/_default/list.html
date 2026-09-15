@@ -53,42 +53,72 @@
                     {{ $pages := .Scratch.Get "pages" }}
                     {{ if $pages }}
                         {{ $pages = sort $pages "Date" "asc" }}
-                        {{ range ($pages.GroupByDate "2006").Reverse }}
-                            {{ $year := .Key }}
-                            {{ $year = replace $year "0" "零" }}
-                            {{ $year = replace $year "1" "壹" }}
-                            {{ $year = replace $year "2" "貳" }}
-                            {{ $year = replace $year "3" "參" }}
-                            {{ $year = replace $year "4" "肆" }}
-                            {{ $year = replace $year "5" "伍" }}
-                            {{ $year = replace $year "6" "陸" }}
-                            {{ $year = replace $year "7" "柒" }}
-                            {{ $year = replace $year "8" "捌" }}
-                            {{ $year = replace $year "9" "玖" }}
-                            {{ $yearEnglish := .Key }}
-                            {{ if eq .Key "2000" }}
-                                {{ $year = "貳零零零-貳零壹零" }}
-                                {{ $yearEnglish = "2000-2010" }}
-                            {{ else if eq .Key "2026" }}
-                                {{ $yearEnglish = "twenty twenty-six" }}
-                            {{ end }}
-                            <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
 
-                            {{ if $.Site.Params.groupByMonth }}
-                                {{ range (.Pages.GroupByDate "January").Reverse }}
-                                    {{ $.Scratch.Delete "month" }}
-                                    {{ if $.Site.Params.i18nMonth }}
-                                        {{ $month := i18n (lower .Key) }}
-                                        {{ $.Scratch.Set "month" $month }}
-                                    {{ else }}
-                                        {{ $.Scratch.Set "month" .Key }}
+                        {{ if and (eq .Kind "section") (in $path "movie-tv-reviews") }}
+                            {{ .Scratch.Delete "movieEra2020" }}
+                            {{ .Scratch.Delete "movieEra2010" }}
+                            {{ .Scratch.Delete "movieEra2000" }}
+
+                            {{ range $pages }}
+                                {{ $year := .Date.Year }}
+                                {{ if ge $year 2020 }}
+                                    {{ $.Scratch.Add "movieEra2020" (slice .) }}
+                                {{ else if ge $year 2010 }}
+                                    {{ $.Scratch.Add "movieEra2010" (slice .) }}
+                                {{ else }}
+                                    {{ $.Scratch.Add "movieEra2000" (slice .) }}
+                                {{ end }}
+                            {{ end }}
+
+                            <h2 class="list-year list-year-bilingual"><span>貳零貳零-現在</span><span class="list-year-en">twenty twenty-present</span></h2>
+                            {{ with (.Scratch.Get "movieEra2020") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
+
+                            <h2 class="list-year list-year-bilingual"><span>貳零壹零-貳零貳零</span><span class="list-year-en">twenty ten-twenty twenty</span></h2>
+                            {{ with (.Scratch.Get "movieEra2010") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
+
+                            <h2 class="list-year list-year-bilingual"><span>貳零零零-貳零壹零</span><span class="list-year-en">two thousand-twenty ten</span></h2>
+                            {{ with (.Scratch.Get "movieEra2000") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
+                        {{ else }}
+                            {{ range ($pages.GroupByDate "2006").Reverse }}
+                                {{ $year := .Key }}
+                                {{ $year = replace $year "0" "零" }}
+                                {{ $year = replace $year "1" "壹" }}
+                                {{ $year = replace $year "2" "貳" }}
+                                {{ $year = replace $year "3" "參" }}
+                                {{ $year = replace $year "4" "肆" }}
+                                {{ $year = replace $year "5" "伍" }}
+                                {{ $year = replace $year "6" "陸" }}
+                                {{ $year = replace $year "7" "柒" }}
+                                {{ $year = replace $year "8" "捌" }}
+                                {{ $year = replace $year "9" "玖" }}
+                                {{ $yearEnglish := .Key }}
+                                {{ if eq .Key "2026" }}
+                                    {{ $yearEnglish = "twenty twenty-six" }}
+                                {{ end }}
+                                <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
+
+                                {{ if $.Site.Params.groupByMonth }}
+                                    {{ range (.Pages.GroupByDate "January").Reverse }}
+                                        {{ $.Scratch.Delete "month" }}
+                                        {{ if $.Site.Params.i18nMonth }}
+                                            {{ $month := i18n (lower .Key) }}
+                                            {{ $.Scratch.Set "month" $month }}
+                                        {{ else }}
+                                            {{ $.Scratch.Set "month" .Key }}
+                                        {{ end }}
+                                        {{ $month := $.Scratch.Get "month" }}
+                                        <h3 class="list-month">{{ $month }}</h3>
+                                        {{ partial "utils/list-item.html" (dict "$" .) }}
                                     {{ end }}
-                                    {{ $month := $.Scratch.Get "month" }}
-                                    <h3 class="list-month">{{ $month }}</h3>
+                                {{ else }}
                                     {{ partial "utils/list-item.html" (dict "$" .) }}
                                 {{ end }}
-                            {{ else }}
-                                {{ partial "utils/list-item.html" (dict "$" .) }}
                             {{ end }}
                         {{ end }}
                     {{ end }}
