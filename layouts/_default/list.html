@@ -66,7 +66,10 @@
                             {{ $year = replace $year "8" "捌" }}
                             {{ $year = replace $year "9" "玖" }}
                             {{ $yearEnglish := .Key }}
-                            {{ if eq .Key "2026" }}
+                            {{ if eq .Key "2000" }}
+                                {{ $year = "貳零零零-貳零壹零" }}
+                                {{ $yearEnglish = "2000-2010" }}
+                            {{ else if eq .Key "2026" }}
                                 {{ $yearEnglish = "twenty twenty-six" }}
                             {{ end }}
                             <h2 class="list-year list-year-bilingual"><span>{{ $year }}</span><span class="list-year-en">{{ $yearEnglish }}</span></h2>
