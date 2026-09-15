@@ -59,14 +59,70 @@
                             {{ .Scratch.Delete "movieEra2010" }}
                             {{ .Scratch.Delete "movieEra2000" }}
 
+                            {{ $movie2010Titles := slice
+                                "《复仇者联盟1》评测"
+                                "《未闻花名》评测"
+                                "《机器人总动员》评测"
+                                "《欢迎来到NHK》评测"
+                                "《武林外传》评测"
+                                "《爱情公寓1-4季》评测"
+                                "《蜘蛛侠3》评测"
+                                "《蜘蛛侠》评测"
+                                "《蝙蝠侠大战超人：正义黎明》评测"
+                                "《超能陆战队》评测"
+                                "《钢铁侠2》评测"
+                                "《银河护卫队1》评测"
+                                "《飞屋环游记》评测"
+                            }}
+
+                            {{ $movie2000Titles := slice
+                                "《中华小子》评测"
+                                "《二十六个秘密》评测"
+                                "《哪吒传奇》评测"
+                                "《哪吒闹海》评测"
+                                "《围棋少年》评测"
+                                "《大力水手》评测"
+                                "《大闹天宫》评测"
+                                "《夺宝幸运星》评测"
+                                "《宝莲灯》评测"
+                                "《小兵张嘎》评测"
+                                "《小鲤鱼历险记》评测"
+                                "《怪兽屋》评测"
+                                "《海底总动员》评测"
+                                "《猫和老鼠》评测"
+                                "《玩具总动员》评测"
+                                "《葫芦兄弟》评测"
+                                "《蓝猫淘气三千问》评测"
+                                "《西游记动画版》评测"
+                                "《超人总动员》评测"
+                                "《邋遢大王奇遇记》评测"
+                                "《风云决》评测"
+                                "《马丁的早晨》评测"
+                                "《黑猫警长》评测"
+                                "《西游记86版加2000版》评测"
+                            }}
+
                             {{ range $pages }}
-                                {{ $year := .Date.Year }}
-                                {{ if ge $year 2020 }}
+                                {{ if and (not (in $movie2010Titles .Title)) (not (in $movie2000Titles .Title)) }}
                                     {{ $.Scratch.Add "movieEra2020" (slice .) }}
-                                {{ else if ge $year 2010 }}
-                                    {{ $.Scratch.Add "movieEra2010" (slice .) }}
-                                {{ else }}
-                                    {{ $.Scratch.Add "movieEra2000" (slice .) }}
+                                {{ end }}
+                            {{ end }}
+
+                            {{ range $movie2010Titles }}
+                                {{ $wantedTitle := . }}
+                                {{ range $pages }}
+                                    {{ if eq .Title $wantedTitle }}
+                                        {{ $.Scratch.Add "movieEra2010" (slice .) }}
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+
+                            {{ range $movie2000Titles }}
+                                {{ $wantedTitle := . }}
+                                {{ range $pages }}
+                                    {{ if eq .Title $wantedTitle }}
+                                        {{ $.Scratch.Add "movieEra2000" (slice .) }}
+                                    {{ end }}
                                 {{ end }}
                             {{ end }}
 
