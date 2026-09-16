@@ -1,3 +1,3 @@
 ---
-title: "My Game Reviews & Research / 我的游戏评测与研究"
+title: "My Game Research & Reviews / 我的游戏研究与评测"
 ---
