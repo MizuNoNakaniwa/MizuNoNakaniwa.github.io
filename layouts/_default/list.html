@@ -55,6 +55,7 @@
                         {{ $pages = sort $pages "Date" "asc" }}
 
                         {{ if and (eq .Kind "section") (in $path "movie-tv-reviews") }}
+                            {{ .Scratch.Delete "movieEra2020Featured" }}
                             {{ .Scratch.Delete "movieEra2020" }}
                             {{ .Scratch.Delete "movieEra2010" }}
                             {{ .Scratch.Delete "movieEra2000" }}
@@ -122,7 +123,9 @@
                             }}
 
                             {{ range $pages }}
-                                {{ if and (not (in $movie2010Titles .Title)) (not (in $movie2000Titles .Title)) }}
+                                {{ if eq .Title "《异世浮生》评测" }}
+                                    {{ $.Scratch.Add "movieEra2020Featured" (slice .) }}
+                                {{ else if and (not (in $movie2010Titles .Title)) (not (in $movie2000Titles .Title)) }}
                                     {{ $.Scratch.Add "movieEra2020" (slice .) }}
                                 {{ end }}
                             {{ end }}
@@ -146,11 +149,9 @@
                             {{ end }}
 
                             <h2 class="list-year list-year-bilingual"><span>貳零貳零</span><span class="list-year-en">twenty twenty</span></h2>
-                            <ul class="list-part">
-                                <li class="list-item">
-                                    <a href="https://zh.wikipedia.org/zh-hans/%E6%99%82%E7%A9%BA%E6%94%94%E6%88%AA" class="list-item-title">《异世浮生》</a>
-                                </li>
-                            </ul>
+                            {{ with (.Scratch.Get "movieEra2020Featured") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
                             {{ with (.Scratch.Get "movieEra2020") }}
                                 {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
                             {{ end }}
