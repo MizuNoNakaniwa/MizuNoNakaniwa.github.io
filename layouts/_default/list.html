@@ -344,9 +344,13 @@
                             }}
 
                             {{ range $pages }}
-                                {{ if eq .Title "《异世浮生》评测" }}
+                                {{ $groupTitle := .Title }}
+                                {{ with .Params.review_group_title }}
+                                    {{ $groupTitle = . }}
+                                {{ end }}
+                                {{ if eq $groupTitle "《异世浮生》评测" }}
                                     {{ $.Scratch.Add "movieEra2020Featured" (slice .) }}
-                                {{ else if and (not (in $movie2010Titles .Title)) (not (in $movie2000Titles .Title)) }}
+                                {{ else if and (not (in $movie2010Titles $groupTitle)) (not (in $movie2000Titles $groupTitle)) }}
                                     {{ $.Scratch.Add "movieEra2020" (slice .) }}
                                 {{ end }}
                             {{ end }}
@@ -354,7 +358,11 @@
                             {{ range $movie2010Titles }}
                                 {{ $wantedTitle := . }}
                                 {{ range $pages }}
-                                    {{ if eq .Title $wantedTitle }}
+                                    {{ $groupTitle := .Title }}
+                                    {{ with .Params.review_group_title }}
+                                        {{ $groupTitle = . }}
+                                    {{ end }}
+                                    {{ if eq $groupTitle $wantedTitle }}
                                         {{ $.Scratch.Add "movieEra2010" (slice .) }}
                                     {{ end }}
                                 {{ end }}
@@ -363,7 +371,11 @@
                             {{ range $movie2000Titles }}
                                 {{ $wantedTitle := . }}
                                 {{ range $pages }}
-                                    {{ if eq .Title $wantedTitle }}
+                                    {{ $groupTitle := .Title }}
+                                    {{ with .Params.review_group_title }}
+                                        {{ $groupTitle = . }}
+                                    {{ end }}
+                                    {{ if eq $groupTitle $wantedTitle }}
                                         {{ $.Scratch.Add "movieEra2000" (slice .) }}
                                     {{ end }}
                                 {{ end }}
