@@ -73,15 +73,21 @@ document.addEventListener('DOMContentLoaded', function () {
         submenu = document.createElement('ul');
         submenu.className = 'submenu';
         submenu.id = 'projects-submenu';
-
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = '{{ `/projects/game/` | relLangURL }}';
-        a.innerHTML = '<span class="submenu-zh">游戏：</span>';
-        li.appendChild(a);
-        submenu.appendChild(li);
         projectsItem.appendChild(submenu);
       }
+
+      // Keep the Projects dropdown identical on every page, even when a
+      // fallback/theme template renders a different header.
+      submenu.id = 'projects-submenu';
+      submenu.innerHTML =
+        '<li><a href="{{ `/projects/game/` | relLangURL }}">' +
+          '<span class="submenu-en">Game:</span>' +
+          '<span class="submenu-zh">游戏：</span>' +
+        '</a></li>' +
+        '<li><a href="{{ `/projects/xx-xinxue/` | relLangURL }}">' +
+          '<span class="submenu-en">Dao: XX School of Mind</span>' +
+          '<span class="submenu-zh">道：XX心学</span>' +
+        '</a></li>';
     }
   }
 
