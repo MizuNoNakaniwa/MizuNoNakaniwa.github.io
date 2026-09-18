@@ -585,7 +585,8 @@ def update_marked_page(path: Path, records: list[dict[str, Any]], repair_frontma
         path.write_text(initial_page(records), encoding="utf-8")
         return True
 
-    existing = path.read_text(encoding="utf-8")
+    original = path.read_text(encoding="utf-8")
+    existing = original
     if repair_frontmatter and "steam_sync: true" in existing:
         existing = re.sub(r"(?m)^title:.*$", f"title: {yaml_quote(page_title(records))}", existing, count=1)
         dates = [r["published"] for r in records if r.get("published")]
@@ -597,7 +598,7 @@ def update_marked_page(path: Path, records: list[dict[str, Any]], repair_frontma
         return False
     pattern = re.compile(re.escape(START_MARKER) + r".*?" + re.escape(END_MARKER), re.S)
     updated = pattern.sub(block, existing, count=1)
-    if updated != existing:
+    if updated != original:
         path.write_text(updated, encoding="utf-8")
         return True
     return False
@@ -613,7 +614,7 @@ def main() -> None:
     all_records = direct + curator + announcements
 
     state = load_state()
-    repair_frontmatter = int(state.get("version", 1) or 1) < 2
+    repair_frontmatter = int(state.get("version", 1) or 1) < 3
     validate_counts(state, all_records)
 
     groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -635,7 +636,7 @@ def main() -> None:
                 "appid": record.get("appid"),
             }
 
-    state["version"] = 2
+    state["version"] = 3
     serialized = json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if not STATE_PATH.exists() or STATE_PATH.read_text(encoding="utf-8") != serialized:
         STATE_PATH.write_text(serialized, encoding="utf-8")
