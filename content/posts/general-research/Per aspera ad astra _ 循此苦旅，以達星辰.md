@@ -1,5 +1,5 @@
 ---
-title: "Per aspera ad astra _ 循此苦旅，以達星辰"
+title: "维基百科：Per aspera ad astra _ 循此苦旅，以達星辰"
 date: 2026-09-18T04:40:59+00:00
 ---
 
