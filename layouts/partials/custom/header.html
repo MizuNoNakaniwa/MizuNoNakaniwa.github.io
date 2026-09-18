@@ -26,6 +26,10 @@
 (function () {
   function desiredProjectsHTML() {
     return (
+      '<li><a href="{{ `/projects/xx-xinxue/` | relLangURL }}">' +
+        '<span class="submenu-en">Dao：XXism</span>' +
+        '<span class="submenu-zh">道：XX心学</span>' +
+      '</a></li>' +
       '<li><a href="{{ `/projects/tzeentch-intel/` | relLangURL }}">' +
         '<span class="submenu-en">Tzeentch Intel</span>' +
         '<span class="submenu-zh">奸奇智库</span>' +
@@ -41,10 +45,6 @@
       '<li><a href="{{ `/projects/ascensionism-project/` | relLangURL }}">' +
         '<span class="submenu-en">Ascensionism Project</span>' +
         '<span class="submenu-zh">飞扬主义计划</span>' +
-      '</a></li>' +
-      '<li><a href="{{ `/projects/xx-xinxue/` | relLangURL }}">' +
-        '<span class="submenu-en">Dao：XXism</span>' +
-        '<span class="submenu-zh">道：XX心学</span>' +
       '</a></li>' +
       '<li><a href="{{ `/projects/game/` | relLangURL }}">' +
         '<span class="submenu-en">Game:</span>' +
@@ -163,11 +163,11 @@
       });
       const hasCorrectOrder =
         projectHrefs.length === 6 &&
-        projectHrefs[0].endsWith('/projects/tzeentch-intel/') &&
-        projectHrefs[1].endsWith('/projects/tzeentchs-staff-ai/') &&
-        projectHrefs[2].endsWith('/projects/consigliere-ai/') &&
-        projectHrefs[3].endsWith('/projects/ascensionism-project/') &&
-        projectHrefs[4].endsWith('/projects/xx-xinxue/') &&
+        projectHrefs[0].endsWith('/projects/xx-xinxue/') &&
+        projectHrefs[1].endsWith('/projects/tzeentch-intel/') &&
+        projectHrefs[2].endsWith('/projects/tzeentchs-staff-ai/') &&
+        projectHrefs[3].endsWith('/projects/consigliere-ai/') &&
+        projectHrefs[4].endsWith('/projects/ascensionism-project/') &&
         projectHrefs[5].endsWith('/projects/game/');
 
       if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectOrder) {
