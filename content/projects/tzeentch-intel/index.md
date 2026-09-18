@@ -1,7 +1,7 @@
 ---
-title: "Tzeentch Intel 奸奇智库"
+title: "Tzeentch Investment & Intelligence / 奸奇投资 & 智库"
 ---
 
-# Tzeentch Intel
+# Tzeentch Investment & Intelligence
 
-# 奸奇智库
+# 奸奇投资 & 智库
