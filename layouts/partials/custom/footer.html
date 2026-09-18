@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!link) return false;
       try {
         const url = new URL(link.getAttribute('href'), window.location.href);
-        return url.origin === window.location.origin && url.pathname.replace(/\\/+$/, '/') === '/projects/';
+        return url.origin === window.location.origin && url.pathname.replace(/\/+$/, '/') === '/projects/';
       } catch (_) {
         return false;
       }
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    if (url.origin !== window.location.origin || url.pathname.replace(/\\/+$/, '/') !== '/projects/') {
+    if (url.origin !== window.location.origin || url.pathname.replace(/\/+$/, '/') !== '/projects/') {
       return;
     }
 
