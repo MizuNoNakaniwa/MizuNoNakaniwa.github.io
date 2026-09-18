@@ -13,6 +13,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: steam-review-sync
@@ -60,15 +62,56 @@ jobs:
           test "$bad" -eq 0
 
       - name: Commit sync changes
+        id: commit
         shell: bash
         run: |
           set -euo pipefail
           git add data/steam-sync.json content/posts/game-reviews-and-research/
           if git diff --cached --quiet; then
             echo "No Steam changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Sync Steam reviews"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Install Hugo CLI for updated site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          HUGO_VERSION: 0.123.7
+        run: |
+          wget -O "${{ runner.temp }}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+
+      - name: Get MemE theme for updated site
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          if [ ! -d "themes/meme" ]; then
+            git clone --depth 1 --branch v5.0.0 https://github.com/reuixiy/hugo-theme-meme.git themes/meme
+          fi
+
+      - name: Setup Pages for updated site
+        if: steps.commit.outputs.changed == 'true'
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build updated site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          HUGO_ENVIRONMENT: production
+        run: |
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload updated site
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy updated site
+        if: steps.commit.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
