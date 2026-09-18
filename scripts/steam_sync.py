@@ -161,6 +161,22 @@ def app_name(appid: str) -> str:
         except Exception:
             pass
 
+    if not name:
+        try:
+            page = get(f"https://store.steampowered.com/app/{appid}/", params={"l": "english", "cc": "US"})
+            soup = BeautifulSoup(page.text, "html.parser")
+            node = soup.select_one(".apphub_AppName")
+            if node:
+                name = node.get_text(" ", strip=True)
+            if not name:
+                meta = soup.select_one("meta[property='og:title']")
+                if meta:
+                    name = meta.get("content", "").strip()
+            if not name and soup.title:
+                name = re.sub(r"\s+on Steam\s*$", "", soup.title.get_text(" ", strip=True), flags=re.I)
+        except Exception:
+            pass
+
     APP_NAME_CACHE[appid] = name or f"Steam App {appid}"
     return APP_NAME_CACHE[appid]
 
@@ -354,7 +370,11 @@ def rss_entries_by_id() -> dict[str, dict[str, Any]]:
     return entries
 
 
-def announcement_from_detail(url: str, rss_item: dict[str, Any] | None) -> dict[str, Any] | None:
+def announcement_from_detail(
+    url: str,
+    rss_item: dict[str, Any] | None,
+    listing_published: str | None = None,
+) -> dict[str, Any] | None:
     match = re.search(r"/announcements/detail/(\d+)", url)
     if not match:
         return None
@@ -387,7 +407,7 @@ def announcement_from_detail(url: str, rss_item: dict[str, Any] | None) -> dict[
                 "appid": None,
                 "title": announcement.get("headline") or (rss_item or {}).get("title") or f"Steam 群组公告 {announcement_id}",
                 "body": body,
-                "published": published or (rss_item or {}).get("published"),
+                "published": published or (rss_item or {}).get("published") or listing_published,
                 "url": url,
                 "status": None,
             }
@@ -432,6 +452,8 @@ def announcement_from_detail(url: str, rss_item: dict[str, Any] | None) -> dict[
                     break
     if not published and rss_item:
         published = rss_item.get("published")
+    if not published:
+        published = listing_published
 
     return {
         "source": "announcement",
@@ -450,14 +472,47 @@ def fetch_group_announcements() -> list[dict[str, Any]]:
     rss = rss_entries_by_id()
     links: list[str] = []
     seen: set[str] = set()
+    listing_dates: dict[str, str] = {}
 
     for page in range(1, MAX_GROUP_PAGES + 1):
-        response = get(GROUP_LIST_URL, params={"p": page, "l": "schinese"})
+        response = get(GROUP_LIST_URL, params={"p": page, "l": "english"})
         soup = BeautifulSoup(response.text, "html.parser")
         page_links: list[str] = []
         for a in soup.find_all("a", href=re.compile(r"/announcements/detail/\d+")):
             href = urljoin("https://steamcommunity.com", a.get("href", ""))
-            if href and href not in seen:
+            if not href:
+                continue
+
+            match = re.search(r"/announcements/detail/(\d+)", href)
+            announcement_id = match.group(1) if match else ""
+            if announcement_id and announcement_id not in listing_dates:
+                container = a.find_parent(["div", "article", "li"])
+                candidates: list[str] = []
+                if container:
+                    for node in container.find_all(attrs={"data-timestamp": True}):
+                        raw = node.get("data-timestamp")
+                        if raw and str(raw).isdigit():
+                            try:
+                                listing_dates[announcement_id] = datetime.fromtimestamp(
+                                    int(raw), tz=timezone.utc
+                                ).isoformat()
+                                break
+                            except Exception:
+                                pass
+                    if announcement_id not in listing_dates:
+                        for node in container.find_all(["time", "span", "div"]):
+                            classes = " ".join(node.get("class", []))
+                            if node.name == "time" or re.search(r"date|time", classes, flags=re.I):
+                                if node.get("datetime"):
+                                    candidates.append(node.get("datetime"))
+                                candidates.append(node.get_text(" ", strip=True))
+                        for raw in candidates:
+                            parsed = parse_date(raw)
+                            if parsed:
+                                listing_dates[announcement_id] = parsed
+                                break
+
+            if href not in seen:
                 seen.add(href)
                 page_links.append(href)
                 links.append(href)
@@ -478,7 +533,11 @@ def fetch_group_announcements() -> list[dict[str, Any]]:
         match = re.search(r"/announcements/detail/(\d+)", url)
         announcement_id = match.group(1) if match else ""
         try:
-            record = announcement_from_detail(url, rss.get(announcement_id))
+            record = announcement_from_detail(
+                url,
+                rss.get(announcement_id),
+                listing_dates.get(announcement_id),
+            )
         except Exception as exc:
             print(f"warning: announcement {announcement_id} detail fetch failed: {exc}", file=sys.stderr)
             record = None
@@ -615,7 +674,7 @@ def main() -> None:
     all_records = direct + curator + announcements
 
     state = load_state()
-    repair_frontmatter = int(state.get("version", 1) or 1) < 3
+    repair_frontmatter = int(state.get("version", 1) or 1) < 4
     validate_counts(state, all_records)
 
     groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -637,7 +696,7 @@ def main() -> None:
                 "appid": record.get("appid"),
             }
 
-    state["version"] = 3
+    state["version"] = 4
     serialized = json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if not STATE_PATH.exists() or STATE_PATH.read_text(encoding="utf-8") != serialized:
         STATE_PATH.write_text(serialized, encoding="utf-8")
