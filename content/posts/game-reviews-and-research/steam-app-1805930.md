@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1805930》评测"
+title: "《Pumpkin Eater》评测"
 date: "2026-08-09T12:00:00+00:00"
 steam_sync: true
 steam_appid: 1805930

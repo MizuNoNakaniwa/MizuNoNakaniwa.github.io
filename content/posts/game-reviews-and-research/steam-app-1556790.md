@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1556790》评测"
+title: "《Isonzo》评测"
 date: "2026-08-03T12:00:00+00:00"
 steam_sync: true
 steam_appid: 1556790

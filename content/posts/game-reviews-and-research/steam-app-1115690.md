@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1115690》评测"
+title: "《Yes, Your Grace》评测"
 date: "2026-08-30T12:00:00+00:00"
 steam_sync: true
 steam_appid: 1115690

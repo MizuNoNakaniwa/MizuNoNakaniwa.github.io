@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1238840》评测"
+title: "《Battlefield™ 1》评测"
 date: "2026-08-05T12:00:00+00:00"
 steam_sync: true
 steam_appid: 1238840

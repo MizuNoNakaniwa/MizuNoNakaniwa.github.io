@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 269790》评测"
+title: "《DreadOut》评测"
 date: "2026-08-04T12:00:00+00:00"
 steam_sync: true
 steam_appid: 269790

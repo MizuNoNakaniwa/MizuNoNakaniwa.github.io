@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 287390》评测"
+title: "《Metro: Last Light Redux》评测"
 date: "2026-09-18T02:32:05.097481+00:00"
 steam_sync: true
 steam_appid: 287390

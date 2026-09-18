@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 779340》评测"
+title: "《Total War: THREE KINGDOMS》评测"
 date: "2026-09-18T02:32:05.114328+00:00"
 steam_sync: true
 steam_appid: 779340

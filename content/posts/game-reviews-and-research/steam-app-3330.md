@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 3330》评测"
+title: "《Zuma Deluxe》评测"
 date: "2026-08-04T12:00:00+00:00"
 steam_sync: true
 steam_appid: 3330

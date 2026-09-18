@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 203140》评测"
+title: "《Hitman: Absolution™》评测"
 date: "2026-08-04T12:00:00+00:00"
 steam_sync: true
 steam_appid: 203140

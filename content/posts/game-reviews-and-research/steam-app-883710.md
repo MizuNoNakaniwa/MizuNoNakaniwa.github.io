@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 883710》评测"
+title: "《Resident Evil 2》评测"
 date: "2026-08-07T12:00:00+00:00"
 steam_sync: true
 steam_appid: 883710

@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 4248590》评测"
+title: "《Gore In Crayon》评测"
 date: "2026-08-10T12:00:00+00:00"
 steam_sync: true
 steam_appid: 4248590

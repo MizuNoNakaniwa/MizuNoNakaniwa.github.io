@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 736260》评测"
+title: "《Baba Is You》评测"
 date: "2026-08-10T12:00:00+00:00"
 steam_sync: true
 steam_appid: 736260

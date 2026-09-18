@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 274170》评测"
+title: "《Hotline Miami 2: Wrong Number》评测"
 date: "2026-08-25T12:00:00+00:00"
 steam_sync: true
 steam_appid: 274170

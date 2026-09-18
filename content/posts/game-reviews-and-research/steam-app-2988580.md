@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 2988580》评测"
+title: "《Yakuza 0 Director's Cut》评测"
 date: "2026-08-04T12:00:00+00:00"
 steam_sync: true
 steam_appid: 2988580

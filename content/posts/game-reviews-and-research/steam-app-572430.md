@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 572430》评测"
+title: "《Party Hard 2》评测"
 date: "2026-08-25T12:00:00+00:00"
 steam_sync: true
 steam_appid: 572430

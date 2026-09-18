@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 3654560》评测"
+title: "《Plants vs. Zombies™: Replanted》评测"
 date: "2026-08-04T12:00:00+00:00"
 steam_sync: true
 steam_appid: 3654560

@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 730》评测"
+title: "《Counter-Strike 2》评测"
 date: "2026-09-18T02:32:05.113030+00:00"
 steam_sync: true
 steam_appid: 730

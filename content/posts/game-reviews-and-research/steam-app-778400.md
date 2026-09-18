@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 778400》评测"
+title: "《Corpse Party: Sweet Sachiko's Hysteric Birthday Bash》评测"
 date: "2026-08-07T12:00:00+00:00"
 steam_sync: true
 steam_appid: 778400

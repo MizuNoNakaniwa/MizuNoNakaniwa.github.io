@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1913620》评测"
+title: "《Puzzle Bobble™2X/BUST-A-MOVE™2 Arcade Edition & Puzzle Bobble™3/BUST-A-MOVE™3 S-Tribute》评测"
 date: "2026-08-10T12:00:00+00:00"
 steam_sync: true
 steam_appid: 1913620

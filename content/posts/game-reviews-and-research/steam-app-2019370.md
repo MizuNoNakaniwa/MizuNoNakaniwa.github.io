@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 2019370》评测"
+title: "《Oh! Edo Towns》评测"
 date: "2026-08-10T12:00:00+00:00"
 steam_sync: true
 steam_appid: 2019370

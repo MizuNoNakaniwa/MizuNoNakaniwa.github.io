@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 3590》评测"
+title: "《Plants vs. Zombies GOTY Edition》评测"
 date: "2026-09-17T12:00:00+00:00"
 steam_sync: true
 steam_appid: 3590

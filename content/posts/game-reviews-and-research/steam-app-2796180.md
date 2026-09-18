@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 2796180》评测"
+title: "《SILENT BREATH》评测"
 date: "2026-08-10T12:00:00+00:00"
 steam_sync: true
 steam_appid: 2796180

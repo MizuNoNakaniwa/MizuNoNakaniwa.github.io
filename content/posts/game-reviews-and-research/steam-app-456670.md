@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 456670》评测"
+title: "《Hand of Fate 2》评测"
 date: "2026-08-31T12:00:00+00:00"
 steam_sync: true
 steam_appid: 456670

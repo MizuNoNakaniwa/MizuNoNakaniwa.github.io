@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1732190》评测"
+title: "《FATAL FRAME / PROJECT ZERO: Maiden of Black Water》评测"
 date: "2026-08-04T12:00:00+00:00"
 steam_sync: true
 steam_appid: 1732190

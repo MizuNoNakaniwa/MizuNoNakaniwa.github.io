@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 356570》评测"
+title: "《Party Hard》评测"
 date: "2026-08-25T12:00:00+00:00"
 steam_sync: true
 steam_appid: 356570

@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 824830》评测"
+title: "《Corpse Party: Blood Drive》评测"
 date: "2026-08-07T12:00:00+00:00"
 steam_sync: true
 steam_appid: 824830

@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 4215800》评测"
+title: "《LOOP THE LOOP The Mansion of Gluttony》评测"
 date: "2026-08-07T12:00:00+00:00"
 steam_sync: true
 steam_appid: 4215800

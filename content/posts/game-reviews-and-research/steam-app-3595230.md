@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 3595230》评测"
+title: "《Call of Duty®: Modern Warfare® II》评测"
 date: "2026-09-17T12:00:00+00:00"
 steam_sync: true
 steam_appid: 3595230

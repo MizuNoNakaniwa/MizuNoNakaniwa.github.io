@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 200710》评测"
+title: "《Torchlight II》评测"
 date: "2026-08-03T12:00:00+00:00"
 steam_sync: true
 steam_appid: 200710
