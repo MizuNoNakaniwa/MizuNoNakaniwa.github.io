@@ -27,12 +27,12 @@
   function desiredProjectsHTML() {
     return (
       '<li><a href="{{ `/projects/tzeentch-intel/` | relLangURL }}">' +
-        '<span class="submenu-en">Tzeentch_Intel</span>' +
+        '<span class="submenu-en">Tzeentch Intel</span>' +
         '<span class="submenu-zh">奸奇智库</span>' +
       '</a></li>' +
       '<li><a href="{{ `/projects/tzeentchs-staff-ai/` | relLangURL }}">' +
         '<span class="submenu-en">Tzeentch`s Staff AI</span>' +
-        '<span class="submenu-zh">奸奇之杖AI</span>' +
+        '<span class="submenu-zh">奸奇之杖 AI</span>' +
       '</a></li>' +
       '<li><a href="{{ `/projects/consigliere-ai/` | relLangURL }}">' +
         '<span class="submenu-en">Consigliere AI</span>' +
@@ -122,7 +122,7 @@
       const hasCorrectIntel =
         !!intelLink &&
         !!intelLink.querySelector('.submenu-en') &&
-        intelLink.querySelector('.submenu-en').textContent.trim() === 'Tzeentch_Intel' &&
+        intelLink.querySelector('.submenu-en').textContent.trim() === 'Tzeentch Intel' &&
         !!intelLink.querySelector('.submenu-zh') &&
         intelLink.querySelector('.submenu-zh').textContent.trim() === '奸奇智库';
 
@@ -132,7 +132,7 @@
         !!staffLink.querySelector('.submenu-en') &&
         staffLink.querySelector('.submenu-en').textContent.trim() === 'Tzeentch`s Staff AI' &&
         !!staffLink.querySelector('.submenu-zh') &&
-        staffLink.querySelector('.submenu-zh').textContent.trim() === '奸奇之杖AI';
+        staffLink.querySelector('.submenu-zh').textContent.trim() === '奸奇之杖 AI';
 
       const consigliereLink = submenu.querySelector('a[href*="/projects/consigliere-ai/"]');
       const hasCorrectConsigliere =
