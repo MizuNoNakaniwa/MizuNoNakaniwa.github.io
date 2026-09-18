@@ -59,14 +59,37 @@
                             {{ .Scratch.Delete "comicEra2010" }}
                             {{ .Scratch.Delete "comicEra2000" }}
 
+                            {{ $comic2010Titles := slice
+                                "《剑豪生死斗》评测"
+                                "《火线鸳鸯》评测"
+                                "《杀手阿一》评测"
+                                "《不自然博物馆》评测"
+                                "《天才在左，疯子在右》评测"
+                            }}
+                            {{ $comic2000Titles := slice
+                                "《丁丁历险记》评测"
+                                "《三毛流浪记》评测"
+                                "《三毛从军记》评测"
+                            }}
+
                             {{ range $pages }}
-                                {{ $y := .Date.Year }}
-                                {{ if ge $y 2020 }}
-                                    {{ $.Scratch.Add "comicEra2020" (slice .) }}
-                                {{ else if ge $y 2010 }}
+                                {{ $groupTitle := .Title }}
+                                {{ with .Params.review_group_title }}
+                                    {{ $groupTitle = . }}
+                                {{ end }}
+                                {{ if in $comic2010Titles $groupTitle }}
                                     {{ $.Scratch.Add "comicEra2010" (slice .) }}
-                                {{ else }}
+                                {{ else if in $comic2000Titles $groupTitle }}
                                     {{ $.Scratch.Add "comicEra2000" (slice .) }}
+                                {{ else }}
+                                    {{ $y := .Date.Year }}
+                                    {{ if ge $y 2020 }}
+                                        {{ $.Scratch.Add "comicEra2020" (slice .) }}
+                                    {{ else if ge $y 2010 }}
+                                        {{ $.Scratch.Add "comicEra2010" (slice .) }}
+                                    {{ else }}
+                                        {{ $.Scratch.Add "comicEra2000" (slice .) }}
+                                    {{ end }}
                                 {{ end }}
                             {{ end }}
 
