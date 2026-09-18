@@ -7,22 +7,16 @@
     </div>
 {{ end }}
 
-{{ if or (or (and .IsHome .Site.Params.displayHeaderInHome) (eq .Site.Params.headerLayout "flex")) (and (not .IsHome) .Site.Params.enableHeader) }}
-    <header class="header">
-        {{ if eq .Site.Params.headerLayout "flex" }}
-            <div class="header-wrapper">
-                <div class="header-inner {{ cond (or .IsHome (eq (len .Pages) 0)) "single" "list"}}">
-                    {{/* 站名已按要求彻底移除, 原为 site-brand */}}
-                    {{ partial "menu.html" . }}
-                    {{ partial "custom/header.html" . }}
-                </div>
-            </div>
-            {{ partial "components/nav-toggle.html" . }}
-        {{ else }}
-            {{/* 站名已按要求彻底移除 */}}
-        {{ end }}
-    </header>
-{{ end }}
+{{/* 全站强制渲染导航：所有 Hugo 页面都显示同一套 Projects / Blog 菜单 */}}
+<header class="header">
+    <div class="header-wrapper">
+        <div class="header-inner {{ cond (or .IsHome (eq (len .Pages) 0)) "single" "list"}}">
+            {{ partial "menu.html" . }}
+            {{ partial "custom/header.html" . }}
+        </div>
+    </div>
+    {{ partial "components/nav-toggle.html" . }}
+</header>
 
 {{ define "site-brand" }}
     <div class="site-brand">
