@@ -46,6 +46,10 @@
         '<span class="submenu-en">Ascensionism Project</span>' +
         '<span class="submenu-zh">飞扬主义计划</span>' +
       '</a></li>' +
+      '<li><a href="{{ `/projects/aspergers-adhd-rescue-project/` | relLangURL }}">' +
+        '<span class="submenu-en">Asperger’s & ADHD Rescue Project</span>' +
+        '<span class="submenu-zh">拯救阿斯伯格以及多动症计划</span>' +
+      '</a></li>' +
       '<li><a href="{{ `/projects/game/` | relLangURL }}">' +
         '<span class="submenu-en">Game:</span>' +
         '<span class="submenu-zh">游戏：</span>' +
@@ -158,6 +162,14 @@
         !!ascensionLink.querySelector('.submenu-zh') &&
         ascensionLink.querySelector('.submenu-zh').textContent.trim() === '飞扬主义计划';
 
+      const rescueLink = submenu.querySelector('a[href*="/projects/aspergers-adhd-rescue-project/"]');
+      const hasCorrectRescue =
+        !!rescueLink &&
+        !!rescueLink.querySelector('.submenu-en') &&
+        rescueLink.querySelector('.submenu-en').textContent.trim() === 'Asperger’s & ADHD Rescue Project' &&
+        !!rescueLink.querySelector('.submenu-zh') &&
+        rescueLink.querySelector('.submenu-zh').textContent.trim() === '拯救阿斯伯格以及多动症计划';
+
       const artProjectLink = submenu.querySelector('a[href*="/projects/art-project-xxx/"]');
       const hasCorrectArtProject =
         !!artProjectLink &&
@@ -174,16 +186,17 @@
         }
       });
       const hasCorrectOrder =
-        projectHrefs.length === 7 &&
+        projectHrefs.length === 8 &&
         projectHrefs[0].endsWith('/projects/xx-xinxue/') &&
         projectHrefs[1].endsWith('/projects/tzeentch-intel/') &&
         projectHrefs[2].endsWith('/projects/tzeentchs-staff-ai/') &&
         projectHrefs[3].endsWith('/projects/consigliere-ai/') &&
         projectHrefs[4].endsWith('/projects/ascensionism-project/') &&
-        projectHrefs[5].endsWith('/projects/game/') &&
-        projectHrefs[6].endsWith('/projects/art-project-xxx/');
+        projectHrefs[5].endsWith('/projects/aspergers-adhd-rescue-project/') &&
+        projectHrefs[6].endsWith('/projects/game/') &&
+        projectHrefs[7].endsWith('/projects/art-project-xxx/');
 
-      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectArtProject || !hasCorrectOrder) {
+      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectRescue || !hasCorrectArtProject || !hasCorrectOrder) {
         submenu.innerHTML = desiredProjectsHTML();
       }
 
