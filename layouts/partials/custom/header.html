@@ -1,0 +1,171 @@
+{{/* 全站导航自愈层：确保 Projects 下拉菜单在每个页面保持一致 */}}
+<style>
+.header,
+.header-wrapper,
+.header-inner,
+.header .nav,
+.header .nav .menu,
+.menu-item-dropdown {
+  overflow: visible !important;
+}
+
+.menu-item-dropdown .submenu {
+  display: none !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  z-index: 9999 !important;
+}
+
+.menu-item-dropdown.is-open .submenu {
+  display: block !important;
+}
+</style>
+
+<script>
+(function () {
+  function desiredProjectsHTML() {
+    return (
+      '<li><a href="{{ `/projects/game/` | relLangURL }}">' +
+        '<span class="submenu-en">Game:</span>' +
+        '<span class="submenu-zh">游戏：</span>' +
+      '</a></li>' +
+      '<li><a href="{{ `/projects/xx-xinxue/` | relLangURL }}">' +
+        '<span class="submenu-en">Dao: XXism</span>' +
+        '<span class="submenu-zh">道：XX心学</span>' +
+      '</a></li>'
+    );
+  }
+
+  function ensureProjectsMenu() {
+    document.querySelectorAll('.header .nav .menu').forEach(function (menu) {
+      const items = Array.from(menu.querySelectorAll(':scope > .menu-item'));
+      let projectsItem = items.find(function (item) {
+        const label = item.querySelector('.menu-item-name');
+        if (label && label.textContent.trim() === 'Projects 我的项目') return true;
+
+        const link = item.querySelector(':scope > a[href]');
+        if (!link) return false;
+        try {
+          const url = new URL(link.getAttribute('href'), window.location.href);
+          return url.origin === window.location.origin &&
+            url.pathname.replace(/\/+$/, '/') === '/projects/';
+        } catch (_) {
+          return false;
+        }
+      });
+
+      if (!projectsItem) {
+        projectsItem = document.createElement('li');
+        projectsItem.className = 'menu-item menu-item-dropdown';
+        const firstItem = menu.querySelector(':scope > .menu-item');
+        if (firstItem && firstItem.nextSibling) {
+          menu.insertBefore(projectsItem, firstItem.nextSibling);
+        } else {
+          menu.appendChild(projectsItem);
+        }
+      }
+
+      projectsItem.classList.add('menu-item-dropdown');
+
+      let toggle = projectsItem.querySelector(':scope > .menu-dropdown-toggle');
+      const oldLink = projectsItem.querySelector(':scope > a');
+
+      if (!toggle) {
+        toggle = document.createElement('button');
+        toggle.className = 'menu-dropdown-toggle';
+        toggle.type = 'button';
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-controls', 'projects-submenu');
+        toggle.innerHTML =
+          '<span class="menu-item-name">Projects 我的项目</span>' +
+          '<span class="dropdown-arrow" aria-hidden="true">▾</span>';
+
+        if (oldLink) oldLink.replaceWith(toggle);
+        else projectsItem.insertBefore(toggle, projectsItem.firstChild);
+      } else {
+        toggle.setAttribute('aria-controls', 'projects-submenu');
+        const label = toggle.querySelector('.menu-item-name');
+        if (label) label.textContent = 'Projects 我的项目';
+      }
+
+      let submenu = projectsItem.querySelector(':scope > .submenu');
+      if (!submenu) {
+        submenu = document.createElement('ul');
+        submenu.className = 'submenu';
+        projectsItem.appendChild(submenu);
+      }
+      submenu.id = 'projects-submenu';
+
+      const hasGame = !!submenu.querySelector('a[href*="/projects/game/"]');
+      const xxLink = submenu.querySelector('a[href*="/projects/xx-xinxue/"]');
+      const hasCorrectXX =
+        !!xxLink &&
+        !!xxLink.querySelector('.submenu-en') &&
+        xxLink.querySelector('.submenu-en').textContent.trim() === 'Dao: XXism' &&
+        !!xxLink.querySelector('.submenu-zh') &&
+        xxLink.querySelector('.submenu-zh').textContent.trim() === '道：XX心学';
+
+      if (!hasGame || !hasCorrectXX || submenu.children.length !== 2) {
+        submenu.innerHTML = desiredProjectsHTML();
+      }
+
+      if (toggle.dataset.projectsBound !== '1') {
+        toggle.dataset.projectsBound = '1';
+        toggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          document.querySelectorAll('.menu-item-dropdown.is-open').forEach(function (other) {
+            if (other !== projectsItem) {
+              other.classList.remove('is-open');
+              const otherToggle = other.querySelector('.menu-dropdown-toggle');
+              if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          const willOpen = !projectsItem.classList.contains('is-open');
+          projectsItem.classList.toggle('is-open', willOpen);
+          toggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+        });
+      }
+    });
+  }
+
+  function closeProjectsMenus() {
+    document.querySelectorAll('.menu-item-dropdown.is-open').forEach(function (item) {
+      item.classList.remove('is-open');
+      const toggle = item.querySelector('.menu-dropdown-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', ensureProjectsMenu);
+  window.addEventListener('pageshow', ensureProjectsMenu);
+
+  let scheduled = false;
+  const observer = new MutationObserver(function (mutations) {
+    const touchesHeader = mutations.some(function (mutation) {
+      const target = mutation.target.nodeType === 1 ? mutation.target : mutation.target.parentElement;
+      return target && (target.closest('.header') || target.querySelector?.('.header'));
+    });
+    if (!touchesHeader || scheduled) return;
+
+    scheduled = true;
+    requestAnimationFrame(function () {
+      scheduled = false;
+      ensureProjectsMenu();
+    });
+  });
+
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.menu-item-dropdown')) closeProjectsMenus();
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeProjectsMenus();
+  });
+})();
+</script>
