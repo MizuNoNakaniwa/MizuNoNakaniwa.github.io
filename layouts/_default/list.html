@@ -131,7 +131,9 @@
                                 {{ with .Params.review_group_title }}
                                     {{ $groupTitle = . }}
                                 {{ end }}
-                                {{ if in $comic2010Titles $groupTitle }}
+                                {{ if eq (printf "%v" .Params.comic_era) "2010" }}
+                                    {{ $.Scratch.Add "comicEra2010" (slice .) }}
+                                {{ else if in $comic2010Titles $groupTitle }}
                                     {{ $.Scratch.Add "comicEra2010" (slice .) }}
                                 {{ else if in $comic2000Titles $groupTitle }}
                                     {{ $.Scratch.Add "comicEra2000" (slice .) }}
