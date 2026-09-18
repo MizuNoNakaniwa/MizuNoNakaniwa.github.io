@@ -152,7 +152,7 @@
     },
     "announcement:668373055181948336": {
       "appid": null,
-      "hash": "09e058bf46be0bbc13c409d0544e03b59de3e0bf094f207faa97ffd5eaa346b1",
+      "hash": "d149fda499a240c05f00e8ccec356464d85f448de63524454d74167cc8b42db1",
       "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948336.md",
       "source": "announcement"
     },
@@ -350,7 +350,7 @@
     },
     "announcement:690891687156776976": {
       "appid": null,
-      "hash": "fd5a51aa25096e5e9e08be7ff245f0a249a7fad13a741c492e20d303b0a98090",
+      "hash": "79f103625ee9821115fd76b0861c0abdf33010afbffef2ef7577614e46f396b6",
       "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776976.md",
       "source": "announcement"
     },
@@ -2202,5 +2202,5 @@
     "curator": 87,
     "direct": 205
   },
-  "version": 2
+  "version": 3
 }
