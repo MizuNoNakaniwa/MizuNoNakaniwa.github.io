@@ -50,8 +50,9 @@
         '<span class="submenu-en">Game:</span>' +
         '<span class="submenu-zh">游戏：</span>' +
       '</a></li>' +
-      '<li><a href="{{ `/projects/movie-xxx/` | relLangURL }}">' +
-        '<span class="submenu-zh">电影：Xxx</span>' +
+      '<li><a href="{{ `/projects/art-project-xxx/` | relLangURL }}">' +
+        '<span class="submenu-en">Art Project: XXX</span>' +
+        '<span class="submenu-zh">艺术项目：XXX</span>' +
       '</a></li>'
     );
   }
@@ -157,11 +158,13 @@
         !!ascensionLink.querySelector('.submenu-zh') &&
         ascensionLink.querySelector('.submenu-zh').textContent.trim() === '飞扬主义计划';
 
-      const movieLink = submenu.querySelector('a[href*="/projects/movie-xxx/"]');
-      const hasCorrectMovie =
-        !!movieLink &&
-        !!movieLink.querySelector('.submenu-zh') &&
-        movieLink.querySelector('.submenu-zh').textContent.trim() === '电影：Xxx';
+      const artProjectLink = submenu.querySelector('a[href*="/projects/art-project-xxx/"]');
+      const hasCorrectArtProject =
+        !!artProjectLink &&
+        !!artProjectLink.querySelector('.submenu-en') &&
+        artProjectLink.querySelector('.submenu-en').textContent.trim() === 'Art Project: XXX' &&
+        !!artProjectLink.querySelector('.submenu-zh') &&
+        artProjectLink.querySelector('.submenu-zh').textContent.trim() === '艺术项目：XXX';
 
       const projectHrefs = Array.from(submenu.querySelectorAll(':scope > li > a')).map(function (a) {
         try {
@@ -178,9 +181,9 @@
         projectHrefs[3].endsWith('/projects/consigliere-ai/') &&
         projectHrefs[4].endsWith('/projects/ascensionism-project/') &&
         projectHrefs[5].endsWith('/projects/game/') &&
-        projectHrefs[6].endsWith('/projects/movie-xxx/');
+        projectHrefs[6].endsWith('/projects/art-project-xxx/');
 
-      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectMovie || !hasCorrectOrder) {
+      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectArtProject || !hasCorrectOrder) {
         submenu.innerHTML = desiredProjectsHTML();
       }
 
