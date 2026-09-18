@@ -1,5 +1,2206 @@
 {
-  "version": 1,
-  "records": {},
-  "source_counts": {}
+  "records": {
+    "announcement:668373055181947150": {
+      "appid": null,
+      "hash": "4ec5fc6f2ae26ac2891f569018382608a7fd76a83ab975c1735a7a4cb3022a18",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947150.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947153": {
+      "appid": null,
+      "hash": "ea5587d71d27ae7513259d12c1a341cb7bb10d508024beea1b0815fd8f11322c",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947153.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947154": {
+      "appid": null,
+      "hash": "a526ebd98cb5e6ce6adcef1e1ab2927b1c604981b55c9cbd90d7bfc77ef97f1c",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947154.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947156": {
+      "appid": null,
+      "hash": "ac6fb5ccdf00088ae81b3356b6c6912d108d872fdc4e470b763d8c6c7593ecea",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947156.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947168": {
+      "appid": null,
+      "hash": "86adc86d940c702f85113713338042ca69f17c8875cda49809ffa944b6731f6b",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947168.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947169": {
+      "appid": null,
+      "hash": "f40272b21b099bb937775e54f1410a3eec2b94d7f0a1ccefd271d8e8bfa61c65",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947169.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947170": {
+      "appid": null,
+      "hash": "80c0b680b4eddbef49da669e0fe2aa71f2d94bb3dd41326f2c74842ef5f7610c",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947170.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947171": {
+      "appid": null,
+      "hash": "f9610209e650feb3942852f2e84132da1c37428eb9c5079da3ea51527dc03966",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947171.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947172": {
+      "appid": null,
+      "hash": "d79d12859644e88e61237ddb567a74cab463a47ba94e49681df3fffbec15bdcf",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947172.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947227": {
+      "appid": null,
+      "hash": "8950a1df002880d33d183be220c1a7fae15539bdfdd1e5ba2818aafb86207cd3",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947227.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947230": {
+      "appid": null,
+      "hash": "c0d8394cb0b9f3754c7f15d8dbf8e25939333e20d4d1230d2fd8729efc172e99",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947230.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947236": {
+      "appid": null,
+      "hash": "d5fa09688ac7a7a659df6602e533a4f6d144cb54faf34009f9cb7b11a956094a",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947236.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947237": {
+      "appid": null,
+      "hash": "86226d684aacbe58575074e3fa55a655a2c97c7ea8aeeb148819df25dfb12095",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947237.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947238": {
+      "appid": null,
+      "hash": "fb3a33d46665a80b1a9596454f5e6943896c6cdc462a46976bfd67e35f4a82e8",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947238.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947239": {
+      "appid": null,
+      "hash": "69a4a75c9142caa360f62af929e2bf9da0f805e049ae22a3ab0ab271baadde1c",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947239.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947243": {
+      "appid": null,
+      "hash": "6072e2d75f5c8eb25cf2d2947603accba36188769b2d75b4fad9ab321942ad44",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947243.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947249": {
+      "appid": null,
+      "hash": "987ae130306c2b7a0736c1b41b85994606e78031b42d8e9f29b4ee9920cbd1f8",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947249.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181947893": {
+      "appid": null,
+      "hash": "52bd83fe0eb4ce8ac9cdba509ee21a278cc1f482ba0733856494ba33a96920b2",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181947893.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948329": {
+      "appid": null,
+      "hash": "de33a55a8cf51dc20dbf537ce053914d57169e926083adfe63a54fb681f68659",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948329.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948330": {
+      "appid": null,
+      "hash": "d808aedd9d046ecf53e0d3bd631239e56df63dc255ea92c26c4523a068b4db4b",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948330.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948331": {
+      "appid": null,
+      "hash": "59b9a248b3e685b7e1095a9cedae8064012a7aedf79cb53cd03f672b0ce44389",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948331.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948332": {
+      "appid": null,
+      "hash": "b46cb81cf86cb119dbed7fcea868b3be3f1943cd1c30eb5f991d3f54ecaeace8",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948332.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948333": {
+      "appid": null,
+      "hash": "e264e861708e524801201572baac1bde9d131a1196104799003a54d77b38549f",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948333.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948334": {
+      "appid": null,
+      "hash": "6d1825485bca8131cda1b73084990c7e24cd885f2115dad3e6d47a3a9d1aa5d3",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948334.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948335": {
+      "appid": null,
+      "hash": "f747fbcf24fa925843bf8341be4e1f49d67c4235c2c6a4c7dfbda12ee16a0a79",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948335.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948336": {
+      "appid": null,
+      "hash": "09e058bf46be0bbc13c409d0544e03b59de3e0bf094f207faa97ffd5eaa346b1",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948336.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948337": {
+      "appid": null,
+      "hash": "1fe025b864fc95816d0c3df542179417902fc63d890f01c4350c33cf94a30869",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948337.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948338": {
+      "appid": null,
+      "hash": "ac310c5e570c95252c42b0c7e5ada0a666b2a644a52e352f3345dcf8b9ec6c05",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948338.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948342": {
+      "appid": null,
+      "hash": "80fdd7e4dbb62ab62d110dc030c7c4eda8a69419ae101f322ea0018baabe0dce",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948342.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948343": {
+      "appid": null,
+      "hash": "6a7fd314775639af01029c58a51faa42d165d5c6cebc513949c073940a564453",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948343.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948344": {
+      "appid": null,
+      "hash": "6f1e22c53a3fd6bef5d0be4efd9cff8b40416b32059025196af7e8c0e8e814eb",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948344.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948345": {
+      "appid": null,
+      "hash": "8dcd682c01c2b50857564cd88c471a12a1f8425d4558f81eeb4cfe1ad56e46ff",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948345.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948346": {
+      "appid": null,
+      "hash": "7e9dcc794eed34ad0c13c3b2f7c9254f51d523dccfacd99a3b51cf45f3280558",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948346.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948353": {
+      "appid": null,
+      "hash": "b3b43730fe1e3b6681049fbfdb0cfc8bd99f064eeec55f571e4592bc21ffaf80",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948353.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948685": {
+      "appid": null,
+      "hash": "54772535f8c52ab7795ff9ec4075b5f581bb649f2e51e0a8ffe63e8be88f8715",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948685.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948686": {
+      "appid": null,
+      "hash": "36c1d98d6b14ef223f2f927aad82ce8029a8dedd8187cdf3705c11140fed6bc8",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948686.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948687": {
+      "appid": null,
+      "hash": "55939994df88510f8ccc5bc9f3afbfd6ae6085b441e643f38790e0ebaf50f2d4",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948687.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948688": {
+      "appid": null,
+      "hash": "afb707087418963cae86d093ab7855ed9fb967f4870c14cd733b9ced1810836f",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948688.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948689": {
+      "appid": null,
+      "hash": "9916d100cbaf04722e2ffc04e487ffed4c3bc108955b4538b95f2b0f893c5b56",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948689.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948697": {
+      "appid": null,
+      "hash": "05641658c27f2fc9c58da58f9508ad1f10010c8fd35e1235e7ebb7e6ad2fb1cd",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948697.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948698": {
+      "appid": null,
+      "hash": "2953e70d8c2196535f2aebc739be6c604e62d2fe52b9fa9401797259999b9853",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948698.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948699": {
+      "appid": null,
+      "hash": "11fbbbac32445a4bea5ddedbdb0c4adec2b1e4f17daba539a51b4f4ed281bf18",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948699.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948700": {
+      "appid": null,
+      "hash": "9ecb3c4b60364eacf746f1b6fdeb40e5fa9ede0a770655bf15da28a1a90dd8eb",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948700.md",
+      "source": "announcement"
+    },
+    "announcement:668373055181948701": {
+      "appid": null,
+      "hash": "09d0f10202727fbd035b84ba5670fdb84da6d90eca7c692e19c9949e4b874a0e",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948701.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213773": {
+      "appid": null,
+      "hash": "a7e6fa14225c6a9347449bf7b02b5d96660216a4cc60f72e103ed4b12f600290",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213773.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213774": {
+      "appid": null,
+      "hash": "d43f39a063e78391c6eb632eb122da61f1fd45ab07f7c59ab9ca1865187042bc",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213774.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213775": {
+      "appid": null,
+      "hash": "3afe73ca2e8daca35910e7fdcf1b98578c04564df7ca0b11d853f05a8a08ff1b",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213775.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213776": {
+      "appid": null,
+      "hash": "576f4cd67cb60c9e3daf9d578dac43354998ec37139f634e4cd600e469450e9e",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213776.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213823": {
+      "appid": null,
+      "hash": "585184c27f447df895d98c35f4392919b75a0535b1a5445210ab772871dd4a68",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213823.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213824": {
+      "appid": null,
+      "hash": "8d229302666e90ccef10ab8099b360df6a4502d2381fb5b9e331de058bfe1a53",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213824.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213841": {
+      "appid": null,
+      "hash": "74a117f9a0f453d03542b08991dac876275f70ebb2f79ec893b18b9425e8072b",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213841.md",
+      "source": "announcement"
+    },
+    "announcement:684139458559213842": {
+      "appid": null,
+      "hash": "8f6c1f8b53aa3d0c28e3ca65e36b8f7e8bfdc5f6040ab8ca402456b66da44bad",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-684139458559213842.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776961": {
+      "appid": null,
+      "hash": "5e18e330af70b66b097d5bdf2e61db4606f2a33c7ac0c9e16668861095dc0d6c",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776961.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776962": {
+      "appid": null,
+      "hash": "d1bda96c75d98f5d014bf5ad7a19b4bc13f7c74b55668491f1135771e03d5413",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776962.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776963": {
+      "appid": null,
+      "hash": "8626911390329b05bcb2d7c1bf31b8c8e84b648be33487305352fda88c5c8169",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776963.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776964": {
+      "appid": null,
+      "hash": "e5c487542e49edca2d805141727cda70f8c7a20fd8f2dd94ed8f10d898919476",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776964.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776965": {
+      "appid": null,
+      "hash": "301b745384957bf59c82e0b833fbc05b9422a32c8eebe18093a7f82c21995de3",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776965.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776975": {
+      "appid": null,
+      "hash": "0560cec06fd7148ffa9495aba6376c9c20b54e93fd43a976f14a952f55ba1d9d",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776975.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776976": {
+      "appid": null,
+      "hash": "fd5a51aa25096e5e9e08be7ff245f0a249a7fad13a741c492e20d303b0a98090",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776976.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776977": {
+      "appid": null,
+      "hash": "013639fdb7d58a18be3fd052395ce97556a8b77a51d660c23987ca2dbdcc2eca",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776977.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776978": {
+      "appid": null,
+      "hash": "b72fd6b685f5a8c3b17de26bc9c6ca5293a5deed408e44bc7976eef69b93dfdc",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776978.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776979": {
+      "appid": null,
+      "hash": "6474332de4c9a4460006f8a1b12509cd2efc7ab5cd96e202a3d8a2a3ad4d0120",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776979.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776984": {
+      "appid": null,
+      "hash": "87bbc363ae4395c1dcd28082dfe13ca92ea0828b8384ec5e56abcf203a7e81ce",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776984.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776985": {
+      "appid": null,
+      "hash": "e02a6c03c5311988dbd8a6827bbe654a0de5cc918bd0730c2b29f41743f357d4",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776985.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776986": {
+      "appid": null,
+      "hash": "486f77f6fb48a6cd193846eea21037eef704d4ea9b418fcb6a56d5cb02288d6f",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776986.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776990": {
+      "appid": null,
+      "hash": "711b53d6a36eb2bcc6b394aa0aaa4939146182ba3d2a68e279e7560bcefd3113",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776990.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156776999": {
+      "appid": null,
+      "hash": "fa476bb1fd4160d3e4efd8cd7cb5eeed053e25505e961cfb421273af4c96c47c",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156776999.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156777000": {
+      "appid": null,
+      "hash": "41d13147a6453996e9a32f16f721c2b9890294876f96c937a8bc4df646362bd3",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156777000.md",
+      "source": "announcement"
+    },
+    "announcement:690891687156777001": {
+      "appid": null,
+      "hash": "a82e62d2e5d01362d4c82065ea16342d64371a8380b988c0bc74772a879b471e",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690891687156777001.md",
+      "source": "announcement"
+    },
+    "announcement:690892955941077676": {
+      "appid": null,
+      "hash": "1173d4e6b94e4e5ad88d26e4ce51389c89ced52fd5c10b297b25101033e3b08b",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690892955941077676.md",
+      "source": "announcement"
+    },
+    "announcement:690893589804221040": {
+      "appid": null,
+      "hash": "754a42cb8e2ce74c0d5bf4edf9c3f2673e682b6acdfca11af7858e35e68bf5b8",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690893589804221040.md",
+      "source": "announcement"
+    },
+    "announcement:690893589804221133": {
+      "appid": null,
+      "hash": "1c93c63562390513742301c32192e5e3d64bb43edce4e80a1f6187741bb62eaa",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-690893589804221133.md",
+      "source": "announcement"
+    },
+    "announcement:706654920914240241": {
+      "appid": null,
+      "hash": "53a6741a1b6dc6d2c0f8bc5751c84308149341f5a097945daec1467a65850d3a",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-706654920914240241.md",
+      "source": "announcement"
+    },
+    "announcement:706654920914240242": {
+      "appid": null,
+      "hash": "7819e7fe834400d9dfd52928a9f293a17ddad0fe6909c92531055ff1926caae3",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-706654920914240242.md",
+      "source": "announcement"
+    },
+    "curator:1038280": {
+      "appid": "1038280",
+      "hash": "5227f78e82ba5a806b1d6e8031e4745c0b569ae95bbe99f91e00ec38c0a405da",
+      "path": "content/posts/game-reviews-and-research/steam-app-1038280.md",
+      "source": "curator"
+    },
+    "curator:1092790": {
+      "appid": "1092790",
+      "hash": "8f3c750d99abbffd43c9f96dc1e8c6e3d95007cc19183bc2827c8e448e3e8cdc",
+      "path": "content/posts/game-reviews-and-research/steam-app-1092790.md",
+      "source": "curator"
+    },
+    "curator:1115690": {
+      "appid": "1115690",
+      "hash": "06f4e7732bad1edaf5bb1df8caa2623eaf46c97c78ca62f48de1c2f8edcc5356",
+      "path": "content/posts/game-reviews-and-research/steam-app-1115690.md",
+      "source": "curator"
+    },
+    "curator:1174460": {
+      "appid": "1174460",
+      "hash": "68589a46b97b92d7668eb4143a4531c1d0d0fbabe0689c73bffa64a2eb4723fa",
+      "path": "content/posts/game-reviews-and-research/steam-app-1174460.md",
+      "source": "curator"
+    },
+    "curator:12200": {
+      "appid": "12200",
+      "hash": "407e26a600204b7685196000c986284fc479abd567ec174c237a16ee8ce496c1",
+      "path": "content/posts/game-reviews-and-research/steam-app-12200.md",
+      "source": "curator"
+    },
+    "curator:1238840": {
+      "appid": "1238840",
+      "hash": "c0d4ddcd63990f20c00e72eb9936ed1d33ae0c0a19eb471b23489dacbf4e1ae1",
+      "path": "content/posts/game-reviews-and-research/steam-app-1238840.md",
+      "source": "curator"
+    },
+    "curator:1238860": {
+      "appid": "1238860",
+      "hash": "310751d7f61cae2bda3b163f710b11badd455cfd5b84ad07b9584daf7de0aa85",
+      "path": "content/posts/game-reviews-and-research/steam-app-1238860.md",
+      "source": "curator"
+    },
+    "curator:1556790": {
+      "appid": "1556790",
+      "hash": "e4f36cfbc1cc61ea07c270956c7638dcb7ea5ff1070b66de0110c0c3ad87965b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1556790.md",
+      "source": "curator"
+    },
+    "curator:1732190": {
+      "appid": "1732190",
+      "hash": "a620e9144986ebc05c0003e0c240c6413829ca61e115ac61e055947923c17b0e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1732190.md",
+      "source": "curator"
+    },
+    "curator:17480": {
+      "appid": "17480",
+      "hash": "67baf909607f2754ae1bba456c431db59fbb0cc85b87d6c790e08d9a5455a76a",
+      "path": "content/posts/game-reviews-and-research/steam-app-17480.md",
+      "source": "curator"
+    },
+    "curator:1805930": {
+      "appid": "1805930",
+      "hash": "c859e9c13cdbf5c8ca637407930b370070d7dc856f7ec5ed1ac33a9d917e7ebc",
+      "path": "content/posts/game-reviews-and-research/steam-app-1805930.md",
+      "source": "curator"
+    },
+    "curator:1832990": {
+      "appid": "1832990",
+      "hash": "6847c88c1f2c748511d4065de07f99079798f1cb136b1744d8ebe3904bd53d6e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1832990.md",
+      "source": "curator"
+    },
+    "curator:1847240": {
+      "appid": "1847240",
+      "hash": "7d8aa644f790da17bee779cf4c90b51333e763a61f1a8781b9ef7f1f0005578a",
+      "path": "content/posts/game-reviews-and-research/steam-app-1847240.md",
+      "source": "curator"
+    },
+    "curator:1913620": {
+      "appid": "1913620",
+      "hash": "fe117394d9f38f6cc72e8a8ad11e48681325ded209a3b12ee8ba558224347f20",
+      "path": "content/posts/game-reviews-and-research/steam-app-1913620.md",
+      "source": "curator"
+    },
+    "curator:1918520": {
+      "appid": "1918520",
+      "hash": "06bcb9ab56fa85aca52eacde7b8faf35c344dcd6be7ffacada4d31c9b069e748",
+      "path": "content/posts/game-reviews-and-research/steam-app-1918520.md",
+      "source": "curator"
+    },
+    "curator:1927720": {
+      "appid": "1927720",
+      "hash": "592dfd7e793331a6b8966d818839db90260e8e905045c4ae9233a4a80ad8d6e0",
+      "path": "content/posts/game-reviews-and-research/steam-app-1927720.md",
+      "source": "curator"
+    },
+    "curator:1927740": {
+      "appid": "1927740",
+      "hash": "9afad6df588ed6c31153af142b6335d7d42854128ca833f6476a4bf6c4a5f5dc",
+      "path": "content/posts/game-reviews-and-research/steam-app-1927740.md",
+      "source": "curator"
+    },
+    "curator:1981820": {
+      "appid": "1981820",
+      "hash": "2b9d59fe746be6e07879f70ba6415d63d683f6903c92ccab7e558fad6d19bbb0",
+      "path": "content/posts/game-reviews-and-research/steam-app-1981820.md",
+      "source": "curator"
+    },
+    "curator:1985810": {
+      "appid": "1985810",
+      "hash": "d7610e342dc9eec7d1e4475db344228e16d4153178e6e80ab077e5e7f35a735b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1985810.md",
+      "source": "curator"
+    },
+    "curator:200710": {
+      "appid": "200710",
+      "hash": "294c1274002108b4e38d416cb7c2afec12d0e7390e655b0e8e7c97ac2f8576a2",
+      "path": "content/posts/game-reviews-and-research/steam-app-200710.md",
+      "source": "curator"
+    },
+    "curator:2019370": {
+      "appid": "2019370",
+      "hash": "8d47505d476cc01c4ba7a064b1dd999d1a304ed789fae3ef704e7ce0f948e555",
+      "path": "content/posts/game-reviews-and-research/steam-app-2019370.md",
+      "source": "curator"
+    },
+    "curator:202750": {
+      "appid": "202750",
+      "hash": "71107b5afe2ca6f1bfd0e8255e136824af809a84fc7f31bd188f734f405d64d0",
+      "path": "content/posts/game-reviews-and-research/steam-app-202750.md",
+      "source": "curator"
+    },
+    "curator:203140": {
+      "appid": "203140",
+      "hash": "a58b11294ac0b60a587636a0357fb30bbc3a48bdf1c5f8ccafe0ac56ec06c0e8",
+      "path": "content/posts/game-reviews-and-research/steam-app-203140.md",
+      "source": "curator"
+    },
+    "curator:204060": {
+      "appid": "204060",
+      "hash": "77fa2440542c39206d9ee7a1c4631c10d5122e960e8d5965b525b665cc640d42",
+      "path": "content/posts/game-reviews-and-research/steam-app-204060.md",
+      "source": "curator"
+    },
+    "curator:206440": {
+      "appid": "206440",
+      "hash": "f4d44e9dc4d981ed6063dc35063c98415e5e7f1152a68ff5f4a6946b380811d4",
+      "path": "content/posts/game-reviews-and-research/steam-app-206440.md",
+      "source": "curator"
+    },
+    "curator:2075070": {
+      "appid": "2075070",
+      "hash": "8784a2ccd92b75f9c03f4b6ea3b490dae486a81dff7d7e9da972f358dc2d2f7c",
+      "path": "content/posts/game-reviews-and-research/steam-app-2075070.md",
+      "source": "curator"
+    },
+    "curator:2099110": {
+      "appid": "2099110",
+      "hash": "42aa79e708883a288119f01b6966244ff729a5870f84cc22a23efed94b4f24fe",
+      "path": "content/posts/game-reviews-and-research/steam-app-2099110.md",
+      "source": "curator"
+    },
+    "curator:21100": {
+      "appid": "21100",
+      "hash": "f310052f48a10c4a41df87d2f59cfaab18d99f7f93648a5a7f4cd35154becd41",
+      "path": "content/posts/game-reviews-and-research/steam-app-21100.md",
+      "source": "curator"
+    },
+    "curator:2141730": {
+      "appid": "2141730",
+      "hash": "450c149b8797df0ccced2909b91c7e49b27739dfc6d2f03a9aa8920dd58e8c3e",
+      "path": "content/posts/game-reviews-and-research/steam-app-2141730.md",
+      "source": "curator"
+    },
+    "curator:219150": {
+      "appid": "219150",
+      "hash": "5985a11934892682640739161d461acb510855ae27fea079afe944d4331a8f9f",
+      "path": "content/posts/game-reviews-and-research/steam-app-219150.md",
+      "source": "curator"
+    },
+    "curator:223470": {
+      "appid": "223470",
+      "hash": "60cfc70b3fd0cf304966546c1cdcd702a5062f0a99bbe2912752c2a826b766c4",
+      "path": "content/posts/game-reviews-and-research/steam-app-223470.md",
+      "source": "curator"
+    },
+    "curator:2243110": {
+      "appid": "2243110",
+      "hash": "3252760a9874b1647f890fedc00bbdc757d4bba8a78ce0c971851190d41ba44d",
+      "path": "content/posts/game-reviews-and-research/steam-app-2243110.md",
+      "source": "curator"
+    },
+    "curator:238320": {
+      "appid": "238320",
+      "hash": "8cce59b17b12395be3693d3e5ced6def1c7ad981fa07498ccc9e86467c6bf743",
+      "path": "content/posts/game-reviews-and-research/steam-app-238320.md",
+      "source": "curator"
+    },
+    "curator:239030": {
+      "appid": "239030",
+      "hash": "fe9543352006d8a379c66081d1665503cd9bb51701c255a42488ca36de0388b0",
+      "path": "content/posts/game-reviews-and-research/steam-app-239030.md",
+      "source": "curator"
+    },
+    "curator:242860": {
+      "appid": "242860",
+      "hash": "4cb819b09409a28d3a4c5a2c51e25dbfcdcee81a689856bcf2ca338cfc5f07e3",
+      "path": "content/posts/game-reviews-and-research/steam-app-242860.md",
+      "source": "curator"
+    },
+    "curator:252330": {
+      "appid": "252330",
+      "hash": "776a1b9d6694125ad0a3365b07a46e9fa5bd4dbb6658ee7a8fb91e93355ae80d",
+      "path": "content/posts/game-reviews-and-research/steam-app-252330.md",
+      "source": "curator"
+    },
+    "curator:2536520": {
+      "appid": "2536520",
+      "hash": "46a08f2e454feb2f4176c19e4a28474d9cd2a498fdad2eeef63d2eba6e9e3e23",
+      "path": "content/posts/game-reviews-and-research/steam-app-2536520.md",
+      "source": "curator"
+    },
+    "curator:2578910": {
+      "appid": "2578910",
+      "hash": "38bde8bd0068af63f3ffaf1684815a97cde519f9c17b45195da571f957d99291",
+      "path": "content/posts/game-reviews-and-research/steam-app-2578910.md",
+      "source": "curator"
+    },
+    "curator:261550": {
+      "appid": "261550",
+      "hash": "f58c764272f5c9998632a129316e636913e3d7025927ff7d92b05759f2d47d19",
+      "path": "content/posts/game-reviews-and-research/steam-app-261550.md",
+      "source": "curator"
+    },
+    "curator:262830": {
+      "appid": "262830",
+      "hash": "bc6c9f779e4b1af9cb5403cc741f62739a5b60128921a0f99fd854f8ed769dc5",
+      "path": "content/posts/game-reviews-and-research/steam-app-262830.md",
+      "source": "curator"
+    },
+    "curator:269790": {
+      "appid": "269790",
+      "hash": "095ac1a557823a1acdc9912be116678ddea23122abe2710406026a234a800aef",
+      "path": "content/posts/game-reviews-and-research/steam-app-269790.md",
+      "source": "curator"
+    },
+    "curator:27000": {
+      "appid": "27000",
+      "hash": "a18ab0fae1956fe36129631513168dc5b92fdc3b9fcc71b2d94ce15319aff7a6",
+      "path": "content/posts/game-reviews-and-research/steam-app-27000.md",
+      "source": "curator"
+    },
+    "curator:274170": {
+      "appid": "274170",
+      "hash": "fef581e16e88abc57a16cd548cfc570834a4c615c134127d07952997ed1799d8",
+      "path": "content/posts/game-reviews-and-research/steam-app-274170.md",
+      "source": "curator"
+    },
+    "curator:2744430": {
+      "appid": "2744430",
+      "hash": "3b7f17795eb69b8e29916268c25b52ee415548c9347a654814c344f8bd9cb59c",
+      "path": "content/posts/game-reviews-and-research/steam-app-2744430.md",
+      "source": "curator"
+    },
+    "curator:2796180": {
+      "appid": "2796180",
+      "hash": "b5e3df293472050117b10f58354b606b77bc850f4d6e1c1880c29d0318134d2f",
+      "path": "content/posts/game-reviews-and-research/steam-app-2796180.md",
+      "source": "curator"
+    },
+    "curator:2835570": {
+      "appid": "2835570",
+      "hash": "5af680ab30fcfec669f3c1ded0bf1176663820b64de83e2b3eb1cf8153e11cca",
+      "path": "content/posts/game-reviews-and-research/steam-app-2835570.md",
+      "source": "curator"
+    },
+    "curator:294370": {
+      "appid": "294370",
+      "hash": "40d3dbb3c03d79a1ca8cba1e258e954b6364583fe98b67af6a34108de5b5dd0a",
+      "path": "content/posts/game-reviews-and-research/steam-app-294370.md",
+      "source": "curator"
+    },
+    "curator:297000": {
+      "appid": "297000",
+      "hash": "39169d05ddd8596047fdec34887b524d21f6b7ea7f7059ea084a71acdbdefd54",
+      "path": "content/posts/game-reviews-and-research/steam-app-297000.md",
+      "source": "curator"
+    },
+    "curator:2988580": {
+      "appid": "2988580",
+      "hash": "075842cb672300eec6134500cb219c751d5d834d0c5691c3bd3ec2f0345b686e",
+      "path": "content/posts/game-reviews-and-research/steam-app-2988580.md",
+      "source": "curator"
+    },
+    "curator:3132930": {
+      "appid": "3132930",
+      "hash": "17aeeb03be924f3064eabf3d9661ee4a01b27b86952f674ab3ab209084115567",
+      "path": "content/posts/game-reviews-and-research/steam-app-3132930.md",
+      "source": "curator"
+    },
+    "curator:322450": {
+      "appid": "322450",
+      "hash": "ab1c26e6fcf5b80c233dd0516f783c4988704683b804ce890096bbf789a92816",
+      "path": "content/posts/game-reviews-and-research/steam-app-322450.md",
+      "source": "curator"
+    },
+    "curator:3240220": {
+      "appid": "3240220",
+      "hash": "2c8cc9a4c47a26f12d457dea6d43676d9039daf836e680223aed3839c526eb27",
+      "path": "content/posts/game-reviews-and-research/steam-app-3240220.md",
+      "source": "curator"
+    },
+    "curator:325610": {
+      "appid": "325610",
+      "hash": "96b029eb34603a7ebd4d72fcd6948bed817801567a1026d849b926be2063135b",
+      "path": "content/posts/game-reviews-and-research/steam-app-325610.md",
+      "source": "curator"
+    },
+    "curator:3310": {
+      "appid": "3310",
+      "hash": "cabef10857bd31b20c18ae8e657c01b9a927f051812b40c0bcbfed8fc69cada8",
+      "path": "content/posts/game-reviews-and-research/steam-app-3310.md",
+      "source": "curator"
+    },
+    "curator:3330": {
+      "appid": "3330",
+      "hash": "32bd9ab9f028c8b5a18ec9b00c632ba57a6f5e3dc8d099d7817ffc367874de80",
+      "path": "content/posts/game-reviews-and-research/steam-app-3330.md",
+      "source": "curator"
+    },
+    "curator:354240": {
+      "appid": "354240",
+      "hash": "594695d6e9d0b427193eb94ad0ab62768fde7f70492ffb2481e9721ee4e4bdd0",
+      "path": "content/posts/game-reviews-and-research/steam-app-354240.md",
+      "source": "curator"
+    },
+    "curator:356570": {
+      "appid": "356570",
+      "hash": "7651af2219993d86ff518785ec3ace68bf6da8548e62b8dc15806cbeeb0e5c3a",
+      "path": "content/posts/game-reviews-and-research/steam-app-356570.md",
+      "source": "curator"
+    },
+    "curator:3590": {
+      "appid": "3590",
+      "hash": "74d1e0048d695c05661bcc1aa075a4b773fcc47b759a87e33cda890f30b3713c",
+      "path": "content/posts/game-reviews-and-research/steam-app-3590.md",
+      "source": "curator"
+    },
+    "curator:3595230": {
+      "appid": "3595230",
+      "hash": "2974e096475ff5265682f3331f4052c88e7d9d68c6860106bfdd907bac0ad6b4",
+      "path": "content/posts/game-reviews-and-research/steam-app-3595230.md",
+      "source": "curator"
+    },
+    "curator:362960": {
+      "appid": "362960",
+      "hash": "32da69c764d16745e8b04ba521271e92d4ba2e044106475d68e90d6cf63fc2d6",
+      "path": "content/posts/game-reviews-and-research/steam-app-362960.md",
+      "source": "curator"
+    },
+    "curator:3654560": {
+      "appid": "3654560",
+      "hash": "b6042a976fceef6b3d11b92fdec0105c5ded65605df2b434a5452c652befe312",
+      "path": "content/posts/game-reviews-and-research/steam-app-3654560.md",
+      "source": "curator"
+    },
+    "curator:366250": {
+      "appid": "366250",
+      "hash": "2b1963c70c7a80583ba2353340684cab9c10053428aa35fd6b844dedb01dd179",
+      "path": "content/posts/game-reviews-and-research/steam-app-366250.md",
+      "source": "curator"
+    },
+    "curator:366260": {
+      "appid": "366260",
+      "hash": "5b27ef547199bdefe7676ca969d659b0b5e95d84695f90d1a46217d218839853",
+      "path": "content/posts/game-reviews-and-research/steam-app-366260.md",
+      "source": "curator"
+    },
+    "curator:40700": {
+      "appid": "40700",
+      "hash": "1af6f8476ead153bf3d0056f65f7c187e75d107fff7e97762ff9a4541bbb0d71",
+      "path": "content/posts/game-reviews-and-research/steam-app-40700.md",
+      "source": "curator"
+    },
+    "curator:412020": {
+      "appid": "412020",
+      "hash": "4798383aba3d61388009daf96a8b04c25be9f99a00916e5ed0a632b4f6a48d41",
+      "path": "content/posts/game-reviews-and-research/steam-app-412020.md",
+      "source": "curator"
+    },
+    "curator:414700": {
+      "appid": "414700",
+      "hash": "48770242164c6e45c6493981524998f1b866945664631b568554e5c2d15ce864",
+      "path": "content/posts/game-reviews-and-research/steam-app-414700.md",
+      "source": "curator"
+    },
+    "curator:4215800": {
+      "appid": "4215800",
+      "hash": "f22dcca5d650ee42bd0bc1bdaf3debbde4d4a3ae289e2db8aa5ca2ff3bbfb1b2",
+      "path": "content/posts/game-reviews-and-research/steam-app-4215800.md",
+      "source": "curator"
+    },
+    "curator:4248590": {
+      "appid": "4248590",
+      "hash": "8b1c89c1faa96d3373722b81d575742c97ad8c55db6e8e54a830ab32dda167dd",
+      "path": "content/posts/game-reviews-and-research/steam-app-4248590.md",
+      "source": "curator"
+    },
+    "curator:447040": {
+      "appid": "447040",
+      "hash": "407e0f62afd2aa4e35c8701b028a0c5fe301ac1ad3f2872fa3fd120b55ec45eb",
+      "path": "content/posts/game-reviews-and-research/steam-app-447040.md",
+      "source": "curator"
+    },
+    "curator:456670": {
+      "appid": "456670",
+      "hash": "7d93341d9efdebd0ca9e004613297f0d669e5b88839760fe60ce467ba2edde52",
+      "path": "content/posts/game-reviews-and-research/steam-app-456670.md",
+      "source": "curator"
+    },
+    "curator:4585880": {
+      "appid": "4585880",
+      "hash": "394e83a74782c7350e89591e74b17e85d8f811fdffb058fafd98632015c587d5",
+      "path": "content/posts/game-reviews-and-research/steam-app-4585880.md",
+      "source": "curator"
+    },
+    "curator:465840": {
+      "appid": "465840",
+      "hash": "d131465ed2dea8ba8a375ee0a6d3374c551354ecee8503d61c3d0e037509933d",
+      "path": "content/posts/game-reviews-and-research/steam-app-465840.md",
+      "source": "curator"
+    },
+    "curator:474750": {
+      "appid": "474750",
+      "hash": "2ec5aebd22fb4c580df94d51784a5c785f43ddca4068c3b1ed81829dc64e5279",
+      "path": "content/posts/game-reviews-and-research/steam-app-474750.md",
+      "source": "curator"
+    },
+    "curator:476600": {
+      "appid": "476600",
+      "hash": "b430e7a36d1d90fc26533e5403d3f3a91cd085b95ee45432d98046a07526b2ee",
+      "path": "content/posts/game-reviews-and-research/steam-app-476600.md",
+      "source": "curator"
+    },
+    "curator:500": {
+      "appid": "500",
+      "hash": "38b2ce456caabefec10c8e5033f05cfc0da43e4d07734d8a83d5ecc073188d24",
+      "path": "content/posts/game-reviews-and-research/steam-app-500.md",
+      "source": "curator"
+    },
+    "curator:572430": {
+      "appid": "572430",
+      "hash": "64e35533727e95f376fe308936271105317da44bcd3a447be4ae8d7b740d387f",
+      "path": "content/posts/game-reviews-and-research/steam-app-572430.md",
+      "source": "curator"
+    },
+    "curator:633460": {
+      "appid": "633460",
+      "hash": "6c1c40bfbbffb92c388850ebf9235b9caf8b07c47ef6cad014a7063febc309cd",
+      "path": "content/posts/game-reviews-and-research/steam-app-633460.md",
+      "source": "curator"
+    },
+    "curator:686440": {
+      "appid": "686440",
+      "hash": "f86080b081ac18411659fc90547bb4ccac8cf558f0d99ef8cff957a2c5e42c56",
+      "path": "content/posts/game-reviews-and-research/steam-app-686440.md",
+      "source": "curator"
+    },
+    "curator:717640": {
+      "appid": "717640",
+      "hash": "0a91502f1bf37f7d442c6b826a77d8bf61bfe020dc0c9bbb5d9482ced1046579",
+      "path": "content/posts/game-reviews-and-research/steam-app-717640.md",
+      "source": "curator"
+    },
+    "curator:733790": {
+      "appid": "733790",
+      "hash": "2a7af7990cb431b8e9e1b064eddbdf53a626452ad69d0ebbc9ff2023e57b4a0e",
+      "path": "content/posts/game-reviews-and-research/steam-app-733790.md",
+      "source": "curator"
+    },
+    "curator:736260": {
+      "appid": "736260",
+      "hash": "5505c3319c503fad9f6ab514130d3df2cd08bf55e09d1c504533bbbe62415c9e",
+      "path": "content/posts/game-reviews-and-research/steam-app-736260.md",
+      "source": "curator"
+    },
+    "curator:778390": {
+      "appid": "778390",
+      "hash": "d4762a6237eb27a17fa2dc48dca0c46e406b0756900a6e5849710007cab20113",
+      "path": "content/posts/game-reviews-and-research/steam-app-778390.md",
+      "source": "curator"
+    },
+    "curator:778400": {
+      "appid": "778400",
+      "hash": "aa560237403daabf54638d51ba399511a327a19e8c54fd5a5ab0c6a69f5373d6",
+      "path": "content/posts/game-reviews-and-research/steam-app-778400.md",
+      "source": "curator"
+    },
+    "curator:824830": {
+      "appid": "824830",
+      "hash": "03109f7391ee00014ec676e9a534e132af66301cd0f979a5187dd76616d35edc",
+      "path": "content/posts/game-reviews-and-research/steam-app-824830.md",
+      "source": "curator"
+    },
+    "curator:883710": {
+      "appid": "883710",
+      "hash": "80d2c899e74c0ef725c1f869217d19f341d74771cfb76cf23e3f624cb5385cd2",
+      "path": "content/posts/game-reviews-and-research/steam-app-883710.md",
+      "source": "curator"
+    },
+    "curator:9010": {
+      "appid": "9010",
+      "hash": "2d14632484847fa00b3e888d4e41b2b8826f25c0e0315c2d705cc931cfc346d9",
+      "path": "content/posts/game-reviews-and-research/steam-app-9010.md",
+      "source": "curator"
+    },
+    "curator:956030": {
+      "appid": "956030",
+      "hash": "b675c2cb2f6a7c701bf7b4209be235b326371fa639261e107e4e8bdde7677bb3",
+      "path": "content/posts/game-reviews-and-research/steam-app-956030.md",
+      "source": "curator"
+    },
+    "direct:10": {
+      "appid": "10",
+      "hash": "7efd0c8a779fdd5c0c8b4b0eef948bcb77910db69efea4d77d33575a68acb619",
+      "path": "content/posts/game-reviews-and-research/steam-app-10.md",
+      "source": "direct"
+    },
+    "direct:1000360": {
+      "appid": "1000360",
+      "hash": "0cf4666182f041cfd515b9e6e7bbde1583838db33ca806f7f47bbc3e5021c84e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1000360.md",
+      "source": "direct"
+    },
+    "direct:1013750": {
+      "appid": "1013750",
+      "hash": "fa83bd711723609e8d7127af564f0e5b54cc8b23b837e34a2805780c1c6ba0fd",
+      "path": "content/posts/game-reviews-and-research/steam-app-1013750.md",
+      "source": "direct"
+    },
+    "direct:1029780": {
+      "appid": "1029780",
+      "hash": "43d0bcc4c6ad0f8cde79588a3ecb217321a86074e81b0e04c32faded6cd3a415",
+      "path": "content/posts/game-reviews-and-research/steam-app-1029780.md",
+      "source": "direct"
+    },
+    "direct:1046930": {
+      "appid": "1046930",
+      "hash": "93c76f24c5ef7561eabd2d052c7aaeb9cb65bfdab5a18fdbbe736460c3880e8e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1046930.md",
+      "source": "direct"
+    },
+    "direct:1047010": {
+      "appid": "1047010",
+      "hash": "1b16b12524243c90d66c7328433ccee1b1e14f4f72ece695ac556cd115728850",
+      "path": "content/posts/game-reviews-and-research/steam-app-1047010.md",
+      "source": "direct"
+    },
+    "direct:1049280": {
+      "appid": "1049280",
+      "hash": "480f4afc14710c717c6355044ae6c06ddbed3fda4a4440d21172e4bc183445ae",
+      "path": "content/posts/game-reviews-and-research/steam-app-1049280.md",
+      "source": "direct"
+    },
+    "direct:1070550": {
+      "appid": "1070550",
+      "hash": "bc6f8c17aa6a83f4a806a18136fa602cdf05e766eb34c8e0a7a4d31e5e0b13e2",
+      "path": "content/posts/game-reviews-and-research/steam-app-1070550.md",
+      "source": "direct"
+    },
+    "direct:1073390": {
+      "appid": "1073390",
+      "hash": "8f32e6ed9b93ed21ff9c41bbf4fc5a4353738c8627116276c896d6da2d690e4e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1073390.md",
+      "source": "direct"
+    },
+    "direct:107410": {
+      "appid": "107410",
+      "hash": "51926939aa3e7dc585491e88aee0f267635607269df848bdcd232aada53cfbac",
+      "path": "content/posts/game-reviews-and-research/steam-app-107410.md",
+      "source": "direct"
+    },
+    "direct:1078420": {
+      "appid": "1078420",
+      "hash": "330d24da2cfdf0af53cd8f66b5d0b33efbe8a1577b825fd4edd1d085356ffcc3",
+      "path": "content/posts/game-reviews-and-research/steam-app-1078420.md",
+      "source": "direct"
+    },
+    "direct:1078970": {
+      "appid": "1078970",
+      "hash": "e075738bc6db36f1964e5233c12fcce3ed4162e4c02ffe160d806992470db4d6",
+      "path": "content/posts/game-reviews-and-research/steam-app-1078970.md",
+      "source": "direct"
+    },
+    "direct:108600": {
+      "appid": "108600",
+      "hash": "0297fdadb10dad69645eb602deb0ce088750f0524aee8fb3d9dfde41c4f6019c",
+      "path": "content/posts/game-reviews-and-research/steam-app-108600.md",
+      "source": "direct"
+    },
+    "direct:113200": {
+      "appid": "113200",
+      "hash": "8b8fa4046e10e19d6da5555a28dd04ef64d620cb8cb1e934df8e71170d3134cb",
+      "path": "content/posts/game-reviews-and-research/steam-app-113200.md",
+      "source": "direct"
+    },
+    "direct:1144200": {
+      "appid": "1144200",
+      "hash": "49b8ca88c701c23704a7fdc8e8d973fae212b59bcaef8acd8d4fd8564f6823a2",
+      "path": "content/posts/game-reviews-and-research/steam-app-1144200.md",
+      "source": "direct"
+    },
+    "direct:1144770": {
+      "appid": "1144770",
+      "hash": "d78b970a275e97d0b0386c1cee15652bea674b9e0a4642d0d16d55dd06924b90",
+      "path": "content/posts/game-reviews-and-research/steam-app-1144770.md",
+      "source": "direct"
+    },
+    "direct:1146310": {
+      "appid": "1146310",
+      "hash": "7c0bea681bee644a5998ec1735cb874d58d36f657e638a5df7f288f8ad0f7d22",
+      "path": "content/posts/game-reviews-and-research/steam-app-1146310.md",
+      "source": "direct"
+    },
+    "direct:1151340": {
+      "appid": "1151340",
+      "hash": "dffd21667ac8c3a0e987f25e5971c050e0ca40464a2fc2f54ccc1da3293751ef",
+      "path": "content/posts/game-reviews-and-research/steam-app-1151340.md",
+      "source": "direct"
+    },
+    "direct:1166290": {
+      "appid": "1166290",
+      "hash": "43cd52dcf182cda9f0b1e475019c4aac3848ccc30baf7f5d60551a880b569c5d",
+      "path": "content/posts/game-reviews-and-research/steam-app-1166290.md",
+      "source": "direct"
+    },
+    "direct:1174180": {
+      "appid": "1174180",
+      "hash": "a6ddc991906049ffd89a1c5cf1e56ef2f991ece9f12e34c572b734a2805d7b5e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1174180.md",
+      "source": "direct"
+    },
+    "direct:1178030": {
+      "appid": "1178030",
+      "hash": "8bee7ee87b0d9d1ade1b5e55079c5cab171912689bf0dcdec78a38bbae06129e",
+      "path": "content/posts/game-reviews-and-research/steam-app-1178030.md",
+      "source": "direct"
+    },
+    "direct:1180320": {
+      "appid": "1180320",
+      "hash": "fa6e5f92c127bcc803f04432270cc0869c6d0b77a4d29a9c70b7a779932a1573",
+      "path": "content/posts/game-reviews-and-research/steam-app-1180320.md",
+      "source": "direct"
+    },
+    "direct:1196590": {
+      "appid": "1196590",
+      "hash": "2b31e237594420ac23ec2ea9570fe7425a74c9a61e57957842d3a6326b617e0b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1196590.md",
+      "source": "direct"
+    },
+    "direct:1202900": {
+      "appid": "1202900",
+      "hash": "5d7f54cf9d6c1ca1600bfe2d6d0a1fd2f5ffb6aeb07cb09f6a20bf9ddcb6579b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1202900.md",
+      "source": "direct"
+    },
+    "direct:1222700": {
+      "appid": "1222700",
+      "hash": "fb91b998ce816bbd282856124af8b1da8eb520c2ec0b0ebe67d242becc3b923b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1222700.md",
+      "source": "direct"
+    },
+    "direct:1245430": {
+      "appid": "1245430",
+      "hash": "117c28238dfb0a80de1a51ca97d521abc1c93b554ca18b50fc05a235958d94ee",
+      "path": "content/posts/game-reviews-and-research/steam-app-1245430.md",
+      "source": "direct"
+    },
+    "direct:1259420": {
+      "appid": "1259420",
+      "hash": "060f2369cf912c1b935b34d95b8305db77ea402380feb8e0eb87d4c2a7c373fa",
+      "path": "content/posts/game-reviews-and-research/steam-app-1259420.md",
+      "source": "direct"
+    },
+    "direct:1262350": {
+      "appid": "1262350",
+      "hash": "279467f9174111fc89028e4da0f1ad9daaa4611e3a3bbc626423bc609dbdac1c",
+      "path": "content/posts/game-reviews-and-research/steam-app-1262350.md",
+      "source": "direct"
+    },
+    "direct:1265820": {
+      "appid": "1265820",
+      "hash": "ebe1572d1bbf208d9c6821dd81c1543c032f28c13ccb23973a8f1732bc273d12",
+      "path": "content/posts/game-reviews-and-research/steam-app-1265820.md",
+      "source": "direct"
+    },
+    "direct:1273260": {
+      "appid": "1273260",
+      "hash": "1c8965f210fc142772518dbe96900b8cc23792b36d263ba0b8f7e5eb2410d8cd",
+      "path": "content/posts/game-reviews-and-research/steam-app-1273260.md",
+      "source": "direct"
+    },
+    "direct:1282730": {
+      "appid": "1282730",
+      "hash": "fcf4d9e83b5ee6f942f8a79cc07af413447c980ae73d7b6c7c951ddd836cc1bc",
+      "path": "content/posts/game-reviews-and-research/steam-app-1282730.md",
+      "source": "direct"
+    },
+    "direct:1289310": {
+      "appid": "1289310",
+      "hash": "745b1f8175ac83d46a5b3e4fd4562f35cfaa434606ab3d03f4e8db8d7ceff55b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1289310.md",
+      "source": "direct"
+    },
+    "direct:1297330": {
+      "appid": "1297330",
+      "hash": "f581ef38e870822c7fb4ed7fc76dc0705c609b3aa3f5fefdecc953d3aad5206a",
+      "path": "content/posts/game-reviews-and-research/steam-app-1297330.md",
+      "source": "direct"
+    },
+    "direct:1338580": {
+      "appid": "1338580",
+      "hash": "52a41fb748e5c8780e03441ac45f9289e0f31fb0712477decbdda1e4c27dc561",
+      "path": "content/posts/game-reviews-and-research/steam-app-1338580.md",
+      "source": "direct"
+    },
+    "direct:1361700": {
+      "appid": "1361700",
+      "hash": "f9d91e5ba77b4b2939f5ffb5aabe94ccafa46c72f9e2792f40b9280da20f6fae",
+      "path": "content/posts/game-reviews-and-research/steam-app-1361700.md",
+      "source": "direct"
+    },
+    "direct:1370050": {
+      "appid": "1370050",
+      "hash": "ddc416e0dfa237b51d2aa7be3bb8e70340d4b9514ad238efeabd346a2f2fe9cb",
+      "path": "content/posts/game-reviews-and-research/steam-app-1370050.md",
+      "source": "direct"
+    },
+    "direct:1392820": {
+      "appid": "1392820",
+      "hash": "23e25f8f563249a49be9130e8f36271fa4613a28532e65046c5747fb6c2c9c6b",
+      "path": "content/posts/game-reviews-and-research/steam-app-1392820.md",
+      "source": "direct"
+    },
+    "direct:1410710": {
+      "appid": "1410710",
+      "hash": "368727f58b4b7f194f7e3f0abdfcdc7ccbb57626ddce718752ff7442fe3e96af",
+      "path": "content/posts/game-reviews-and-research/steam-app-1410710.md",
+      "source": "direct"
+    },
+    "direct:1432100": {
+      "appid": "1432100",
+      "hash": "8b6e877f85360e5438fff1706e3629221f9c8e8ee826b20493861b6df02484af",
+      "path": "content/posts/game-reviews-and-research/steam-app-1432100.md",
+      "source": "direct"
+    },
+    "direct:1444350": {
+      "appid": "1444350",
+      "hash": "5c6d62286f87f98c50174d3cb03d908cf3c0391e507bd2830f9789debff9dbeb",
+      "path": "content/posts/game-reviews-and-research/steam-app-1444350.md",
+      "source": "direct"
+    },
+    "direct:1444650": {
+      "appid": "1444650",
+      "hash": "d1ce0fcce0b0cb96ffb9824670f0f058b856d7edb97819dd80201f574d0777fc",
+      "path": "content/posts/game-reviews-and-research/steam-app-1444650.md",
+      "source": "direct"
+    },
+    "direct:1486630": {
+      "appid": "1486630",
+      "hash": "06c9c641e9552650e8d4d0f4f6c73522d2184198efb46ebb77d36d7b7a6158eb",
+      "path": "content/posts/game-reviews-and-research/steam-app-1486630.md",
+      "source": "direct"
+    },
+    "direct:1574270": {
+      "appid": "1574270",
+      "hash": "9656bc356d5dd18a72c5121e13982cd797045615b4d7d630b6ff384a4a4288fc",
+      "path": "content/posts/game-reviews-and-research/steam-app-1574270.md",
+      "source": "direct"
+    },
+    "direct:1578650": {
+      "appid": "1578650",
+      "hash": "f111fbdad9a5d59c2ac71fbb12ba15ba218ed04a4ee81df0be849608d7b301a4",
+      "path": "content/posts/game-reviews-and-research/steam-app-1578650.md",
+      "source": "direct"
+    },
+    "direct:1604000": {
+      "appid": "1604000",
+      "hash": "de312b99b308df49b3f70090e00af4e60897edf8de0558f864a1c2622758da24",
+      "path": "content/posts/game-reviews-and-research/steam-app-1604000.md",
+      "source": "direct"
+    },
+    "direct:1604270": {
+      "appid": "1604270",
+      "hash": "efe4208b463afc18ce22ecfaf86e1819ed43daa0f3a982b51bcf6425095146fb",
+      "path": "content/posts/game-reviews-and-research/steam-app-1604270.md",
+      "source": "direct"
+    },
+    "direct:1615100": {
+      "appid": "1615100",
+      "hash": "6a4a5d573c2675a8ff6830bf5778288dae47ebb18a54e93253ffdd217f234bc8",
+      "path": "content/posts/game-reviews-and-research/steam-app-1615100.md",
+      "source": "direct"
+    },
+    "direct:1663850": {
+      "appid": "1663850",
+      "hash": "139508a7cb7befc5c5423522ca0c4403fb9582ae1e41453bf1c276235c8d4e0a",
+      "path": "content/posts/game-reviews-and-research/steam-app-1663850.md",
+      "source": "direct"
+    },
+    "direct:1693980": {
+      "appid": "1693980",
+      "hash": "9f5f88ed716bf7357facaba0b66ae40514c13829ad7c5152ee78ea8894a0fff4",
+      "path": "content/posts/game-reviews-and-research/steam-app-1693980.md",
+      "source": "direct"
+    },
+    "direct:1708150": {
+      "appid": "1708150",
+      "hash": "34e0ca353c633a9a3a265e259c84ed2bff17833429e6bfa5235012eea9251b8a",
+      "path": "content/posts/game-reviews-and-research/steam-app-1708150.md",
+      "source": "direct"
+    },
+    "direct:1789480": {
+      "appid": "1789480",
+      "hash": "5bd374439f10de5411a81fb7328c0879fc67c1cdf7bde97140dcc59549a99f65",
+      "path": "content/posts/game-reviews-and-research/steam-app-1789480.md",
+      "source": "direct"
+    },
+    "direct:1794680": {
+      "appid": "1794680",
+      "hash": "e05baf510956902b64dc1f117e5fa022332303feb3b8693c30073fa9c60e4e75",
+      "path": "content/posts/game-reviews-and-research/steam-app-1794680.md",
+      "source": "direct"
+    },
+    "direct:1808500": {
+      "appid": "1808500",
+      "hash": "3e4489c0cd8e5751db7892befacf8855fccd7678295d786bea49da0387d8e186",
+      "path": "content/posts/game-reviews-and-research/steam-app-1808500.md",
+      "source": "direct"
+    },
+    "direct:1820740": {
+      "appid": "1820740",
+      "hash": "fdefdec32860a2fcbaff4d2007ab0f070bf8d169f72c22f13db628a6b138b567",
+      "path": "content/posts/game-reviews-and-research/steam-app-1820740.md",
+      "source": "direct"
+    },
+    "direct:1888930": {
+      "appid": "1888930",
+      "hash": "75d8818d154be1b694c41865a2ba42f8c503a464970dd4ac452c8f1e02cdb112",
+      "path": "content/posts/game-reviews-and-research/steam-app-1888930.md",
+      "source": "direct"
+    },
+    "direct:1895820": {
+      "appid": "1895820",
+      "hash": "37ec4c06fc7b12d7392a172727027474bfd5180746f1f719428e2fe94c45e52d",
+      "path": "content/posts/game-reviews-and-research/steam-app-1895820.md",
+      "source": "direct"
+    },
+    "direct:1942120": {
+      "appid": "1942120",
+      "hash": "451fd63a3908553916d3c67f12e91037ca586d027ff6a0c881684888a3e5ac11",
+      "path": "content/posts/game-reviews-and-research/steam-app-1942120.md",
+      "source": "direct"
+    },
+    "direct:1979320": {
+      "appid": "1979320",
+      "hash": "c4f7c2580c0777536681cfba146a3595361db591a836bf92af46b3c059857abe",
+      "path": "content/posts/game-reviews-and-research/steam-app-1979320.md",
+      "source": "direct"
+    },
+    "direct:1989270": {
+      "appid": "1989270",
+      "hash": "add840a8fc502988a14354741e7ab0425a592caebef1aec4098a6afd98afff92",
+      "path": "content/posts/game-reviews-and-research/steam-app-1989270.md",
+      "source": "direct"
+    },
+    "direct:203160": {
+      "appid": "203160",
+      "hash": "9b503b68864fc2b669258495fc73ef3857bb6152f8fa13e72afe19cc14809e07",
+      "path": "content/posts/game-reviews-and-research/steam-app-203160.md",
+      "source": "direct"
+    },
+    "direct:2050650": {
+      "appid": "2050650",
+      "hash": "ec6e04e865f309476443ae1ca9f2f51e5a02b4b14953cd760053e25ce779f528",
+      "path": "content/posts/game-reviews-and-research/steam-app-2050650.md",
+      "source": "direct"
+    },
+    "direct:2051500": {
+      "appid": "2051500",
+      "hash": "2cde131cdd4d6675c8241cf5f01e994bb8e03892f442f51b011541f109b64451",
+      "path": "content/posts/game-reviews-and-research/steam-app-2051500.md",
+      "source": "direct"
+    },
+    "direct:206190": {
+      "appid": "206190",
+      "hash": "f0972a9eea60cc512ff555379fb441f25db5a94d8529217371abca6eb3efc499",
+      "path": "content/posts/game-reviews-and-research/steam-app-206190.md",
+      "source": "direct"
+    },
+    "direct:2124490": {
+      "appid": "2124490",
+      "hash": "d915c46ae7a3fae86802b097f4e1774249ee89a5871d37ebce426729e8465ab2",
+      "path": "content/posts/game-reviews-and-research/steam-app-2124490.md",
+      "source": "direct"
+    },
+    "direct:214340": {
+      "appid": "214340",
+      "hash": "f1d93e5a1ecb035f5e627a2d16b360c5b7f474c81c01ea4e4380670e722141ef",
+      "path": "content/posts/game-reviews-and-research/steam-app-214340.md",
+      "source": "direct"
+    },
+    "direct:2172260": {
+      "appid": "2172260",
+      "hash": "8f87e84c628f16a7a6d1ac7ad6f2c05401705f446bdf066f210b7bc82126abb5",
+      "path": "content/posts/game-reviews-and-research/steam-app-2172260.md",
+      "source": "direct"
+    },
+    "direct:220": {
+      "appid": "220",
+      "hash": "8d50d9c35b53672e893acda83d2f3362c747fddee713a99852c5dd77614b726e",
+      "path": "content/posts/game-reviews-and-research/steam-app-220.md",
+      "source": "direct"
+    },
+    "direct:2209680": {
+      "appid": "2209680",
+      "hash": "0e9de8043b0bb3b7885d1d1b202672ac3c370af0630910416ca405dfb857adc2",
+      "path": "content/posts/game-reviews-and-research/steam-app-2209680.md",
+      "source": "direct"
+    },
+    "direct:221100": {
+      "appid": "221100",
+      "hash": "c5028bf73d7af1039756b70143e86abd9e16843a9c911102407a2b66e3807519",
+      "path": "content/posts/game-reviews-and-research/steam-app-221100.md",
+      "source": "direct"
+    },
+    "direct:221910": {
+      "appid": "221910",
+      "hash": "5cbdd9c4ba8e8b5c88dd7c616f74e263f09e73870e5b68790e3ccc430996f00e",
+      "path": "content/posts/game-reviews-and-research/steam-app-221910.md",
+      "source": "direct"
+    },
+    "direct:2239150": {
+      "appid": "2239150",
+      "hash": "2676730632fbe6326b96f948da1f9ec54916ebf18b832af4761baf8a9523baf9",
+      "path": "content/posts/game-reviews-and-research/steam-app-2239150.md",
+      "source": "direct"
+    },
+    "direct:2240530": {
+      "appid": "2240530",
+      "hash": "f0a624d85102f02a8bff19a9d7323f316825693da13b05599313955fd1214c6c",
+      "path": "content/posts/game-reviews-and-research/steam-app-2240530.md",
+      "source": "direct"
+    },
+    "direct:230290": {
+      "appid": "230290",
+      "hash": "4f911c4ce8ca3fda091ee9a39d5f25ee51299bb57a69ed1694e8927a75f4cac3",
+      "path": "content/posts/game-reviews-and-research/steam-app-230290.md",
+      "source": "direct"
+    },
+    "direct:2319390": {
+      "appid": "2319390",
+      "hash": "f5f1bc8b45fd4f90fda04100c4ec39561948c8f5868be2edd112cb4fb121d6ca",
+      "path": "content/posts/game-reviews-and-research/steam-app-2319390.md",
+      "source": "direct"
+    },
+    "direct:233150": {
+      "appid": "233150",
+      "hash": "3ca36e055682db5fa4b1e5bf03675502c3e564435bdb922b059ce0976913ac05",
+      "path": "content/posts/game-reviews-and-research/steam-app-233150.md",
+      "source": "direct"
+    },
+    "direct:233860": {
+      "appid": "233860",
+      "hash": "1fef309f773c83cae261c4d1ae1da6bd3e1cb6ba79cbe4fbb18218fb94784a45",
+      "path": "content/posts/game-reviews-and-research/steam-app-233860.md",
+      "source": "direct"
+    },
+    "direct:2406770": {
+      "appid": "2406770",
+      "hash": "a06d65c850a76883553afd222a6b08d9bd8155b1a9d02ada5262cb8b82fbc1a9",
+      "path": "content/posts/game-reviews-and-research/steam-app-2406770.md",
+      "source": "direct"
+    },
+    "direct:240720": {
+      "appid": "240720",
+      "hash": "e693e58a5e4e1c06366d7a88dc376f833de2dba0b034161a5229994ba99e754b",
+      "path": "content/posts/game-reviews-and-research/steam-app-240720.md",
+      "source": "direct"
+    },
+    "direct:242760": {
+      "appid": "242760",
+      "hash": "857f67bd8ec92e243fbddaea60fc87d5c0e11986683023bc0166eec9e5fee581",
+      "path": "content/posts/game-reviews-and-research/steam-app-242760.md",
+      "source": "direct"
+    },
+    "direct:2437040": {
+      "appid": "2437040",
+      "hash": "1611fa9d6ea479b139f2edc26cce4931c2a4e56c60f2ff97201aedde2f429af8",
+      "path": "content/posts/game-reviews-and-research/steam-app-2437040.md",
+      "source": "direct"
+    },
+    "direct:246620": {
+      "appid": "246620",
+      "hash": "5741ebff238583987fc6914d21354c5f92c5c92afce9a2cee08da61e1b045264",
+      "path": "content/posts/game-reviews-and-research/steam-app-246620.md",
+      "source": "direct"
+    },
+    "direct:253330": {
+      "appid": "253330",
+      "hash": "8059cfbdced5f9625a75076494f52259fee51b9681a1efa270c16e83bbf7b163",
+      "path": "content/posts/game-reviews-and-research/steam-app-253330.md",
+      "source": "direct"
+    },
+    "direct:257170": {
+      "appid": "257170",
+      "hash": "5b0cc2189a3e84ddc05ad5e6f753823c9940aa601f4e8d629292a68c42e9ad3c",
+      "path": "content/posts/game-reviews-and-research/steam-app-257170.md",
+      "source": "direct"
+    },
+    "direct:2651330": {
+      "appid": "2651330",
+      "hash": "e974e88b732c5c117a0069f0d95daf3423e37a705de466d811537b8d85a56e33",
+      "path": "content/posts/game-reviews-and-research/steam-app-2651330.md",
+      "source": "direct"
+    },
+    "direct:2663530": {
+      "appid": "2663530",
+      "hash": "9ea53070c46b997c9e689884629700e9e083960f11755b2f86cd87a5f8831552",
+      "path": "content/posts/game-reviews-and-research/steam-app-2663530.md",
+      "source": "direct"
+    },
+    "direct:270150": {
+      "appid": "270150",
+      "hash": "5b9a7ee3b77bff59c744ebdafd08db058341434d2b0a8ee4ea4661a38b63f237",
+      "path": "content/posts/game-reviews-and-research/steam-app-270150.md",
+      "source": "direct"
+    },
+    "direct:274520": {
+      "appid": "274520",
+      "hash": "f8b373c726fe43b4a8e35943dd4997eef0fb368d46741992d15689d3ed85e946",
+      "path": "content/posts/game-reviews-and-research/steam-app-274520.md",
+      "source": "direct"
+    },
+    "direct:275850": {
+      "appid": "275850",
+      "hash": "a4da261566179855792ba9243275996b15f05853e1209b3eb7b3f969a33a94c6",
+      "path": "content/posts/game-reviews-and-research/steam-app-275850.md",
+      "source": "direct"
+    },
+    "direct:2777240": {
+      "appid": "2777240",
+      "hash": "29600b4175efc686438d7831ac60e23d78799b67c4da9cb17f7dc68a53aeff41",
+      "path": "content/posts/game-reviews-and-research/steam-app-2777240.md",
+      "source": "direct"
+    },
+    "direct:282070": {
+      "appid": "282070",
+      "hash": "78447331f8530b78712e7a69947190f20016fd64d457743fc2a1b0ba26a21387",
+      "path": "content/posts/game-reviews-and-research/steam-app-282070.md",
+      "source": "direct"
+    },
+    "direct:2863680": {
+      "appid": "2863680",
+      "hash": "833ae257b535317a06d60294a4623acd1f5f4952a6f449594c2acefcf0e61511",
+      "path": "content/posts/game-reviews-and-research/steam-app-2863680.md",
+      "source": "direct"
+    },
+    "direct:286690": {
+      "appid": "286690",
+      "hash": "8b7e44596c2e3ebd1e2321082f6c5153fe9ac8f083cc9dc1f690357ef82662e8",
+      "path": "content/posts/game-reviews-and-research/steam-app-286690.md",
+      "source": "direct"
+    },
+    "direct:287390": {
+      "appid": "287390",
+      "hash": "2cbd22d691128ba51d420ee983bfe57974d0af64bf3812f3abdf97c68aae7d4b",
+      "path": "content/posts/game-reviews-and-research/steam-app-287390.md",
+      "source": "direct"
+    },
+    "direct:30": {
+      "appid": "30",
+      "hash": "4bd0d50ba6bc4b4a6944f85cd52b8645cfaf61f6087afbdd53ddcab572f439d1",
+      "path": "content/posts/game-reviews-and-research/steam-app-30.md",
+      "source": "direct"
+    },
+    "direct:304430": {
+      "appid": "304430",
+      "hash": "b400cf1e320944bfc7dea79d9ae2547141235be0222c8580cc1dc9a445980dba",
+      "path": "content/posts/game-reviews-and-research/steam-app-304430.md",
+      "source": "direct"
+    },
+    "direct:304930": {
+      "appid": "304930",
+      "hash": "77c0cc4ed7c7eb3d0585d1cc990a15721a3bec15d973a4e8d2bbb202765c5bf6",
+      "path": "content/posts/game-reviews-and-research/steam-app-304930.md",
+      "source": "direct"
+    },
+    "direct:310360": {
+      "appid": "310360",
+      "hash": "b86ac3a228f994a3ec7bc0a7fbbb3c029a7d99547b6191f79461de84088a39e5",
+      "path": "content/posts/game-reviews-and-research/steam-app-310360.md",
+      "source": "direct"
+    },
+    "direct:337320": {
+      "appid": "337320",
+      "hash": "672b4308b9c7c46a76a06d032fde9bac2c3e2afa9aa9e0e99adb3c8b9bb29601",
+      "path": "content/posts/game-reviews-and-research/steam-app-337320.md",
+      "source": "direct"
+    },
+    "direct:339190": {
+      "appid": "339190",
+      "hash": "88c94b97ed1b17ab1586f94a8ef7892bd3fabd435c4bd52039dcd58a6708594e",
+      "path": "content/posts/game-reviews-and-research/steam-app-339190.md",
+      "source": "direct"
+    },
+    "direct:341940": {
+      "appid": "341940",
+      "hash": "2299749db3ae9adec5394dd7eae01342e756643644ce3bd02fb5cb587977df01",
+      "path": "content/posts/game-reviews-and-research/steam-app-341940.md",
+      "source": "direct"
+    },
+    "direct:342180": {
+      "appid": "342180",
+      "hash": "334a6e7951a99f118f74788e081388f5771d11076d4821afe1e7ae8fa3111d84",
+      "path": "content/posts/game-reviews-and-research/steam-app-342180.md",
+      "source": "direct"
+    },
+    "direct:342310": {
+      "appid": "342310",
+      "hash": "9bad4bd3da797f1a161d56566c8c8df743eb5b801c5bcae5efed33b7c3be3edb",
+      "path": "content/posts/game-reviews-and-research/steam-app-342310.md",
+      "source": "direct"
+    },
+    "direct:34330": {
+      "appid": "34330",
+      "hash": "63768b9b4c810a52c9e0f85fa63c588ca0e6b34bbf8e9c550190788543789190",
+      "path": "content/posts/game-reviews-and-research/steam-app-34330.md",
+      "source": "direct"
+    },
+    "direct:35700": {
+      "appid": "35700",
+      "hash": "f8518463e550de20800d22240e7d90d9026d6573cea011c6374dceb7477395ba",
+      "path": "content/posts/game-reviews-and-research/steam-app-35700.md",
+      "source": "direct"
+    },
+    "direct:3570370": {
+      "appid": "3570370",
+      "hash": "fc47483bddf26e8bcba56508a314d23da2328d7b86620c9ae4570c9838e5cc38",
+      "path": "content/posts/game-reviews-and-research/steam-app-3570370.md",
+      "source": "direct"
+    },
+    "direct:359550": {
+      "appid": "359550",
+      "hash": "56917aa6769e542eecaf676a64cc20e61282ce455d47aee1913e06c1b08d708a",
+      "path": "content/posts/game-reviews-and-research/steam-app-359550.md",
+      "source": "direct"
+    },
+    "direct:362890": {
+      "appid": "362890",
+      "hash": "34dccbfa0272d4bd05b7c90e9e96b86e1e96a578bffe981fb252a59feba853ac",
+      "path": "content/posts/game-reviews-and-research/steam-app-362890.md",
+      "source": "direct"
+    },
+    "direct:368230": {
+      "appid": "368230",
+      "hash": "cbfdcbb7b43535baa2a27559aa12026ef965e4fa11cb4270629cb3beedefad46",
+      "path": "content/posts/game-reviews-and-research/steam-app-368230.md",
+      "source": "direct"
+    },
+    "direct:3692660": {
+      "appid": "3692660",
+      "hash": "1361e5f8320f9f59b9804e29a447fcf7d7891719d294698c059faffaddea4d59",
+      "path": "content/posts/game-reviews-and-research/steam-app-3692660.md",
+      "source": "direct"
+    },
+    "direct:3766920": {
+      "appid": "3766920",
+      "hash": "accffc77afece5a9472dc96fb716ee214132eecef574579e3f551808eaf841df",
+      "path": "content/posts/game-reviews-and-research/steam-app-3766920.md",
+      "source": "direct"
+    },
+    "direct:381210": {
+      "appid": "381210",
+      "hash": "ce5fdfd1918b426ebcdb856521fd5d0b0219c259e8269cf2080af2d57f47744d",
+      "path": "content/posts/game-reviews-and-research/steam-app-381210.md",
+      "source": "direct"
+    },
+    "direct:384180": {
+      "appid": "384180",
+      "hash": "b14e830ae78cac1fe0a2a203dbf064a38849369feec392aab6f371656daf376b",
+      "path": "content/posts/game-reviews-and-research/steam-app-384180.md",
+      "source": "direct"
+    },
+    "direct:387860": {
+      "appid": "387860",
+      "hash": "5c687fcf3f2b4da68c0036ca4ab59dec491b0a8f5ebd5848ee774c64d7f28107",
+      "path": "content/posts/game-reviews-and-research/steam-app-387860.md",
+      "source": "direct"
+    },
+    "direct:390290": {
+      "appid": "390290",
+      "hash": "f8300bd97ff893f124d79ebfea2b1efe68f2644e1bb8e91f9e7c239da814783a",
+      "path": "content/posts/game-reviews-and-research/steam-app-390290.md",
+      "source": "direct"
+    },
+    "direct:3907100": {
+      "appid": "3907100",
+      "hash": "141f17e9f195d0777a99677cd3151a05bf41c3bce687be564df03cd0743af8b3",
+      "path": "content/posts/game-reviews-and-research/steam-app-3907100.md",
+      "source": "direct"
+    },
+    "direct:391220": {
+      "appid": "391220",
+      "hash": "fd974418f3cdab9b9939e92394e995208b64770eb41639d68f7cd3b398b4d80e",
+      "path": "content/posts/game-reviews-and-research/steam-app-391220.md",
+      "source": "direct"
+    },
+    "direct:391540": {
+      "appid": "391540",
+      "hash": "8394b80b73f2e3c970cee0bbf0a5b274df968fc5260a3d36b78576a3727b6a01",
+      "path": "content/posts/game-reviews-and-research/steam-app-391540.md",
+      "source": "direct"
+    },
+    "direct:391720": {
+      "appid": "391720",
+      "hash": "88a346303333c0db9a33ff5e78ed47f7654a16c0881a7b1196d553e6556d40bb",
+      "path": "content/posts/game-reviews-and-research/steam-app-391720.md",
+      "source": "direct"
+    },
+    "direct:393380": {
+      "appid": "393380",
+      "hash": "fa75567ee1c30697f6a635d92de74141cf694844f7f3a5d9bfb6f8ded88e75cb",
+      "path": "content/posts/game-reviews-and-research/steam-app-393380.md",
+      "source": "direct"
+    },
+    "direct:394360": {
+      "appid": "394360",
+      "hash": "ea0b8d139a4abc0f92c800873ff0348d53a22b9e054c30a67bd8b1bbff2db83d",
+      "path": "content/posts/game-reviews-and-research/steam-app-394360.md",
+      "source": "direct"
+    },
+    "direct:395180": {
+      "appid": "395180",
+      "hash": "e927237e21b5833a0749f09c307f0a4e663049cbdbff0b13bcafbe34dab6ed4f",
+      "path": "content/posts/game-reviews-and-research/steam-app-395180.md",
+      "source": "direct"
+    },
+    "direct:400750": {
+      "appid": "400750",
+      "hash": "81d9d073e08f1ed589b0aebddd1be18df98f9b51626596199ec4a9c9eeba5e18",
+      "path": "content/posts/game-reviews-and-research/steam-app-400750.md",
+      "source": "direct"
+    },
+    "direct:405640": {
+      "appid": "405640",
+      "hash": "08c587d7b47161bd80bfce3c3256dda58b96270e3e5d498955ce17e99b862aa0",
+      "path": "content/posts/game-reviews-and-research/steam-app-405640.md",
+      "source": "direct"
+    },
+    "direct:416680": {
+      "appid": "416680",
+      "hash": "0e51fbd7e39aed802728267e9214efffe048be0f731d77ac0639c9082c50ba73",
+      "path": "content/posts/game-reviews-and-research/steam-app-416680.md",
+      "source": "direct"
+    },
+    "direct:41700": {
+      "appid": "41700",
+      "hash": "fb8e773fc36a7acd9f5c3822f61947af30746f339d87dc6586f27ef360eb192b",
+      "path": "content/posts/game-reviews-and-research/steam-app-41700.md",
+      "source": "direct"
+    },
+    "direct:418370": {
+      "appid": "418370",
+      "hash": "8c91bec567ecbe851c71bdf20590d089ce5e9d40052b3da4a63a1848b1a0f39d",
+      "path": "content/posts/game-reviews-and-research/steam-app-418370.md",
+      "source": "direct"
+    },
+    "direct:418460": {
+      "appid": "418460",
+      "hash": "7687f235739ba33bbba323e5bdc25a8881ae1592a759f54c9f76630c99448ff7",
+      "path": "content/posts/game-reviews-and-research/steam-app-418460.md",
+      "source": "direct"
+    },
+    "direct:421120": {
+      "appid": "421120",
+      "hash": "66d9d95ae49c53d87487d33ffbdc249af970c132cf5840f38fd68c369860efe6",
+      "path": "content/posts/game-reviews-and-research/steam-app-421120.md",
+      "source": "direct"
+    },
+    "direct:424030": {
+      "appid": "424030",
+      "hash": "c840a3afb395deeaf859b2d33fef8fd7f1cc97b795233ed0bcb51a6fe230661b",
+      "path": "content/posts/game-reviews-and-research/steam-app-424030.md",
+      "source": "direct"
+    },
+    "direct:435150": {
+      "appid": "435150",
+      "hash": "8176871b3ee31491ae2f3e03bab7679ab62950bd758378f0af497ee784a3062c",
+      "path": "content/posts/game-reviews-and-research/steam-app-435150.md",
+      "source": "direct"
+    },
+    "direct:435530": {
+      "appid": "435530",
+      "hash": "de650474200541265f1d508d5fee6d974ae5b8716ad8fcdb0057b9a8531cebc2",
+      "path": "content/posts/game-reviews-and-research/steam-app-435530.md",
+      "source": "direct"
+    },
+    "direct:443810": {
+      "appid": "443810",
+      "hash": "4fa0327f634607551c5edba59b6a144d70e6da125dc91cd6afaa059aa3a408c7",
+      "path": "content/posts/game-reviews-and-research/steam-app-443810.md",
+      "source": "direct"
+    },
+    "direct:447530": {
+      "appid": "447530",
+      "hash": "ef145b7fb952cf8c1cab52f4e10571b6726fd73a190424d4ca9b5e9ced07b7b7",
+      "path": "content/posts/game-reviews-and-research/steam-app-447530.md",
+      "source": "direct"
+    },
+    "direct:448580": {
+      "appid": "448580",
+      "hash": "6ad13e16039497270088b614c471a9978d71747f046c764f35813e78453ef2bc",
+      "path": "content/posts/game-reviews-and-research/steam-app-448580.md",
+      "source": "direct"
+    },
+    "direct:461620": {
+      "appid": "461620",
+      "hash": "628621f6731247cbc19faa4b3b1b828b6f6c60d119df764d8f87865ddfac7c7b",
+      "path": "content/posts/game-reviews-and-research/steam-app-461620.md",
+      "source": "direct"
+    },
+    "direct:464060": {
+      "appid": "464060",
+      "hash": "acdfcef1a04bb99ad31dd3a1e865101e356a0253831abfe0d9418fc5b952b150",
+      "path": "content/posts/game-reviews-and-research/steam-app-464060.md",
+      "source": "direct"
+    },
+    "direct:4657290": {
+      "appid": "4657290",
+      "hash": "5be3436f28906d7207a25a7793a6836a590341ac12d4d38a8a374b088313d06d",
+      "path": "content/posts/game-reviews-and-research/steam-app-4657290.md",
+      "source": "direct"
+    },
+    "direct:475550": {
+      "appid": "475550",
+      "hash": "a2d194a84437e2800fd6041579b063651eb2d680235dcdda4b9d379416f96138",
+      "path": "content/posts/game-reviews-and-research/steam-app-475550.md",
+      "source": "direct"
+    },
+    "direct:47780": {
+      "appid": "47780",
+      "hash": "d11f864a399a4544d1f0b5e370eebbcd6120ad8ef932ab8287f6301c0531265b",
+      "path": "content/posts/game-reviews-and-research/steam-app-47780.md",
+      "source": "direct"
+    },
+    "direct:48000": {
+      "appid": "48000",
+      "hash": "1734429d43f6497ab2ec80155c1377658e1cc8a23dd6777e548d695b8defeaaf",
+      "path": "content/posts/game-reviews-and-research/steam-app-48000.md",
+      "source": "direct"
+    },
+    "direct:4834070": {
+      "appid": "4834070",
+      "hash": "240316cf15fb42d4e9fd59e5393935c5ddd1134dc672452799ebd178fbb25f73",
+      "path": "content/posts/game-reviews-and-research/steam-app-4834070.md",
+      "source": "direct"
+    },
+    "direct:492720": {
+      "appid": "492720",
+      "hash": "1c08fd04db80aa043c8929fd988db00e691e52092f99ad02e429a4b65ca1cd5b",
+      "path": "content/posts/game-reviews-and-research/steam-app-492720.md",
+      "source": "direct"
+    },
+    "direct:493490": {
+      "appid": "493490",
+      "hash": "711267c80b486c4a7208a8ff80d6de1af8315b7082f702ac8a61fd9f4c05629f",
+      "path": "content/posts/game-reviews-and-research/steam-app-493490.md",
+      "source": "direct"
+    },
+    "direct:496890": {
+      "appid": "496890",
+      "hash": "1c8b000224d68986ea91a65b39ef9f9cea344c60e2a9fe39d5bbf59e3d8620c9",
+      "path": "content/posts/game-reviews-and-research/steam-app-496890.md",
+      "source": "direct"
+    },
+    "direct:501300": {
+      "appid": "501300",
+      "hash": "a4b93a06259de582740f2d08cf205e75cc5343940eca77d03923ed447f87eff1",
+      "path": "content/posts/game-reviews-and-research/steam-app-501300.md",
+      "source": "direct"
+    },
+    "direct:502520": {
+      "appid": "502520",
+      "hash": "33c956ad64b227cfdc2326849da5b44110e22459c0c5175e98912f81497d60f5",
+      "path": "content/posts/game-reviews-and-research/steam-app-502520.md",
+      "source": "direct"
+    },
+    "direct:505460": {
+      "appid": "505460",
+      "hash": "cd4c2d5a27faf3e9c2608a01d8b2ebb3836e518dae1d3780876824e1649b7b52",
+      "path": "content/posts/game-reviews-and-research/steam-app-505460.md",
+      "source": "direct"
+    },
+    "direct:510420": {
+      "appid": "510420",
+      "hash": "cf427c4d3f788e3296c6b9c89951edb17545f18feff85cb98148d9ddcee4b653",
+      "path": "content/posts/game-reviews-and-research/steam-app-510420.md",
+      "source": "direct"
+    },
+    "direct:519860": {
+      "appid": "519860",
+      "hash": "a8ca00d677a364692dfac0e8b3ee9ef240d61853101f64e58d6c7e5d54f3f9c2",
+      "path": "content/posts/game-reviews-and-research/steam-app-519860.md",
+      "source": "direct"
+    },
+    "direct:532840": {
+      "appid": "532840",
+      "hash": "7a50d830f6d957d233e1d686e83ee096170aa7a603745e1ea5fca1f6d51bf5a6",
+      "path": "content/posts/game-reviews-and-research/steam-app-532840.md",
+      "source": "direct"
+    },
+    "direct:537800": {
+      "appid": "537800",
+      "hash": "d54dcdcdf7b0e85746f3770d0e2c43ec28e9e600896ae9293e31dd6172b8d7b8",
+      "path": "content/posts/game-reviews-and-research/steam-app-537800.md",
+      "source": "direct"
+    },
+    "direct:546560": {
+      "appid": "546560",
+      "hash": "323a191b32bbdb6b4ebecdfd1dba797f0abfd7959bcf12c58ce4363f07c85a9b",
+      "path": "content/posts/game-reviews-and-research/steam-app-546560.md",
+      "source": "direct"
+    },
+    "direct:550": {
+      "appid": "550",
+      "hash": "c49fb028877e92281f067ba47f3d0d49e04038af966b4d1032273a5bb461e892",
+      "path": "content/posts/game-reviews-and-research/steam-app-550.md",
+      "source": "direct"
+    },
+    "direct:552520": {
+      "appid": "552520",
+      "hash": "31d0b0e4653a4e6b1645431afc01647382a4e7727f00b440442fc2bf5c51b36b",
+      "path": "content/posts/game-reviews-and-research/steam-app-552520.md",
+      "source": "direct"
+    },
+    "direct:555000": {
+      "appid": "555000",
+      "hash": "8215f37c557fa883414a924571acb3c1627fa07726bbbb15f02807ffb8201e58",
+      "path": "content/posts/game-reviews-and-research/steam-app-555000.md",
+      "source": "direct"
+    },
+    "direct:555220": {
+      "appid": "555220",
+      "hash": "f275a90e3b796a5e98a45c09473532e67fb2b79eb295af12bc5726d01a24ad6c",
+      "path": "content/posts/game-reviews-and-research/steam-app-555220.md",
+      "source": "direct"
+    },
+    "direct:557340": {
+      "appid": "557340",
+      "hash": "d8ae61858418a85c1b41071768ac9aedf866ac2809e7591d2e1375cfd1879fc4",
+      "path": "content/posts/game-reviews-and-research/steam-app-557340.md",
+      "source": "direct"
+    },
+    "direct:578080": {
+      "appid": "578080",
+      "hash": "0dfb6187f4c5ea1bb337bcaefe125cf4f795ee9f501a1dc3c6f4aefa4576b802",
+      "path": "content/posts/game-reviews-and-research/steam-app-578080.md",
+      "source": "direct"
+    },
+    "direct:587000": {
+      "appid": "587000",
+      "hash": "73817b933f4506170cb33eef317caa22fbca3a372681673bb20811890a3b74eb",
+      "path": "content/posts/game-reviews-and-research/steam-app-587000.md",
+      "source": "direct"
+    },
+    "direct:594330": {
+      "appid": "594330",
+      "hash": "1ad7f951fe97ae4e1b683ed1cf820de6f1a7d2e9a2ebb422de7e0cfbff6f851a",
+      "path": "content/posts/game-reviews-and-research/steam-app-594330.md",
+      "source": "direct"
+    },
+    "direct:594650": {
+      "appid": "594650",
+      "hash": "d241bac4a091ac82220b077a46b33ce03e9c2f537c548977582b00a800b309a4",
+      "path": "content/posts/game-reviews-and-research/steam-app-594650.md",
+      "source": "direct"
+    },
+    "direct:606480": {
+      "appid": "606480",
+      "hash": "8e00e55c6f9cd7714e7363f9002b6c1dc00434e78fb8a070ef62882b29984ef3",
+      "path": "content/posts/game-reviews-and-research/steam-app-606480.md",
+      "source": "direct"
+    },
+    "direct:606500": {
+      "appid": "606500",
+      "hash": "4a33f07f5a607a8c1df1e6652ae65aa4c46b9cfdeba52c34016ca63dd0b664ad",
+      "path": "content/posts/game-reviews-and-research/steam-app-606500.md",
+      "source": "direct"
+    },
+    "direct:611760": {
+      "appid": "611760",
+      "hash": "b635eb31362c49ccdfb69c9e3d2114b5c9e34b928cbf547cbd24ce0f4548744b",
+      "path": "content/posts/game-reviews-and-research/steam-app-611760.md",
+      "source": "direct"
+    },
+    "direct:616560": {
+      "appid": "616560",
+      "hash": "95fcba79dd59c63aae72cbdd3fcb681b3a7944b88a5f494e24cbc2493d425d37",
+      "path": "content/posts/game-reviews-and-research/steam-app-616560.md",
+      "source": "direct"
+    },
+    "direct:621060": {
+      "appid": "621060",
+      "hash": "faf5a0403542f76c9d93006003aaa706f8cd14385d506601941e1a9c1a60650c",
+      "path": "content/posts/game-reviews-and-research/steam-app-621060.md",
+      "source": "direct"
+    },
+    "direct:628200": {
+      "appid": "628200",
+      "hash": "b93652029245b32f1cada826fe7183f635dcda4c483102ed1ae011beccf27814",
+      "path": "content/posts/game-reviews-and-research/steam-app-628200.md",
+      "source": "direct"
+    },
+    "direct:632470": {
+      "appid": "632470",
+      "hash": "bccc8db3ca5937a814eb8ba50f3cdbc4b407a5c587ed7785f4625f6968bced07",
+      "path": "content/posts/game-reviews-and-research/steam-app-632470.md",
+      "source": "direct"
+    },
+    "direct:658850": {
+      "appid": "658850",
+      "hash": "bac58a5a3d747cf6cac369042691f5e2b989ab28606e39f65417ab77a8dd4a20",
+      "path": "content/posts/game-reviews-and-research/steam-app-658850.md",
+      "source": "direct"
+    },
+    "direct:666570": {
+      "appid": "666570",
+      "hash": "307af71401b5aa65ba0cce4fcfd29c9240ecaaf4bb059265921a9dff85b93f64",
+      "path": "content/posts/game-reviews-and-research/steam-app-666570.md",
+      "source": "direct"
+    },
+    "direct:686810": {
+      "appid": "686810",
+      "hash": "e92e89abc00ca9a99e297196f87c9b729cd25c4ea1b54ca1008ce6237459cd45",
+      "path": "content/posts/game-reviews-and-research/steam-app-686810.md",
+      "source": "direct"
+    },
+    "direct:698670": {
+      "appid": "698670",
+      "hash": "1cd44d0a27fd01f040c96c0e724813fe955b096d449711caf1cb908702ce5dec",
+      "path": "content/posts/game-reviews-and-research/steam-app-698670.md",
+      "source": "direct"
+    },
+    "direct:698780": {
+      "appid": "698780",
+      "hash": "20874db1fe452663c8392e621b495b54e1254ca07b623d043dc4e80f9db14b82",
+      "path": "content/posts/game-reviews-and-research/steam-app-698780.md",
+      "source": "direct"
+    },
+    "direct:699920": {
+      "appid": "699920",
+      "hash": "a8323220b0e50c50a9743272eedadc34689bcb2a72182a8cf47c839dd3d3063c",
+      "path": "content/posts/game-reviews-and-research/steam-app-699920.md",
+      "source": "direct"
+    },
+    "direct:70": {
+      "appid": "70",
+      "hash": "a5df56400203ad869b63eb791be0e50225a3c080ff31439579d78554a12dfed5",
+      "path": "content/posts/game-reviews-and-research/steam-app-70.md",
+      "source": "direct"
+    },
+    "direct:711660": {
+      "appid": "711660",
+      "hash": "19f72eefc844b1d20f9d17191bd21d17d3e45b10649b95f65f62095ce689ab92",
+      "path": "content/posts/game-reviews-and-research/steam-app-711660.md",
+      "source": "direct"
+    },
+    "direct:730": {
+      "appid": "730",
+      "hash": "6f88f87e41bf6a34c36078e67f22f78b51ddbe8d260faf4220507ce6ae8a7b15",
+      "path": "content/posts/game-reviews-and-research/steam-app-730.md",
+      "source": "direct"
+    },
+    "direct:746850": {
+      "appid": "746850",
+      "hash": "c00ed50cbc5f135d69fed3b5da865931e9598afab5d93091d1dd91ef8145680b",
+      "path": "content/posts/game-reviews-and-research/steam-app-746850.md",
+      "source": "direct"
+    },
+    "direct:757480": {
+      "appid": "757480",
+      "hash": "54a32253023e10e4ac60d1d404675d0b94b2849ea983b2241f73441d587e27d7",
+      "path": "content/posts/game-reviews-and-research/steam-app-757480.md",
+      "source": "direct"
+    },
+    "direct:757910": {
+      "appid": "757910",
+      "hash": "cbd9f4ed03967a480771ec09725942510aff1e873ebca7d10cabc6db75ba453f",
+      "path": "content/posts/game-reviews-and-research/steam-app-757910.md",
+      "source": "direct"
+    },
+    "direct:758570": {
+      "appid": "758570",
+      "hash": "039e6a9c1810655005daecbf56236416098d2f10267c3d41bbc76caceee74e39",
+      "path": "content/posts/game-reviews-and-research/steam-app-758570.md",
+      "source": "direct"
+    },
+    "direct:766280": {
+      "appid": "766280",
+      "hash": "f54061e44ffbbd88aef697b404d0f36e43a324071e1cc28f2e3a1f2314bfa3ef",
+      "path": "content/posts/game-reviews-and-research/steam-app-766280.md",
+      "source": "direct"
+    },
+    "direct:779340": {
+      "appid": "779340",
+      "hash": "8edf0294536ec3c88f59f066b62a660722d590eb6032f49d96bb195881c4b4d2",
+      "path": "content/posts/game-reviews-and-research/steam-app-779340.md",
+      "source": "direct"
+    },
+    "direct:785740": {
+      "appid": "785740",
+      "hash": "b78ce5429d7c39bd54685b425327c5d680480442a3f989eba058f5310486005a",
+      "path": "content/posts/game-reviews-and-research/steam-app-785740.md",
+      "source": "direct"
+    },
+    "direct:80": {
+      "appid": "80",
+      "hash": "58c19f0ea5f041ff9d9b09e8e99a7b1681ee8c53049686039ca7d94d716848ce",
+      "path": "content/posts/game-reviews-and-research/steam-app-80.md",
+      "source": "direct"
+    },
+    "direct:809230": {
+      "appid": "809230",
+      "hash": "1483b8f4493546443e75bb744f6d39fcb3b5d4d7493e04ff3d7e9fff9a7fd1f6",
+      "path": "content/posts/game-reviews-and-research/steam-app-809230.md",
+      "source": "direct"
+    },
+    "direct:811890": {
+      "appid": "811890",
+      "hash": "3fdd1057a4cb49ce4ed050a2fef883dbf98b195e06a047816be040c7875d99d4",
+      "path": "content/posts/game-reviews-and-research/steam-app-811890.md",
+      "source": "direct"
+    },
+    "direct:8140": {
+      "appid": "8140",
+      "hash": "768114ef528f996c35d277ec81a4f236678212e0f2829d549162b3059f8ee153",
+      "path": "content/posts/game-reviews-and-research/steam-app-8140.md",
+      "source": "direct"
+    },
+    "direct:814380": {
+      "appid": "814380",
+      "hash": "5a669704d71652b735450d0e0398219a0356fba1cfee0c8be7d8ff94a2ae0260",
+      "path": "content/posts/game-reviews-and-research/steam-app-814380.md",
+      "source": "direct"
+    },
+    "direct:838350": {
+      "appid": "838350",
+      "hash": "36af7e13401395fb3595398b5bf69b5048e5d137f06b576743cf87f9521933cc",
+      "path": "content/posts/game-reviews-and-research/steam-app-838350.md",
+      "source": "direct"
+    },
+    "direct:858810": {
+      "appid": "858810",
+      "hash": "25138ff7c3f67267cd2ea8932f8fa77e40dd5ef916800a3f1d0429308bf506a2",
+      "path": "content/posts/game-reviews-and-research/steam-app-858810.md",
+      "source": "direct"
+    },
+    "direct:870780": {
+      "appid": "870780",
+      "hash": "717577207a8ab79cd12c2d7d55bb8b3073dffd778629b8a3461e9caadca49b32",
+      "path": "content/posts/game-reviews-and-research/steam-app-870780.md",
+      "source": "direct"
+    },
+    "direct:871530": {
+      "appid": "871530",
+      "hash": "669be500a1f439e632286a10895e9ffc98764f1e5ed4cdb48fc647bb9c641635",
+      "path": "content/posts/game-reviews-and-research/steam-app-871530.md",
+      "source": "direct"
+    },
+    "direct:881100": {
+      "appid": "881100",
+      "hash": "5c58c5988dadbb2a931391499bceabdccba003815471a68299ed4aff97534b09",
+      "path": "content/posts/game-reviews-and-research/steam-app-881100.md",
+      "source": "direct"
+    },
+    "direct:886250": {
+      "appid": "886250",
+      "hash": "9e5b5816245b6f5fda725daab9db64f0aea2fda4b5c863735a65e13e9d187831",
+      "path": "content/posts/game-reviews-and-research/steam-app-886250.md",
+      "source": "direct"
+    },
+    "direct:897820": {
+      "appid": "897820",
+      "hash": "f70823f31507b3a707f45311593578091ed7cd490e348c2ed48b1f092a11c90e",
+      "path": "content/posts/game-reviews-and-research/steam-app-897820.md",
+      "source": "direct"
+    },
+    "direct:899970": {
+      "appid": "899970",
+      "hash": "6023e1fb60b5c12e79a6abeb259628ef796ce0fccbfd04d570be204c66373063",
+      "path": "content/posts/game-reviews-and-research/steam-app-899970.md",
+      "source": "direct"
+    },
+    "direct:926140": {
+      "appid": "926140",
+      "hash": "a20ec8d20716617aab11a6a8955149f08f7487ca8a57bf39ba19a19ad885d41c",
+      "path": "content/posts/game-reviews-and-research/steam-app-926140.md",
+      "source": "direct"
+    },
+    "direct:933110": {
+      "appid": "933110",
+      "hash": "1d9b9ac1906df5644c86973bff952e66acdb9a3c03475bad6ff7686428da5806",
+      "path": "content/posts/game-reviews-and-research/steam-app-933110.md",
+      "source": "direct"
+    },
+    "direct:937170": {
+      "appid": "937170",
+      "hash": "dde7ea4d68bf01d2eda8bea16f827a74568bce3f00d18fa75424005070f4fc87",
+      "path": "content/posts/game-reviews-and-research/steam-app-937170.md",
+      "source": "direct"
+    },
+    "direct:943700": {
+      "appid": "943700",
+      "hash": "bc44e2f336512717a041a6961557db99f00e1d644755f5cf1dff469fcb17be22",
+      "path": "content/posts/game-reviews-and-research/steam-app-943700.md",
+      "source": "direct"
+    },
+    "direct:952060": {
+      "appid": "952060",
+      "hash": "8e5b6021a159713884d62ff821a0ddaa6343145493e43d4ffc161b58c738395b",
+      "path": "content/posts/game-reviews-and-research/steam-app-952060.md",
+      "source": "direct"
+    },
+    "direct:953490": {
+      "appid": "953490",
+      "hash": "7ee2549f3b3794b9ae27e41e3ba3b95db6e93741fdec15bff85cf2d05985362c",
+      "path": "content/posts/game-reviews-and-research/steam-app-953490.md",
+      "source": "direct"
+    },
+    "direct:95700": {
+      "appid": "95700",
+      "hash": "fd30b52fe6fdcfda773f70925e611c572bfd7fc1c4cd730385fdd7db1acf6227",
+      "path": "content/posts/game-reviews-and-research/steam-app-95700.md",
+      "source": "direct"
+    },
+    "direct:96000": {
+      "appid": "96000",
+      "hash": "848bd0b021acfb3cf8b79316b31cff77c5bed537f2c4df63db178276cdfbdf29",
+      "path": "content/posts/game-reviews-and-research/steam-app-96000.md",
+      "source": "direct"
+    }
+  },
+  "source_counts": {
+    "announcement": 74,
+    "curator": 87,
+    "direct": 205
+  },
+  "version": 1
 }
