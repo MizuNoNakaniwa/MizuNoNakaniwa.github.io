@@ -33,6 +33,10 @@
       '<li><a href="{{ `/projects/xx-xinxue/` | relLangURL }}">' +
         '<span class="submenu-en">Dao：XXism</span>' +
         '<span class="submenu-zh">道：XX心学</span>' +
+      '</a></li>' +
+      '<li><a href="{{ `/projects/tzeentch-intel/` | relLangURL }}">' +
+        '<span class="submenu-en">Tzeentch_Intel</span>' +
+        '<span class="submenu-zh">奸奇智库</span>' +
       '</a></li>'
     );
   }
@@ -106,7 +110,15 @@
         !!xxLink.querySelector('.submenu-zh') &&
         xxLink.querySelector('.submenu-zh').textContent.trim() === '道：XX心学';
 
-      if (!hasGame || !hasCorrectXX || submenu.children.length !== 2) {
+      const intelLink = submenu.querySelector('a[href*="/projects/tzeentch-intel/"]');
+      const hasCorrectIntel =
+        !!intelLink &&
+        !!intelLink.querySelector('.submenu-en') &&
+        intelLink.querySelector('.submenu-en').textContent.trim() === 'Tzeentch_Intel' &&
+        !!intelLink.querySelector('.submenu-zh') &&
+        intelLink.querySelector('.submenu-zh').textContent.trim() === '奸奇智库';
+
+      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || submenu.children.length !== 3) {
         submenu.innerHTML = desiredProjectsHTML();
       }
 
