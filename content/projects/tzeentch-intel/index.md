@@ -1,7 +1,7 @@
 ---
-title: "Tzeentch_Intel 奸奇智库"
+title: "Tzeentch Intel 奸奇智库"
 ---
 
-# Tzeentch_Intel
+# Tzeentch Intel
 
 # 奸奇智库
