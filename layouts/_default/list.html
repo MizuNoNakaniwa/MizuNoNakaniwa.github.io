@@ -54,7 +54,37 @@
                     {{ if $pages }}
                         {{ $pages = sort $pages "Date" "asc" }}
 
-                        {{ if and (eq .Kind "section") (in $path "movie-tv-reviews") }}
+                        {{ if and (eq .Kind "section") (in $path "comic-reviews") }}
+                            {{ .Scratch.Delete "comicEra2020" }}
+                            {{ .Scratch.Delete "comicEra2010" }}
+                            {{ .Scratch.Delete "comicEra2000" }}
+
+                            {{ range $pages }}
+                                {{ $y := .Date.Year }}
+                                {{ if ge $y 2020 }}
+                                    {{ $.Scratch.Add "comicEra2020" (slice .) }}
+                                {{ else if ge $y 2010 }}
+                                    {{ $.Scratch.Add "comicEra2010" (slice .) }}
+                                {{ else }}
+                                    {{ $.Scratch.Add "comicEra2000" (slice .) }}
+                                {{ end }}
+                            {{ end }}
+
+                            <h2 class="list-year list-year-bilingual"><span>貳零貳零</span><span class="list-year-en">twenty twenty</span></h2>
+                            {{ with (.Scratch.Get "comicEra2020") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
+
+                            <h2 class="list-year list-year-bilingual"><span>貳零壹零</span><span class="list-year-en">twenty ten</span></h2>
+                            {{ with (.Scratch.Get "comicEra2010") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
+
+                            <h2 class="list-year list-year-bilingual"><span>貳零零零</span><span class="list-year-en">two thousand</span></h2>
+                            {{ with (.Scratch.Get "comicEra2000") }}
+                                {{ partial "utils/list-item.html" (dict "$" (dict "Pages" .)) }}
+                            {{ end }}
+                        {{ else if and (eq .Kind "section") (in $path "movie-tv-reviews") }}
                             {{ .Scratch.Delete "movieEra2020Featured" }}
                             {{ .Scratch.Delete "movieEra2020" }}
                             {{ .Scratch.Delete "movieEra2010" }}
