@@ -38,6 +38,10 @@
         '<span class="submenu-en">Consigliere AI</span>' +
         '<span class="submenu-zh">军师 AI</span>' +
       '</a></li>' +
+      '<li><a href="{{ `/projects/ascensionism-project/` | relLangURL }}">' +
+        '<span class="submenu-en">Ascensionism Project</span>' +
+        '<span class="submenu-zh">飞扬主义计划</span>' +
+      '</a></li>' +
       '<li><a href="{{ `/projects/xx-xinxue/` | relLangURL }}">' +
         '<span class="submenu-en">Dao：XXism</span>' +
         '<span class="submenu-zh">道：XX心学</span>' +
@@ -142,6 +146,14 @@
         !!consigliereLink.querySelector('.submenu-zh') &&
         consigliereLink.querySelector('.submenu-zh').textContent.trim() === '军师 AI';
 
+      const ascensionLink = submenu.querySelector('a[href*="/projects/ascensionism-project/"]');
+      const hasCorrectAscension =
+        !!ascensionLink &&
+        !!ascensionLink.querySelector('.submenu-en') &&
+        ascensionLink.querySelector('.submenu-en').textContent.trim() === 'Ascensionism Project' &&
+        !!ascensionLink.querySelector('.submenu-zh') &&
+        ascensionLink.querySelector('.submenu-zh').textContent.trim() === '飞扬主义计划';
+
       const projectHrefs = Array.from(submenu.querySelectorAll(':scope > li > a')).map(function (a) {
         try {
           return new URL(a.getAttribute('href'), window.location.href).pathname.replace(/\/+$/, '/');
@@ -150,14 +162,15 @@
         }
       });
       const hasCorrectOrder =
-        projectHrefs.length === 5 &&
+        projectHrefs.length === 6 &&
         projectHrefs[0].endsWith('/projects/tzeentch-intel/') &&
         projectHrefs[1].endsWith('/projects/tzeentchs-staff-ai/') &&
         projectHrefs[2].endsWith('/projects/consigliere-ai/') &&
-        projectHrefs[3].endsWith('/projects/xx-xinxue/') &&
-        projectHrefs[4].endsWith('/projects/game/');
+        projectHrefs[3].endsWith('/projects/ascensionism-project/') &&
+        projectHrefs[4].endsWith('/projects/xx-xinxue/') &&
+        projectHrefs[5].endsWith('/projects/game/');
 
-      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectOrder) {
+      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectOrder) {
         submenu.innerHTML = desiredProjectsHTML();
       }
 
