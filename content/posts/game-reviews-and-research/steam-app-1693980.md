@@ -1,5 +1,5 @@
 ---
-title: "《死亡空间》评测"
+title: "《Dead Space》评测"
 date: "2026-09-18T02:32:05.086599+00:00"
 steam_sync: true
 steam_appid: 1693980
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1693980/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □无深刻意义纯体验
 ☑好玩又有深度

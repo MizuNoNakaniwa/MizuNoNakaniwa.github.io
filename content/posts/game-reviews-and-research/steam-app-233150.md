@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/233150/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏他妈的，说实话，太小品了。
 而且它需要你反应力很快。

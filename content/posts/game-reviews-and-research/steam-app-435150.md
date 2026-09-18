@@ -1,5 +1,5 @@
 ---
-title: "《神界：原罪2 - 终极版》评测"
+title: "《Divinity: Original Sin 2 - Definitive Edition》评测"
 date: "2026-09-18T02:32:05.105328+00:00"
 steam_sync: true
 steam_appid: 435150
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/435150/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □无深刻意义纯体验
 ☑好玩又有深度

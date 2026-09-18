@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/2051500/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这是啥游戏啊？这是多人游戏？
 

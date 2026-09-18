@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/555000/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 你这破逼游戏打不开。自己都没测试过能不能打开？退款也退不了，CNM。
 

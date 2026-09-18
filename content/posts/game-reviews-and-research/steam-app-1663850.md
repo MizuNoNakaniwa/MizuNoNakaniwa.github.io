@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1663850/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏对我来说怎么说呢，我无数次下载了，然后无数次去玩，但确实是玩不下去。
 

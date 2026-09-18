@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/384180/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 妥妥的垃圾，不要玩。这个东西它的概率绝对是被操纵的。它绝对是为了说为了当前的节目效果，而去操纵了牌局。它很多的东西基本上都绝对不符合真正的德州扑克概率。除非你是来体验的，你是来大概了解这个德州扑克的，如果你想要练习牌术，不要玩！不要玩！不要玩！
 

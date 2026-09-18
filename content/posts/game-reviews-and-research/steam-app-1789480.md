@@ -1,5 +1,5 @@
 ---
-title: "《星际海盗》评测"
+title: "《Marauders》评测"
 date: "2026-09-18T02:32:05.087143+00:00"
 steam_sync: true
 steam_appid: 1789480
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1789480/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个逼游戏我就要说道说道了。
 

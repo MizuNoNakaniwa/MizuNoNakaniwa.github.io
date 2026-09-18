@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/390290/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 我操，这个游戏绝对是 2012 年到 2015 年左右的东西。
 

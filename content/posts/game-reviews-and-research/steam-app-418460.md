@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/418460/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏一般吧，真的真的，非常一般。我其实玩着感觉非常没有意思。
 首先，你是很难看见敌人的。这我也接受了，毕竟要真实。

@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1047010/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 没进社会之前，我估计还比较喜欢这种赛博朋克、讨论人生、百合风格的游戏。
 

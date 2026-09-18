@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/746850/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 我觉得这个游戏最大的问题，就是远看很好，但是近看不行。
 

@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/519860/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 好吧，我在 2021 年左右玩的这个游戏。
 当时这个游戏的中文还是韩语，可能现在这个作者已经用AI改掉了。

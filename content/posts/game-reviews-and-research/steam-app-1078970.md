@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1078970/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 哎呀，这游戏我就要说道说道啊。你妈了个逼，这游戏真的是神了。
 

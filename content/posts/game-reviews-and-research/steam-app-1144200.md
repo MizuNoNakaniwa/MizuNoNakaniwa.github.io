@@ -1,5 +1,5 @@
 ---
-title: "《Steam App 1144200》评测"
+title: "《Ready or Not》评测"
 date: "2026-09-18T02:32:05.081332+00:00"
 steam_sync: true
 steam_appid: 1144200
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1144200/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 ☑ 好玩又有深度
 □ 无深刻意义纯体验

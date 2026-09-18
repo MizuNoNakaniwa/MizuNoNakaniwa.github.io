@@ -1,5 +1,5 @@
 ---
-title: "《卡瑞玛拉：枯肢之下》评测"
+title: "《CARIMARA: Beneath the forlorn limbs》评测"
 date: "2026-09-18T02:32:05.100592+00:00"
 steam_sync: true
 steam_appid: 3570370
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/3570370/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □ 好玩又有深度
 ☑ 无深刻意义纯体验

@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/493490/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 我在游戏中还tm得遵守交通规矩？
 

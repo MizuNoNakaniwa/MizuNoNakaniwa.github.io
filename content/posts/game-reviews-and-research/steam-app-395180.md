@@ -13,8 +13,8 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/395180/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
-（评测文本已隐藏）
+(Review text hidden)
 
 <!-- STEAM-SYNC-END -->

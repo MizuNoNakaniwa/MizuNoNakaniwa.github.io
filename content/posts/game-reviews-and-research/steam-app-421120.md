@@ -1,5 +1,5 @@
 ---
-title: "《银河历险记3 (Samorost 3)》评测"
+title: "《Samorost 3》评测"
 date: "2026-09-18T02:32:05.104795+00:00"
 steam_sync: true
 steam_appid: 421120
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/421120/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏说实话，我有点可惜，但我确实没法沉浸进去，这是个问题。
 

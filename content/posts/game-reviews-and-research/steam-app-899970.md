@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/899970/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 抱歉，我可能天生就不喜欢这种无脑型的 Galgame。
 我是那种对于痛苦非常敏锐的高敏感型人群。

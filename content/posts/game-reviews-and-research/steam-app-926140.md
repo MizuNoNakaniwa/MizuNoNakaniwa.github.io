@@ -1,5 +1,5 @@
 ---
-title: "《CHANGE：无家可归的生存体验》评测"
+title: "《CHANGE: A Homeless Survival Experience》评测"
 date: "2026-09-18T02:32:05.116764+00:00"
 steam_sync: true
 steam_appid: 926140
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/926140/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 重复劳动太多，主要是为了体验，没什么含金量，浪费了我很多的时间，不如去看youtube破关视频，给到拉。
 

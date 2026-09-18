@@ -1,5 +1,5 @@
 ---
-title: "《王权：权力的游戏》评测"
+title: "《Reigns: Game of Thrones》评测"
 date: "2026-09-18T02:32:05.116374+00:00"
 steam_sync: true
 steam_appid: 897820
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/897820/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 一般的王权式卡牌选择小品游戏，对于我这种没有看过权力的游戏的人来说，确实提不起兴趣来，可能权力的游戏粉丝会更加喜欢。
 

@@ -1,5 +1,5 @@
 ---
-title: "《阴暗森林 Darkwood》评测"
+title: "《Darkwood》评测"
 date: "2026-09-18T02:32:05.096393+00:00"
 steam_sync: true
 steam_appid: 274520
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/274520/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □无深刻意义纯体验
 ☑好玩又有深度

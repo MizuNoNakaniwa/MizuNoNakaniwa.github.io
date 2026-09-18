@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/578080/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 十年了，整整十年了！这游戏还是外挂满天飞！千万别玩！！！！！！！
 

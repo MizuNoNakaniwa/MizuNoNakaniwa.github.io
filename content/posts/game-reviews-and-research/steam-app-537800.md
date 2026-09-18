@@ -1,5 +1,5 @@
 ---
-title: "《轰炸机小队 / Bomber Crew》评测"
+title: "《Bomber Crew》评测"
 date: "2026-09-18T02:32:05.109083+00:00"
 steam_sync: true
 steam_appid: 537800
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/537800/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏对小孩来说可能比较有意思，但是在我看来的话，就实在没什么意思了。
 

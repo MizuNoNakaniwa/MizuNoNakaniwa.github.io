@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1265820/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 我觉得这个游戏总体上来说，设计不错。
 

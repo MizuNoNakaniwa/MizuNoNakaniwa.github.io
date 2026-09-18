@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/464060/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 首先，这个游戏的打击感够好。
 这游戏打击感够好。虽然这个配色确实够瞎眼，但是你手感确实好，好吧，比较爽快，我承认。

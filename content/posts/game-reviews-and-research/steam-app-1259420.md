@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1259420/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 OK，我玩了十一个小时，然后我确实还是感觉这游戏没什么好玩的。
 我觉得这种全程 GTA 式的游戏，对我来说，它的信息量太低了，你知道吧？

@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/80/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 我不喜欢这一代。
 首先第一个，它里面有 Bug，它这个指引做得非常垃圾。

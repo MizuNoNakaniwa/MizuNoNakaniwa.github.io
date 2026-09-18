@@ -1,5 +1,5 @@
 ---
-title: "《太吾绘卷：天幕心帷》评测"
+title: "《The Scroll of Taiwu : Beyond The Dome》评测"
 date: "2026-09-18T02:32:05.115435+00:00"
 steam_sync: true
 steam_appid: 838350
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/838350/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 不行，这个游戏不好玩。
 

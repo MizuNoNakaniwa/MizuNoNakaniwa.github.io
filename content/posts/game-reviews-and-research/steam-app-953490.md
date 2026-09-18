@@ -1,5 +1,5 @@
 ---
-title: "《红怪》评测"
+title: "《CARRION》评测"
 date: "2026-09-18T02:32:05.117443+00:00"
 steam_sync: true
 steam_appid: 953490
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/953490/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏不行。我觉得它的视觉效果和整体设计做得不错，但是不适合我。
 

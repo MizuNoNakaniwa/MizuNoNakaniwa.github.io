@@ -1,5 +1,5 @@
 ---
-title: "《黄泉之路》评测"
+title: "《Trek to Yomi》评测"
 date: "2026-09-18T02:32:05.084659+00:00"
 steam_sync: true
 steam_appid: 1370050
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1370050/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 不行，这个游戏狗屁不通。
 

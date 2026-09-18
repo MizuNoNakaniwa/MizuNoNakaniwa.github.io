@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1146310/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏虽然我玩的没什么意思，但是我一眼就看出来了，它是美国 60 到 80 年代那种嬉皮士系、冷战时期漫画的逻辑。我后来才知道，原来这个游戏就是1999年的由80年代漫画改编来的游戏再版重制版，果然。
 

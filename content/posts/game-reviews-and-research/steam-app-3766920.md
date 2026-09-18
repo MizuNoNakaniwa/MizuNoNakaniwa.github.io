@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/3766920/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏我是看视频通关的。
 

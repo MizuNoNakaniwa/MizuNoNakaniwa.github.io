@@ -1,5 +1,5 @@
 ---
-title: "《统一指挥2》评测"
+title: "《Unity of Command II》评测"
 date: "2026-09-18T02:32:05.114725+00:00"
 steam_sync: true
 steam_appid: 809230
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/809230/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □ 好玩又有深度
 ☑ 无深刻意义纯体验

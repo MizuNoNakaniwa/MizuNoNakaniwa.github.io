@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/443810/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 游戏不适合我，这游戏确实不适合我。
 

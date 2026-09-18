@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/108600/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 说实话，这个游戏我是不太喜欢的。
 因为这个游戏对我来说，很难接受一个事实，就是当你在这个世界上存活，其实是无意义的。

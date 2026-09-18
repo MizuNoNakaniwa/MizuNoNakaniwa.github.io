@@ -1,5 +1,5 @@
 ---
-title: "《装机模拟器 (PC Building Simulator)》评测"
+title: "《PC Building Simulator》评测"
 date: "2026-09-18T02:32:05.111202+00:00"
 steam_sync: true
 steam_appid: 621060
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/621060/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 哎，这个装机模拟器就算了，哥们儿。
 你要真想学装机的话，自己上网查教程，或者直接问 AI，要比从这个游戏中能获取到的知识多得多。

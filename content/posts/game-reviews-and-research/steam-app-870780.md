@@ -1,5 +1,5 @@
 ---
-title: "《控制 - 终极合辑 / Control Ultimate Edition》评测"
+title: "《CONTROL Ultimate Edition》评测"
 date: "2026-09-18T02:32:05.115699+00:00"
 steam_sync: true
 steam_appid: 870780
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/870780/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 啊，这个游戏我说实话，首先配色闪瞎我眼。这东西直接把我感官拉超载了。
 

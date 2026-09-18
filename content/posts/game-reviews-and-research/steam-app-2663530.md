@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/2663530/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □ 好玩又有深度
 ☑ 无深刻意义纯体验

@@ -1,5 +1,5 @@
 ---
-title: "《Vampire Survivors - 吸血鬼幸存者》评测"
+title: "《Vampire Survivors》评测"
 date: "2026-09-18T02:32:05.087281+00:00"
 steam_sync: true
 steam_appid: 1794680
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1794680/)
 
-Steam 状态：推荐
+Steam 状态：Recommended
 
 □ 好玩又有深度
 ☑ 无深刻意义纯体验

@@ -1,5 +1,5 @@
 ---
-title: "《三国杀》评测"
+title: "《 War of the Three Kingdoms》评测"
 date: "2026-09-18T02:32:05.082402+00:00"
 steam_sync: true
 steam_appid: 1180320
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1180320/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 《三国杀》，我操你祖宗。你知道我他妈的下载了你这个该死的客户端，然后挂了 5 分钟，就是为了来骂你吗？操你妈的。
 

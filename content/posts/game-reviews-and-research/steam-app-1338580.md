@@ -1,5 +1,5 @@
 ---
-title: "《像素哥3》评测"
+title: "《McPixel 3》评测"
 date: "2026-09-18T02:32:05.084402+00:00"
 steam_sync: true
 steam_appid: 1338580
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1338580/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏我跟你说，很垃圾。
 我玩完了，很垃圾，不好玩。

@@ -1,5 +1,5 @@
 ---
-title: "《书行者》评测"
+title: "《The Bookwalker: Thief of Tales》评测"
 date: "2026-09-18T02:32:05.085072+00:00"
 steam_sync: true
 steam_appid: 1432100
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/1432100/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 这个游戏节奏不行，节奏太慢了。
 而且你的这些故事啊，你妈的，没有给我留下任何深刻的印象，你知道吗？

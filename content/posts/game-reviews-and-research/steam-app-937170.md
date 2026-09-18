@@ -1,5 +1,5 @@
 ---
-title: "《宅男的人间冒险》评测"
+title: "《Otaku's Adventure》评测"
 date: "2026-09-18T02:32:05.117047+00:00"
 steam_sync: true
 steam_appid: 937170
@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/937170/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 成年以后，就是对这种妄想中的生活，基本上已经提不起什么兴趣了。
 

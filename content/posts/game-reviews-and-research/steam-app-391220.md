@@ -13,7 +13,7 @@ steam_sources:
 
 [Steam 原文](https://steamcommunity.com/id/HerbertLawrence/recommended/391220/)
 
-Steam 状态：不推荐
+Steam 状态：Not Recommended
 
 我虽然是《古墓丽影》的老粉，但是我深刻地感觉到了这一代和上一代，包括《古墓丽影8：地下世界》，它有一个极大的不同。而就是这个不同，毁掉了古墓丽影。
 不同在哪儿呢？
