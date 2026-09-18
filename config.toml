@@ -195,7 +195,7 @@ uglyURLs = false
         weight = 1
 
     [[menu.main]]
-        pageref = "/projects/"
+        url = "#projects-submenu"
         name = "Projects 我的项目"
         weight = 2
 
