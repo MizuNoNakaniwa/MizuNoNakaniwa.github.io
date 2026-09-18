@@ -37,6 +37,10 @@
       '<li><a href="{{ `/projects/tzeentch-intel/` | relLangURL }}">' +
         '<span class="submenu-en">Tzeentch_Intel</span>' +
         '<span class="submenu-zh">奸奇智库</span>' +
+      '</a></li>' +
+      '<li><a href="{{ `/projects/tzeentchs-staff-ai/` | relLangURL }}">' +
+        '<span class="submenu-en">Tzeentch`s Staff AI</span>' +
+        '<span class="submenu-zh">奸奇权杖AI</span>' +
       '</a></li>'
     );
   }
@@ -118,7 +122,15 @@
         !!intelLink.querySelector('.submenu-zh') &&
         intelLink.querySelector('.submenu-zh').textContent.trim() === '奸奇智库';
 
-      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || submenu.children.length !== 3) {
+      const staffLink = submenu.querySelector('a[href*="/projects/tzeentchs-staff-ai/"]');
+      const hasCorrectStaff =
+        !!staffLink &&
+        !!staffLink.querySelector('.submenu-en') &&
+        staffLink.querySelector('.submenu-en').textContent.trim() === 'Tzeentch`s Staff AI' &&
+        !!staffLink.querySelector('.submenu-zh') &&
+        staffLink.querySelector('.submenu-zh').textContent.trim() === '奸奇权杖AI';
+
+      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || submenu.children.length !== 4) {
         submenu.innerHTML = desiredProjectsHTML();
       }
 
