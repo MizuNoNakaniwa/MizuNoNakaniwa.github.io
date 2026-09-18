@@ -46,6 +46,7 @@ SESSION.cookies.update({
     "wants_mature_content": "1",
 })
 APP_NAME_CACHE: dict[str, str] = {}
+APP_LIST_CACHE: dict[str, str] | None = None
 
 
 def fail(message: str) -> None:
@@ -134,19 +135,31 @@ def safe_appid(value: Any) -> str | None:
 
 
 def app_name(appid: str) -> str:
+    global APP_LIST_CACHE
     if appid in APP_NAME_CACHE:
         return APP_NAME_CACHE[appid]
-    name = None
-    try:
-        response = get(
-            "https://store.steampowered.com/api/appdetails",
-            params={"appids": appid, "filters": "basic", "l": "schinese", "cc": "US"},
-        )
-        payload = response.json().get(str(appid), {})
-        if payload.get("success"):
-            name = payload.get("data", {}).get("name")
-    except Exception:
-        pass
+
+    if APP_LIST_CACHE is None:
+        try:
+            response = get("https://api.steampowered.com/ISteamApps/GetAppList/v2/")
+            apps = response.json().get("applist", {}).get("apps", [])
+            APP_LIST_CACHE = {str(item.get("appid")): item.get("name", "") for item in apps if item.get("appid")}
+        except Exception:
+            APP_LIST_CACHE = {}
+
+    name = APP_LIST_CACHE.get(appid) if APP_LIST_CACHE else None
+    if not name:
+        try:
+            response = get(
+                "https://store.steampowered.com/api/appdetails",
+                params={"appids": appid, "filters": "basic", "l": "english", "cc": "US"},
+            )
+            payload = response.json().get(str(appid), {})
+            if payload.get("success"):
+                name = payload.get("data", {}).get("name")
+        except Exception:
+            pass
+
     APP_NAME_CACHE[appid] = name or f"Steam App {appid}"
     return APP_NAME_CACHE[appid]
 
@@ -163,7 +176,7 @@ def record_hash(record: dict[str, Any]) -> str:
 def fetch_direct_reviews() -> list[dict[str, Any]]:
     found: dict[str, dict[str, Any]] = {}
     for page in range(1, MAX_DIRECT_PAGES + 1):
-        response = get(PROFILE_URL, params={"p": page, "l": "schinese"})
+        response = get(PROFILE_URL, params={"p": page, "l": "english"})
         soup = BeautifulSoup(response.text, "html.parser")
         boxes = soup.select("div.review_box")
         if not boxes:
@@ -345,7 +358,42 @@ def announcement_from_detail(url: str, rss_item: dict[str, Any] | None) -> dict[
     if not match:
         return None
     announcement_id = match.group(1)
-    response = get(url, params={"l": "schinese"})
+
+    # Prefer Steam's public partner-event JSON: it contains exact headline,
+    # BBCode body and Unix post time, so dates do not depend on localized HTML.
+    try:
+        response = get(
+            "https://store.steampowered.com/events/ajaxgetpartnerevent",
+            params={
+                "clan_accountid": CURATOR_ID,
+                "announcement_gid": announcement_id,
+                "l": "english",
+                "cc": "US",
+            },
+        )
+        event = response.json().get("event", {})
+        announcement = event.get("announcement_body") or {}
+        body = bbcode_to_markdown(announcement.get("body", ""))
+        if body:
+            posttime = announcement.get("posttime")
+            published = None
+            if posttime:
+                published = datetime.fromtimestamp(int(posttime), tz=timezone.utc).isoformat()
+            return {
+                "source": "announcement",
+                "source_id": f"announcement:{announcement_id}",
+                "remote_id": announcement_id,
+                "appid": None,
+                "title": announcement.get("headline") or (rss_item or {}).get("title") or f"Steam 群组公告 {announcement_id}",
+                "body": body,
+                "published": published or (rss_item or {}).get("published"),
+                "url": url,
+                "status": None,
+            }
+    except Exception as exc:
+        print(f"warning: partner-event JSON failed for {announcement_id}: {exc}", file=sys.stderr)
+
+    response = get(url, params={"l": "english"})
     soup = BeautifulSoup(response.text, "html.parser")
 
     title = ""
@@ -374,18 +422,21 @@ def announcement_from_detail(url: str, rss_item: dict[str, Any] | None) -> dict[
     time_node = soup.select_one("time[datetime]")
     if time_node:
         published = parse_date(time_node.get("datetime"))
+    if not published:
+        for selector in (".date", ".eventDate", ".announcement_date", "[class*='date']"):
+            node = soup.select_one(selector)
+            if node:
+                published = parse_date(node.get_text(" ", strip=True))
+                if published:
+                    break
     if not published and rss_item:
         published = rss_item.get("published")
-
-    search_material = str(body_node) if body_node else body
-    app_match = re.search(r"(?:store\.steampowered\.com/app|steamcommunity\.com/app)/(\d+)", search_material, flags=re.I)
-    appid = app_match.group(1) if app_match else None
 
     return {
         "source": "announcement",
         "source_id": f"announcement:{announcement_id}",
         "remote_id": announcement_id,
-        "appid": appid,
+        "appid": None,
         "title": title or f"Steam 群组公告 {announcement_id}",
         "body": body,
         "published": published,
@@ -528,13 +579,19 @@ def initial_page(records: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def update_marked_page(path: Path, records: list[dict[str, Any]]) -> bool:
+def update_marked_page(path: Path, records: list[dict[str, Any]], repair_frontmatter: bool = False) -> bool:
     block = sync_block(records)
     if not path.exists():
         path.write_text(initial_page(records), encoding="utf-8")
         return True
 
     existing = path.read_text(encoding="utf-8")
+    if repair_frontmatter and "steam_sync: true" in existing:
+        existing = re.sub(r"(?m)^title:.*$", f"title: {yaml_quote(page_title(records))}", existing, count=1)
+        dates = [r["published"] for r in records if r.get("published")]
+        if dates:
+            existing = re.sub(r"(?m)^date:.*$", f"date: {yaml_quote(max(dates))}", existing, count=1)
+
     if START_MARKER not in existing or END_MARKER not in existing:
         print(f"skip: {path.relative_to(ROOT)} exists but has no Steam sync markers", file=sys.stderr)
         return False
@@ -556,6 +613,7 @@ def main() -> None:
     all_records = direct + curator + announcements
 
     state = load_state()
+    repair_frontmatter = int(state.get("version", 1) or 1) < 2
     validate_counts(state, all_records)
 
     groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -566,7 +624,7 @@ def main() -> None:
     changed_pages = 0
     for _, records in sorted(groups.items()):
         path = page_path(records)
-        if update_marked_page(path, records):
+        if update_marked_page(path, records, repair_frontmatter=repair_frontmatter):
             changed_pages += 1
         rel = str(path.relative_to(ROOT)).replace("\\", "/")
         for record in records:
@@ -577,6 +635,7 @@ def main() -> None:
                 "appid": record.get("appid"),
             }
 
+    state["version"] = 2
     serialized = json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if not STATE_PATH.exists() or STATE_PATH.read_text(encoding="utf-8") != serialized:
         STATE_PATH.write_text(serialized, encoding="utf-8")
