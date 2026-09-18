@@ -60,7 +60,8 @@ def get(url: str, **kwargs: Any) -> requests.Response:
 
 
 def normalize_space(text: str) -> str:
-    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = "\n".join(line.rstrip() for line in text.split("\n"))
     text = re.sub(r"\n{4,}", "\n\n\n", text)
     return text.strip()
 
