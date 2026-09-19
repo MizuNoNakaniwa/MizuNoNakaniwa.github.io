@@ -42,6 +42,10 @@
         '<span class="submenu-en">Consigliere AI</span>' +
         '<span class="submenu-zh">军师 AI</span>' +
       '</a></li>' +
+      '<li><a href="{{ `/projects/claimtome-ai/` | relLangURL }}">' +
+        '<span class="submenu-en">ClaimTome AI</span>' +
+        '<span class="submenu-zh">合订本 AI</span>' +
+      '</a></li>' +
       '<li><a href="{{ `/projects/ascensionism-project/` | relLangURL }}">' +
         '<span class="submenu-en">Ascensionism Project</span>' +
         '<span class="submenu-zh">飞扬主义计划</span>' +
@@ -154,6 +158,14 @@
         !!consigliereLink.querySelector('.submenu-zh') &&
         consigliereLink.querySelector('.submenu-zh').textContent.trim() === '军师 AI';
 
+      const claimTomeLink = submenu.querySelector('a[href*="/projects/claimtome-ai/"]');
+      const hasCorrectClaimTome =
+        !!claimTomeLink &&
+        !!claimTomeLink.querySelector('.submenu-en') &&
+        claimTomeLink.querySelector('.submenu-en').textContent.trim() === 'ClaimTome AI' &&
+        !!claimTomeLink.querySelector('.submenu-zh') &&
+        claimTomeLink.querySelector('.submenu-zh').textContent.trim() === '合订本 AI';
+
       const ascensionLink = submenu.querySelector('a[href*="/projects/ascensionism-project/"]');
       const hasCorrectAscension =
         !!ascensionLink &&
@@ -186,17 +198,18 @@
         }
       });
       const hasCorrectOrder =
-        projectHrefs.length === 8 &&
+        projectHrefs.length === 9 &&
         projectHrefs[0].endsWith('/projects/xx-xinxue/') &&
         projectHrefs[1].endsWith('/projects/tzeentch-intel/') &&
         projectHrefs[2].endsWith('/projects/tzeentchs-staff-ai/') &&
         projectHrefs[3].endsWith('/projects/consigliere-ai/') &&
-        projectHrefs[4].endsWith('/projects/ascensionism-project/') &&
-        projectHrefs[5].endsWith('/projects/aspergers-adhd-rescue-project/') &&
-        projectHrefs[6].endsWith('/projects/game/') &&
-        projectHrefs[7].endsWith('/projects/art-project-xxx/');
+        projectHrefs[4].endsWith('/projects/claimtome-ai/') &&
+        projectHrefs[5].endsWith('/projects/ascensionism-project/') &&
+        projectHrefs[6].endsWith('/projects/aspergers-adhd-rescue-project/') &&
+        projectHrefs[7].endsWith('/projects/game/') &&
+        projectHrefs[8].endsWith('/projects/art-project-xxx/');
 
-      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectAscension || !hasCorrectRescue || !hasCorrectArtProject || !hasCorrectOrder) {
+      if (!hasGame || !hasCorrectXX || !hasCorrectIntel || !hasCorrectStaff || !hasCorrectConsigliere || !hasCorrectClaimTome || !hasCorrectAscension || !hasCorrectRescue || !hasCorrectArtProject || !hasCorrectOrder) {
         submenu.innerHTML = desiredProjectsHTML();
       }
 
