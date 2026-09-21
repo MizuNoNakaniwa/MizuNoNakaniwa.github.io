@@ -52,7 +52,19 @@
 
                     {{ $pages := .Scratch.Get "pages" }}
                     {{ if $pages }}
-                        {{ $pages = sort $pages "Date" "asc" }}
+                        {{ with .Params.pageOrder }}
+                            {{ $.Scratch.Delete "orderedPages" }}
+                            {{ range . }}
+                                {{ with $.Site.GetPage . }}
+                                    {{ $.Scratch.Add "orderedPages" (slice .) }}
+                                {{ end }}
+                            {{ end }}
+                            {{ with $.Scratch.Get "orderedPages" }}
+                                {{ $pages = . }}
+                            {{ end }}
+                        {{ else }}
+                            {{ $pages = sort $pages "Date" "asc" }}
+                        {{ end }}
 
                         {{ if and (eq .Kind "section") (in $path "comic-reviews") }}
                             {{ .Scratch.Delete "comicEra2020" }}
