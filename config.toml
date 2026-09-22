@@ -201,7 +201,7 @@ uglyURLs = false
 
     [[menu.main]]
         pageref = "/posts/"
-        name = "Blog 我的博客"
+        name = "Blog 我的生活博客"
         weight = 3
 
     [[menu.main]]
