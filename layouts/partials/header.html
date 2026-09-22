@@ -10,7 +10,7 @@
 {{/* 全站强制渲染导航：所有 Hugo 页面都显示同一套 Projects / Blog 菜单 */}}
 <header class="header">
     <div class="header-wrapper">
-        <div class="header-inner {{ cond (or .IsHome (eq (len .Pages) 0)) "single" "list"}}">
+        <div class="header-inner list">
             {{ partial "menu.html" . }}
             {{ partial "custom/header.html" . }}
         </div>
