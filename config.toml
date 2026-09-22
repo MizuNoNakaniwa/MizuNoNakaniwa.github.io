@@ -196,12 +196,12 @@ uglyURLs = false
 
     [[menu.main]]
         url = "#projects-submenu"
-        name = "Projects 我的项目"
+        name = "Projects & Thoughts 我的项目 & 思考"
         weight = 2
 
     [[menu.main]]
         pageref = "/posts/"
-        name = "Blog 我的生活博客"
+        name = "Blog 我的博客"
         weight = 3
 
     [[menu.main]]
