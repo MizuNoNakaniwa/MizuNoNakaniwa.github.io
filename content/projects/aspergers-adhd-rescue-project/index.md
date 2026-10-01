@@ -6,3 +6,7 @@ date: 2026-10-01T00:11:00-07:00
 ## 测试：你的自闭症指数
 
 [https://rdos.net/eng/Aspie-quiz.php](https://rdos.net/eng/Aspie-quiz.php)
+
+## 测试：你的自闭症指数
+
+[https://psychology-tools.com/test/raads-14](https://psychology-tools.com/test/raads-14)
