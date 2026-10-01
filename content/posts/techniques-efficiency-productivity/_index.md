@@ -3,11 +3,3 @@ title: |-
   Techniques: Efficiency & Productivity
   术：提升效率术，生产力术
 ---
-
-## 测试：你的生物钟类型
-
-[开始测试你的生物钟类型（MEQ）](https://qxmd.com/calculate/calculator_829/morningness-eveningness-questionnaire-meq)
-
-通过晨晚型问卷（MEQ），了解你的生物钟更偏向晨型、晚型还是中间型。
-
-测试完成后，可以把结果作为参考，结合自己每天的实际精力变化，找到专注力最好的“黄金时段”和次好的“白银时段”，据此安排学习、工作和其他需要专注的事情。
