@@ -264,6 +264,12 @@
       "path": "content/posts/game-reviews-and-research/steam-announcement-668373055181948701.md",
       "source": "announcement"
     },
+    "announcement:676259427855107432": {
+      "appid": null,
+      "hash": "4f1e623b27c105b4812c06d05abff87791167343544af445dd2cbfb93583d34d",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-676259427855107432.md",
+      "source": "announcement"
+    },
     "announcement:684139458559213773": {
       "appid": null,
       "hash": "a7e6fa14225c6a9347449bf7b02b5d96660216a4cc60f72e103ed4b12f600290",
@@ -2198,7 +2204,7 @@
     }
   },
   "source_counts": {
-    "announcement": 74,
+    "announcement": 75,
     "curator": 87,
     "direct": 205
   },
