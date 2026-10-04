@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".tmp-custom-feed-image-png/READY"
+      - ".tmp-custom-feed-image-jpg/READY"
 
 permissions:
   contents: write
@@ -17,15 +17,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reconstruct exact PNG
+      - name: Reconstruct the original image file
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p static/images/omnissiahs-sieve-ai
-          cat .tmp-custom-feed-image-png/[0-9][0-9].b64 | base64 --decode > static/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.png
-          test "$(sha256sum static/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.png | awk '{print $1}')" = "e9681e438e02d88a0cdb6809bc3c074ea960c5628741231ef2c7f00a7203ca7e"
+          cat .tmp-custom-feed-image-jpg/[0-9][0-9].b64 | base64 --decode > static/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.jpg
+          test "$(sha256sum static/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.jpg | awk '{print $1}')" = "0f6afea554630f309f7890ee85958bc867e4284caf764d70f8e314fe4b6e92b4"
 
-      - name: Point article to original PNG and clean temporary files
+      - name: Replace the mistaken redraw
         shell: bash
         run: |
           set -euo pipefail
@@ -35,20 +35,25 @@ jobs:
           s = p.read_text(encoding="utf-8")
           s = s.replace(
               "![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.svg)",
-              "![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.png)"
+              "![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.jpg)"
+          )
+          s = s.replace(
+              "![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.png)",
+              "![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.jpg)"
           )
           p.write_text(s, encoding="utf-8")
           PY
           rm -f static/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.svg
-          rm -rf .tmp-custom-feed-image .tmp-custom-feed-image-png
+          rm -f static/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.png
+          rm -rf .tmp-custom-feed-image .tmp-custom-feed-image-png .tmp-custom-feed-image-jpg
           rm -f .github/workflows/install-original-custom-feed-image.yml
 
-      - name: Commit exact image
+      - name: Commit exact copied image
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Replace redrawn diagram with exact original PNG [skip ci]"
+          git commit -m "Replace redrawn diagram with copied original image [skip ci]"
           git push origin main
