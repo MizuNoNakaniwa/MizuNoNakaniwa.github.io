@@ -1,5 +1,7 @@
 ---
-title: "ClaimTome AI合订本 AI"
+title: |-
+  ClaimTome AI
+  合订本 AI
 ---
 
 # ClaimTome AI
