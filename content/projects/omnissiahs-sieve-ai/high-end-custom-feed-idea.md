@@ -16,7 +16,7 @@ slug: "high-end-custom-feed-idea"
 
 言而总之，我想做一个属于自己的 **高端定制信息流过滤器**。
 
-![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.svg)
+![高端定制信息流 AI 概念草图](/images/omnissiahs-sieve-ai/high-end-custom-feed-concept.png)
 
 它可以连接抖音、B站以及其他内容平台，但不是把平台原始的经过平台算法后的信息流直接搬过来，而是在我和无限信息流之间增加一层过滤。
 
