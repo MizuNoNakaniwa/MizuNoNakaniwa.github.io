@@ -1,5 +1,7 @@
 ---
-title: "Ascensionism Project / 扬升计划"
+title: |-
+  Ascensionism Project
+  扬升计划
 ---
 
 # Ascensionism Project
