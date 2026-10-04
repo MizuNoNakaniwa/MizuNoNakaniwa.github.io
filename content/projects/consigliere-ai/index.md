@@ -1,5 +1,7 @@
 ---
-title: "Consigliere AI / 军师 AI"
+title: |-
+  Consigliere AI
+  军师 AI
 ---
 
 # Consigliere AI
