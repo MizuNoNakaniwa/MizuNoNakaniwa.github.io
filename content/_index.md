@@ -1,5 +1,7 @@
 ---
-title: "About 介绍"
+title: |-
+  About
+  介绍
 ---
 
 Lester Shi。
