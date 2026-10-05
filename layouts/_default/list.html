@@ -63,7 +63,8 @@
                                 {{ $pages = . }}
                             {{ end }}
                         {{ else }}
-                            {{ $pages = sort $pages "Date" "asc" }}
+                            {{ $dateSort := .Params.dateSort | default "asc" }}
+                            {{ $pages = sort $pages "Date" $dateSort }}
                         {{ end }}
 
                         {{ if and (eq .Kind "section") (in $path "comic-reviews") }}
