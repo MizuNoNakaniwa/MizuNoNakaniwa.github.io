@@ -4,3 +4,4 @@ date: 2026-10-05T00:00:00-07:00
 slug: "jiaren-xuetu-kugu-hui-jiuxiangtu"
 ---
 
+![](/images/xinxue/九相图.png)
