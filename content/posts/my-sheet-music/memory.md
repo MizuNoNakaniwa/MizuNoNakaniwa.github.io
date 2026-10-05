@@ -3,6 +3,4 @@ title: "Memory"
 date: 2026-10-05T00:00:00-07:00
 ---
 
-## Sheet Music / 琴谱
-
-[Open Sheet Music / 打开琴谱](/sheet-music/Memory.pdf)
+<iframe src="/sheet-music/Memory.pdf#view=FitH" title="Memory" style="width:100%;height:88vh;min-height:900px;border:0;" loading="lazy"></iframe>
