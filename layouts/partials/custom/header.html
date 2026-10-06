@@ -36,6 +36,32 @@
     generalResearchLink.closest('li').insertAdjacentElement('afterend', item);
   }
 
+  function ensureTwelveHoursLink() {
+    const projectsSubmenu = document.getElementById('projects-submenu');
+    if (!projectsSubmenu) return;
+    if (projectsSubmenu.querySelector('a[href*="/projects/art-project-twelve-hours/"]')) return;
+
+    const artProjectLink = projectsSubmenu.querySelector('a[href*="/projects/art-project-xxx/"]');
+    if (!artProjectLink) return;
+
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = '/projects/art-project-twelve-hours/';
+
+    const en = document.createElement('span');
+    en.className = 'submenu-en';
+    en.textContent = 'Art Project: Twelve Hours';
+
+    const zh = document.createElement('span');
+    zh.className = 'submenu-zh';
+    zh.textContent = '艺术项目：十二小时';
+
+    link.appendChild(en);
+    link.appendChild(zh);
+    item.appendChild(link);
+    artProjectLink.closest('li').insertAdjacentElement('afterend', item);
+  }
+
   function bindDropdowns() {
     document.querySelectorAll('.menu-item-dropdown').forEach(function (item) {
       const toggle = item.querySelector(':scope > .menu-dropdown-toggle');
@@ -61,10 +87,12 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     ensureSheetMusicLink();
+    ensureTwelveHoursLink();
     bindDropdowns();
   });
   window.addEventListener('pageshow', function () {
     ensureSheetMusicLink();
+    ensureTwelveHoursLink();
     bindDropdowns();
   });
 
