@@ -6,7 +6,7 @@
             </a>
         </li>
 
-        <li class="menu-item menu-item-dropdown{{ if eq .Section `projects` }} active{{ end }}">
+        <li class="menu-item menu-item-dropdown{{ if and (eq .Section `projects`) (not (in .RelPermalink `/projects/my-whimsical-ideas/`)) }} active{{ end }}">
             <button class="menu-dropdown-toggle" type="button" aria-expanded="false" aria-controls="projects-submenu">
                 <span class="menu-item-name">Projects &amp; Thoughts 我的项目 &amp; 思考</span>
                 <span class="dropdown-arrow" aria-hidden="true">▾</span>
@@ -108,16 +108,10 @@
                         <span class="submenu-zh">艺术项目：十二小时</span>
                     </a>
                 </li>
-                <li>
-                    <a href="{{ `/projects/my-whimsical-ideas/` | relLangURL }}">
-                        <span class="submenu-en">My Whimsical Ideas &amp; Interesting Concepts</span>
-                        <span class="submenu-zh">我的奇思妙想，有趣的点子</span>
-                    </a>
-                </li>
             </ul>
         </li>
 
-        <li class="menu-item menu-item-dropdown{{ if eq .Section `posts` }} active{{ end }}">
+        <li class="menu-item menu-item-dropdown{{ if or (eq .Section `posts`) (in .RelPermalink `/projects/my-whimsical-ideas/`) }} active{{ end }}">
             <button class="menu-dropdown-toggle" type="button" aria-expanded="false" aria-controls="blog-submenu">
                 <span class="menu-item-name">Blog 我的博客</span>
                 <span class="dropdown-arrow" aria-hidden="true">▾</span>
@@ -139,6 +133,12 @@
                     <a href="{{ `/posts/my-sheet-music/` | relLangURL }}">
                         <span class="submenu-en">My Sheet Music</span>
                         <span class="submenu-zh">我的琴谱</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ `/projects/my-whimsical-ideas/` | relLangURL }}">
+                        <span class="submenu-en">My Whimsical Ideas &amp; Interesting Concepts</span>
+                        <span class="submenu-zh">我的奇思妙想，有趣的点子</span>
                     </a>
                 </li>
                 <li>
