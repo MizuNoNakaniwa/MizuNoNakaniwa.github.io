@@ -48,6 +48,8 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Verify global navigation on every HTML page
+        run: python3 scripts/verify_global_navigation.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
