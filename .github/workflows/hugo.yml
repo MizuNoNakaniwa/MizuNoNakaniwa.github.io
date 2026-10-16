@@ -46,6 +46,7 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+          HUGO_PARAMS_NAVVERSION: ${{ github.sha }}
         run: |
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Verify global navigation on every HTML page
