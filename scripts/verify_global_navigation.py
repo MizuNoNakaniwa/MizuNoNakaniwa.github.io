@@ -24,7 +24,7 @@ if not pages:
 
 
 def get_submenu(nav, menu_id):
-    pattern = r"<ul\\b[^>]*\\bid=(?:[\\\"']?)" + re.escape(menu_id) + r"(?:[\\\"']?)[^>]*>.*?</ul>"
+    pattern = r'<ul\b[^>]*\bid=(?:"|\x27)?' + re.escape(menu_id) + r'(?:"|\x27)?[^>]*>.*?</ul>'
     match = re.search(pattern, nav, re.DOTALL)
     return match.group(0) if match else None
 
@@ -32,7 +32,7 @@ def get_submenu(nav, menu_id):
 failures = []
 for page in pages:
     text = unescape(page.read_text(encoding="utf-8"))
-    match = re.search(r"<nav\\b[^>]*>.*?</nav>", text, re.DOTALL)
+    match = re.search(r"<nav\b[^>]*>.*?</nav>", text, re.DOTALL)
     if not match:
         failures.append(f"{page}: missing <nav>")
         continue
@@ -75,13 +75,13 @@ if not section_path.is_file():
     failures.append(f"{section_path}: section page missing")
 else:
     section = unescape(section_path.read_text(encoding="utf-8"))
-    heading = re.search(r"<h1\\b[^>]*>(.*?)</h1>", section, re.DOTALL)
+    heading = re.search(r"<h1\b[^>]*>(.*?)</h1>", section, re.DOTALL)
     title = re.sub(r"<[^>]*>", "", heading.group(1)) if heading else ""
     if expected_en not in title or expected_zh not in title:
         failures.append(f"{section_path}: section headline does not match the navigation")
 
 if failures:
-    print("\\n".join(failures[:60]), file=sys.stderr)
+    print("\n".join(failures[:60]), file=sys.stderr)
     sys.exit(f"Navigation check failed on {len(failures)} assertions.")
 
 print(
