@@ -63,8 +63,7 @@ for page in pages:
     if nav_sha:
         for target in ("/", "/projects/art-project-xxx/", sheet_music, whimsical):
             versioned = f"{target}?nav={nav_sha}"
-            matches = re.findall(r'href=["\\']?' + re.escape(versioned) + r'(?=["\\' >])', nav)
-            if len(matches) != 1:
+            if nav.count('href="' + versioned + '"') != 1:
                 failures.append(f"{page}: missing or incorrect versioned link {versioned}")
 
 for required in ("index.html", "projects/art-project-xxx/index.html"):
