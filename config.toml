@@ -1334,7 +1334,7 @@ uglyURLs = false
     ######################################
     # Instant Page
 
-    enableInstantPage = true
+    enableInstantPage = false
     # 说明：https://github.com/instantpage/instant.page
 
 
