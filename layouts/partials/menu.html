@@ -1,7 +1,8 @@
+{{- $navVersion := .Site.Params.navVersion | default "local" -}}
 <nav class="nav">
     <ul class="menu" id="menu">
         <li class="menu-item{{ if .IsHome }} active{{ end }}">
-            <a href="{{ `/` | relLangURL }}">
+            <a href="{{ `/` | relLangURL }}?nav={{ $navVersion }}">
                 <span class="menu-item-name">About 介绍</span>
             </a>
         </li>
@@ -13,97 +14,97 @@
             </button>
             <ul class="submenu" id="projects-submenu">
                 <li>
-                    <a href="{{ `/projects/xx-xinxue/` | relLangURL }}">
+                    <a href="{{ `/projects/xx-xinxue/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Dao：XXism</span>
                         <span class="submenu-zh">道：XX心学</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/techniques-investment-decision-making-risk-management/` | relLangURL }}">
+                    <a href="{{ `/posts/techniques-investment-decision-making-risk-management/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Techniques: Investment,Decision-Making &amp; Risk Management</span>
                         <span class="submenu-zh">术：投资术，决策术，风险管理术</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/techniques-social-interaction-getting-things-done-winning-people-over/` | relLangURL }}">
+                    <a href="{{ `/posts/techniques-social-interaction-getting-things-done-winning-people-over/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Techniques: Social Interaction, Getting Things Done &amp; Winning People Over</span>
                         <span class="submenu-zh">术：交往术，办事术，团结人心术</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/techniques-efficiency-productivity/` | relLangURL }}">
+                    <a href="{{ `/posts/techniques-efficiency-productivity/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Techniques: Efficiency &amp; Productivity</span>
                         <span class="submenu-zh">术：提升效率术，生产力术</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/aspergers-adhd-rescue-project/` | relLangURL }}">
+                    <a href="{{ `/projects/aspergers-adhd-rescue-project/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Techniques: Health, ASD &amp; ADHD Mental Health, Exercise</span>
                         <span class="submenu-zh">术：健康术，自闭症 &amp; 多动症心理健康术，锻炼术</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/techniques-ai/` | relLangURL }}">
+                    <a href="{{ `/posts/techniques-ai/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Techniques: AI</span>
                         <span class="submenu-zh">术：AI术</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/tzeentch-intel/` | relLangURL }}">
+                    <a href="{{ `/projects/tzeentch-intel/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Tzeentch Investment &amp; Intelligence</span>
                         <span class="submenu-zh">奸奇投资 &amp; 智库</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/tzeentchs-staff-ai/` | relLangURL }}">
+                    <a href="{{ `/projects/tzeentchs-staff-ai/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Tzeentch`s Staff AI</span>
                         <span class="submenu-zh">奸奇之杖 AI</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/omnissiahs-sieve-ai/` | relLangURL }}">
+                    <a href="{{ `/projects/omnissiahs-sieve-ai/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Omnissiah's Sieve AI</span>
                         <span class="submenu-zh">欧姆尼西亚之筛 AI</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/adjutant-ai/` | relLangURL }}">
+                    <a href="{{ `/projects/adjutant-ai/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Adjutant App &amp; Adjutant AI</span>
                         <span class="submenu-zh">副官 App &amp; 副官 AI</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/consigliere-ai/` | relLangURL }}">
+                    <a href="{{ `/projects/consigliere-ai/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Consigliere AI</span>
                         <span class="submenu-zh">军师 AI</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/claimtome-ai/` | relLangURL }}">
+                    <a href="{{ `/projects/claimtome-ai/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">ClaimTome AI</span>
                         <span class="submenu-zh">合订本 AI</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/ascensionism-project/` | relLangURL }}">
+                    <a href="{{ `/projects/ascensionism-project/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Ascensionism Project</span>
                         <span class="submenu-zh">扬升计划</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/game/` | relLangURL }}">
+                    <a href="{{ `/projects/game/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Game:</span>
                         <span class="submenu-zh">游戏：</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/art-project-xxx/` | relLangURL }}">
+                    <a href="{{ `/projects/art-project-xxx/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Art Project: XXX</span>
                         <span class="submenu-zh">艺术项目：XXX</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/art-project-twelve-hours/` | relLangURL }}">
+                    <a href="{{ `/projects/art-project-twelve-hours/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">Art Project: Twelve Hours</span>
                         <span class="submenu-zh">艺术项目：十二小时</span>
                     </a>
@@ -118,55 +119,55 @@
             </button>
             <ul class="submenu" id="blog-submenu">
                 <li>
-                    <a href="{{ `/posts/history-research/` | relLangURL }}">
+                    <a href="{{ `/posts/history-research/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Historical Research</span>
                         <span class="submenu-zh">我的历史研究</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/general-research/` | relLangURL }}">
+                    <a href="{{ `/posts/general-research/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My General Research</span>
                         <span class="submenu-zh">我的一般研究</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/my-sheet-music/` | relLangURL }}">
+                    <a href="{{ `/posts/my-sheet-music/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Sheet Music</span>
                         <span class="submenu-zh">我的琴谱</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/projects/my-whimsical-ideas/` | relLangURL }}">
+                    <a href="{{ `/projects/my-whimsical-ideas/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Whimsical Ideas &amp; Interesting Concepts</span>
                         <span class="submenu-zh">我的奇思妙想，有趣的点子</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/my-aesthetics/` | relLangURL }}">
+                    <a href="{{ `/posts/my-aesthetics/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Aesthetics &amp; Public Figure Reviews</span>
                         <span class="submenu-zh">我的美学 &amp; 公共人物评测</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/food-recipes-and-reviews/` | relLangURL }}">
+                    <a href="{{ `/posts/food-recipes-and-reviews/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Recipes, Ideas, Food &amp; Drink Reviews</span>
                         <span class="submenu-zh">我的食谱，点子，美食饮料评测</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/game-reviews-and-research/` | relLangURL }}">
+                    <a href="{{ `/posts/game-reviews-and-research/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Game Research &amp; Reviews</span>
                         <span class="submenu-zh">我的游戏研究与评测</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/comic-reviews/` | relLangURL }}">
+                    <a href="{{ `/posts/comic-reviews/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Comic &amp; Leisure Book Reviews</span>
                         <span class="submenu-zh">我的漫画，消遣书评测</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ `/posts/movie-tv-reviews/` | relLangURL }}">
+                    <a href="{{ `/posts/movie-tv-reviews/` | relLangURL }}?nav={{ $navVersion }}">
                         <span class="submenu-en">My Movie, TV Series, Anime, Cartoon, TV Program &amp; TV Channel Reviews</span>
                         <span class="submenu-zh">我的电影，电视剧，动漫，动画，电视节目，电视频道评测</span>
                     </a>
@@ -175,7 +176,7 @@
         </li>
 
         <li class="menu-item{{ if eq .Section `contact` }} active{{ end }}">
-            <a href="{{ `/contact/` | relLangURL }}">
+            <a href="{{ `/contact/` | relLangURL }}?nav={{ $navVersion }}">
                 <span class="menu-item-name">Contact 联系我</span>
             </a>
         </li>
