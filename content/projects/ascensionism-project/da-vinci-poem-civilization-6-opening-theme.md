@@ -9,7 +9,6 @@ slug: "da-vinci-poem-civilization-6-opening-theme"
 1. [《Sogno di Volare／飞天之梦》翻唱版](https://b23.tv/iGjlkvq)（未下载）
 2. [《Sogno di Volare》](https://b23.tv/Sq4JlMp)
 
----
 **Una volta che avrai**  
 **一旦你**  
 **spiccato il volo, deciderai**  
