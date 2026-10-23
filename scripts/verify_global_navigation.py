@@ -59,6 +59,18 @@ for page in pages:
     if not (0 <= blog.find(sheet_music) < blog.find(whimsical) < blog.find(aesthetics)):
         failures.append(f"{page}: Whimsical Ideas is not immediately after Sheet Music")
 
+    # Keep app projects in the same order and under the right headings on every page.
+    consigliere = "/projects/consigliere-ai/"
+    mindgruad = "/projects/mindgruad-app/"
+    claimtome = "/projects/claimtome-ai/"
+    if not (0 <= projects.find(consigliere) < projects.find(mindgruad) < projects.find(claimtome)):
+        failures.append(f"{page}: wrong Consigliere > MindGruad > ClaimTome order")
+    if projects.count(mindgruad) != 1 or projects.count(consigliere) != 1:
+        failures.append(f"{page}: Consigliere or MindGruad item missing/duplicated")
+    for label in ("Consigliere AI & Consigliere APP", "军师 AI & 军师 APP", "MindGruad APP", "自持慎言 APP"):
+        if label not in projects:
+            failures.append(f"{page}: app menu label missing: {label}")
+
     # A versioned URL forces a new cache key for every release.
     if nav_sha:
         for target in ("/", "/projects/art-project-xxx/", sheet_music, whimsical):
@@ -79,6 +91,20 @@ else:
     title = re.sub(r"<[^>]*>", "", heading.group(1)) if heading else ""
     if expected_en not in title or expected_zh not in title:
         failures.append(f"{section_path}: section headline does not match the navigation")
+
+for section_name, labels in (
+    ("consigliere-ai", ("Consigliere AI & Consigliere APP", "军师 AI & 军师 APP")),
+    ("mindgruad-app", ("MindGruad APP", "自持慎言 APP")),
+):
+    section_file = root / "projects" / section_name / "index.html"
+    if not section_file.exists():
+        failures.append(f"{section_file}: app page missing")
+        continue
+    markup = unescape(section_file.read_text(encoding="utf-8"))
+    h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", markup, re.DOTALL)
+    heading = re.sub(r"<[^>]*>", "", h1.group(1)) if h1 else ""
+    if any(label not in heading for label in labels):
+        failures.append(f"{section_file}: title is inconsistent with menu")
 
 if failures:
     print("\n".join(failures[:60]), file=sys.stderr)
