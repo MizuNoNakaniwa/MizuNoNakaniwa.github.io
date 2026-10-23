@@ -59,6 +59,13 @@ for page in pages:
     if not (0 <= blog.find(sheet_music) < blog.find(whimsical) < blog.find(aesthetics)):
         failures.append(f"{page}: Whimsical Ideas is not immediately after Sheet Music")
 
+    adjutant = "/projects/adjutant-ai/"
+    if projects.count(adjutant) != 1:
+        failures.append(f"{page}: Adjutant entry missing or duplicated")
+    for label in ("Adjutant AI & Adjutant APP", "副官 AI & 副官 APP"):
+        if label not in projects:
+            failures.append(f"{page}: Adjutant menu label missing: {label}")
+
     # Keep app projects in the same order and under the right headings on every page.
     consigliere = "/projects/consigliere-ai/"
     mindgruad = "/projects/mindgruad-app/"
@@ -93,6 +100,7 @@ else:
         failures.append(f"{section_path}: section headline does not match the navigation")
 
 for section_name, labels in (
+    ("adjutant-ai", ("Adjutant AI & Adjutant APP", "副官 AI & 副官 APP")),
     ("consigliere-ai", ("Consigliere AI & Consigliere APP", "军师 AI & 军师 APP")),
     ("mindgruad-app", ("MindGruad APP", "自持慎言 APP")),
 ):
