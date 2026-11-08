@@ -438,6 +438,18 @@
       "path": "content/posts/game-reviews-and-research/steam-announcement-690893589804221133.md",
       "source": "announcement"
     },
+    "announcement:695403169614659662": {
+      "appid": null,
+      "hash": "bce5ac8bc6dd07938c99c2765cb5f60a47038ee4f3cfa132dfcfb9387a8b9e76",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-695403169614659662.md",
+      "source": "announcement"
+    },
+    "announcement:695403169614659663": {
+      "appid": null,
+      "hash": "d82653f24811ea245f0e0b1009f8ce162c6eea7f1b4edace3bff93009dc4e0b3",
+      "path": "content/posts/game-reviews-and-research/steam-announcement-695403169614659663.md",
+      "source": "announcement"
+    },
     "announcement:706654920914240241": {
       "appid": null,
       "hash": "054e4121ed3c1a1d67320a81f6a3b977bb66b6fcd8ae30b49914d221686ef814",
@@ -2204,7 +2216,7 @@
     }
   },
   "source_counts": {
-    "announcement": 75,
+    "announcement": 77,
     "curator": 87,
     "direct": 205
   },
