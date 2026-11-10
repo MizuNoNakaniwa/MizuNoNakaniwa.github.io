@@ -1,7 +1,7 @@
 ---
 title: |-
-  Techniques: Investment,Decision-Making & Risk Management
-  术：投资术，决策术，风险管理术
+  Techniques: Entrepreneurship, Investment, Decision-Making & Risk Management
+  术：创业术，投资术，决策术，风险管理术
 extraPages:
   - "posts/comic-reviews/评《FX战士久留美》"
   - "posts/movie-tv-reviews/《大空头》评测"

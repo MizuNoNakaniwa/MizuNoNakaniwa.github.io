@@ -52,6 +52,13 @@ for page in pages:
         failures.append(f"{page}: Projects or Blog submenu missing")
         continue
 
+    investment = "/posts/techniques-investment-decision-making-risk-management/"
+    if projects.count(investment) != 1:
+        failures.append(f"{page}: entrepreneurship/investment menu item missing or duplicated")
+    for label in ("Techniques: Entrepreneurship, Investment, Decision-Making & Risk Management", "术：创业术，投资术，决策术，风险管理术"):
+        if label not in projects:
+            failures.append(f"{page}: entrepreneurship/investment menu label missing: {label}")
+
     if whimsical in projects:
         failures.append(f"{page}: Whimsical Ideas remains under Projects")
     if blog.count(whimsical) != 1:
@@ -98,6 +105,17 @@ else:
     title = re.sub(r"<[^>]*>", "", heading.group(1)) if heading else ""
     if expected_en not in title or expected_zh not in title:
         failures.append(f"{section_path}: section headline does not match the navigation")
+
+investment_page = root / "posts/techniques-investment-decision-making-risk-management/index.html"
+if not investment_page.is_file():
+    failures.append(f"{investment_page}: investment section page missing")
+else:
+    markup = unescape(investment_page.read_text(encoding="utf-8"))
+    h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", markup, re.DOTALL)
+    heading = re.sub(r"<[^>]*>", "", h1.group(1)) if h1 else ""
+    for label in ("Techniques: Entrepreneurship, Investment, Decision-Making & Risk Management", "术：创业术，投资术，决策术，风险管理术"):
+        if label not in heading:
+            failures.append(f"{investment_page}: section heading missing {label}")
 
 for section_name, labels in (
     ("adjutant-ai", ("Adjutant AI & Adjutant APP", "副官 AI & 副官 APP")),
