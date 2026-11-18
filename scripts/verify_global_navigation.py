@@ -59,6 +59,18 @@ for page in pages:
         if label not in projects:
             failures.append(f"{page}: entrepreneurship/investment menu label missing: {label}")
 
+    # New techniques must appear exactly after AI and before Tzeentch on every page.
+    ai_path = "/posts/techniques-ai/"
+    metaphysics_path = "/posts/techniques-metaphysics-big-data-analytics/"
+    tzeentch_path = "/projects/tzeentch-intel/"
+    if not (0 <= projects.find(ai_path) < projects.find(metaphysics_path) < projects.find(tzeentch_path)):
+        failures.append(f"{page}: wrong AI > Metaphysics > Tzeentch menu order")
+    if projects.count(metaphysics_path) != 1:
+        failures.append(f"{page}: missing or duplicated metaphysics menu entry")
+    for label in ("Techniques: Metaphysics & Big Data Analytics", "术：玄学术，大数据分析术"):
+        if label not in projects:
+            failures.append(f"{page}: metaphysics menu label missing: {label}")
+
     if whimsical in projects:
         failures.append(f"{page}: Whimsical Ideas remains under Projects")
     if blog.count(whimsical) != 1:
@@ -116,6 +128,17 @@ else:
     for label in ("Techniques: Entrepreneurship, Investment, Decision-Making & Risk Management", "术：创业术，投资术，决策术，风险管理术"):
         if label not in heading:
             failures.append(f"{investment_page}: section heading missing {label}")
+
+metaphysics_page = root / "posts/techniques-metaphysics-big-data-analytics/index.html"
+if not metaphysics_page.is_file():
+    failures.append(f"{metaphysics_page}: missing metaphysics section page")
+else:
+    markup = unescape(metaphysics_page.read_text(encoding="utf-8"))
+    h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", markup, re.DOTALL)
+    heading = re.sub(r"<[^>]*>", "", h1.group(1)) if h1 else ""
+    for label in ("Techniques: Metaphysics & Big Data Analytics", "术：玄学术，大数据分析术"):
+        if label not in heading:
+            failures.append(f"{metaphysics_page}: section heading missing {label}")
 
 for section_name, labels in (
     ("adjutant-ai", ("Adjutant AI & Adjutant APP", "副官 AI & 副官 APP")),
